@@ -1,0 +1,14 @@
+.videoBanner {
+  position: absolute;
+  top: -20px;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% + 20px);
+  border-radius: 8px;
+}
+.videoElement {
+  width: 100%;
+  height: calc(100vh + 20px);
+  object-fit: cover;
+  border-radius: 8px;
+}

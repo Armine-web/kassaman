@@ -1,0 +1,23 @@
+.ratio {
+  --card-aspect-ratio: 3 / 2.2;
+}
+
+.collections {
+  padding: 60px 0;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .collections {
+    padding: var(--section-padding-mobile) 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .ratio {
+    --card-aspect-ratio: 1 / 1;
+  }
+}

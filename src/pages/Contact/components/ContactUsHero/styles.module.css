@@ -1,0 +1,62 @@
+.contactUsHero {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.contactUsHeroContent {
+  margin-top: 120px;
+  padding: 60px 0;
+  text-align: center;
+  font-size: var(--text-large);
+  color: var(--light-primary);
+  opacity: 0.85;
+  font-family: var(--font-body);
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.contactUsHero p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactLogo {
+  width: 150px;
+  position: absolute;
+  top: 44%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+@media (max-width: 768px) {
+  .contactUsHeroContent {
+    margin-top: 80px;
+    padding: 40px 15px;
+    font-size: var(--text-regular);
+  }
+  .contactLogo {
+    width: 120px;
+    top: 34%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactUsHeroContent {
+    margin-top: 80px;
+    padding: 40px 15px;
+    font-size: var(--text-small);
+  }
+}
+
+@media (max-width: 427px) {
+  .contactLogo {
+    width: 100px;
+    top: 51%;
+  }
+}
+
+

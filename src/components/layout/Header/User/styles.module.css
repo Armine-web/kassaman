@@ -1,0 +1,22 @@
+.user {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userIcon {
+  font-size: var(--text-large);
+  opacity: 0.7;
+
+}
+
+.userIcon:hover {
+  color: var(--color-hover-link);
+}
+
+@media (max-width: 480px) {
+  .userIcon {
+    font-size: var(--text-regular);
+  }
+}

@@ -1,0 +1,70 @@
+.contactPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid var(--light-primary);
+  padding: 140px 0 40px 0;
+  background-image: url('../../../../assets/img/contact/bg-contact.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contactImage img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+
+.contactContent > h1 {
+  font-size: var(--text-large);
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  color: var(--dark-primary);
+  letter-spacing: var(--letter-spacing-medium);
+  font-weight: 600;
+  width: 420px;
+  text-align: left;
+}
+
+.contactContent > p {
+  font-size: var(--text-regular);
+  font-family: var(--font-body);
+  color: var(--dark-primary);
+  letter-spacing: var(--letter-spacing-small);
+  font-weight: 400;
+  width: 420px;
+  text-align: left;
+  margin-top: 14px;
+}
+
+@media (max-width: 1024px) {
+  .contactPage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .contactContent > h1,
+  .contactContent > p {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContent > h1 {
+    font-size: var(--text-regular);
+  }
+  .contactPage {
+    padding: 160px 0 20px 0;
+  }
+}

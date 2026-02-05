@@ -1,0 +1,11 @@
+.philosophy {
+  padding: var(--section-padding-y) 0;
+}
+
+.content {
+  padding: 0 2%;
+}
+
+.desc {
+  padding: 22px 0 14px;
+}

@@ -1,0 +1,22 @@
+.card {
+  background: none;
+  border: none;
+}
+
+.imgWrapper {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--gray-400);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+  transform-origin: center center;
+  transform: translateZ(0);
+}
+

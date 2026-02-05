@@ -1,0 +1,20 @@
+.logoContainer {
+  width: 100px;
+}
+
+.logo {
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .logoContainer {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoContainer {
+    width: 60px;
+  }
+}

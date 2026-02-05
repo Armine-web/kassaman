@@ -1,0 +1,454 @@
+{
+  "home": {
+    "heroBanners": [
+      {
+        "id": "1",
+        "image": "ring9",
+        "title": "Fine Jewelry. Handmade.",
+        "alt": "Handmade fine jewelry ring with diamonds",
+        "cta": {
+          "book": "Book an Item",
+          "shop": "Shop Now"
+        }
+      },
+      {
+        "id": "2",
+        "image": "ring10",
+        "title": "Latest Rings Collection.",
+        "alt": "Close-up of luxury ring from latest collection",
+        "cta": {
+          "book": "Book an Item",
+          "shop": "Shop Now"
+        }
+      },
+      {
+        "id": "3",
+        "image": "cufflinks5",
+        "title": "Premium Cufflinks.",
+        "alt": "Set of premium men’s cufflinks",
+        "cta": {
+          "book": "Book an Item",
+          "shop": "Shop Now"
+        }
+      },
+      {
+        "id": "4",
+        "image": "necklace3",
+        "title": "Luxury Necklaces for Men.",
+        "alt": "Luxury necklace for men made from gold",
+        "cta": {
+          "book": "Book an Item",
+          "shop": "Shop Now"
+        }
+      }
+    ],
+    "featuredCategories": {
+      "title": "Featured Categories"
+    },
+    "philosophy": {
+      "title": "Always in progress",
+      "description": "Kassaman has grown organically, supported by those who have been with us since the beginning. For us, the process of creation is a continuous journey. We believe in steady progress and staying true to the craft — a core principle that guides everything we do. Each piece is a reflection of this simple, ongoing evolution.",
+      "cta": "Discover our story",
+      "images": {
+        "featured": "Exquisite handcrafted creation",
+        "sketch": "From sketch to reality: the creative process",
+        "process1": "Artisan's hands shaping the future piece",
+        "process2": "Traditional jewelry crafting techniques",
+        "process3": "Dedicated focus on every small detail"
+      }
+    },
+    "advantages": {
+      "materials": {
+        "title": "Certified materials",
+        "description": "Ethically sourced metals and GIA certified gemstones."
+      },
+      "resizing": {
+        "title": "Free resizing",
+        "description": "Complimentary adjustment for a perfect, lifelong fit."
+      },
+      "cleaning": {
+        "title": "Lifetime cleaning",
+        "description": "Professional care to preserve the brilliance of your jewelry."
+      },
+      "delivery": {
+        "title": "Free delivery",
+        "description": "Insured worldwide shipping in our signature packaging."
+      }
+    }
+  },
+  "catalog": {
+    "title": "Catalog",
+    "description": "Browse all our products here."
+  },
+  "product": {
+    "title": "Product Details",
+    "description": "Information about the selected product."
+  },
+  "collections": {
+    "title": "Collections",
+    "description": "Explore our collections."
+  },
+  "collection": {
+    "title": "Collection",
+    "description": "Explore our collection"
+  },
+  "category": {
+    "title": "Category",
+    "description": "View different categories here."
+  },
+  "services": {
+    "title": "Services",
+    "description": "We provide the following services."
+  },
+  "booking": {
+    "title": "Booking",
+    "description": "Book your service or product here."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "description": "Review your order and make payment."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "This is the About page. You can add information about your company here."
+  },
+    "contact": {
+    "title": "Contact Us",
+    "description": "Our Kassaman Ambassadors are delighted to assist you with your orders, style advice, gift ideas, and more. Please select your preferred method of contact below.",
+    "callUs": "Call Us",
+    "callUsDescription": "Kassaman Client Relations team is available to assist you",
+    "workingHours": "Working Hours",
+    "workingHoursDescription": "Kassaman Client Relations hours",
+    "workingHoursSchedule": "Every day 10:30 - 19:30",
+    "emailUs": "E-mail Us",
+    "emailUsDescription": "A Kassaman Ambassador will respond as soon as possible",
+    "sendEmail": "Send an e-mail",
+    "visitUs": "Visit Us",
+    "visitUsDescription": "We look forward to welcoming you in-store",
+    "adress": "Find Us: Khorenatsi 15, Yerevan, Armenia",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "preferredContact": "Preferred Contact Method",
+    "telegram": "Telegram",
+    "telegramUsername": "Telegram Username",
+    "topic": "Topic",
+    "selectTopic": "Select topic",
+    "topicGeneral": "General question",
+    "topicBooking": "Booking",
+    "topicRepair": "Repair",
+    "topicCustom": "Custom order",
+    "message": "Message",
+    "consentText": "I consent to data processing",
+    "submit": "Submit",
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email",
+    "invalidPhone": "Please enter a valid phone number",
+    "consentRequired": "You must give consent",
+    "formSuccess": "Your message has been sent successfully!",
+    "formError": "Something went wrong, please try again.",
+    "typeMessage": "Type your message...",
+    "signIn": "Sign In",
+    "contactUsHero": "We invite you to write to us with any question you may have. Our client advisors would be delighted to assist you with your enquiry."
+
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Frequently Asked Questions."
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Read our latest news and articles."
+  },
+  "account": {
+    "title": "My Account",
+    "description": "Manage your account details."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist."
+  },
+  "categories": {
+    "rings": {
+      "title": "Rings",
+      "subtitle": "Elegant & modern design"
+    },
+    "necklaces": {
+      "title": "Necklaces",
+      "subtitle": "Perfect jewelry for any look."
+    },
+    "bracelets": {
+      "title": "Bracelets",
+      "subtitle": "A subtle combination of style and character"
+    },
+    "cufflinks": {
+      "title": "Cufflinks",
+      "subtitle": "Refined style for special occasions"
+    }
+  },
+  "productCollections": {
+    "signature": {
+      "title": "Signature",
+      "subtitle": "The essence of our brand's unique identity"
+    },
+    "timeless": {
+      "title": "Timeless",
+      "subtitle": "Classic elegance that transcends generations"
+    },
+    "prestige": {
+      "title": "Prestige",
+      "subtitle": "Exceptional craftsmanship for special moments"
+    },
+    "wedding": {
+      "title": "Wedding",
+      "subtitle": "Elegant symbols for your beginning of forever"
+    }
+  },
+  "products": {
+    "goldPrestigeBracelet": {
+      "name": "Gold Bracelet Prestige",
+      "materials": ["Yellow Gold", "Leather"],
+      "stones": ["Diamond"],
+      "description": "An architectural piece in solid 14K yellow gold. The central element features a prominent large diamond, encircled by a meticulous setting of smaller brilliant-cut stones for enhanced light reflection. Mounted on a durable premium leather band, this high-weight bracelet focuses on intricate stone-setting and clean geometric lines."
+    },
+    "platinumSignatureBracelet": {
+      "name": "Platinum Bracele Signature ",
+      "materials": ["Platinum", "Leather"],
+      "stones": [],
+      "description": "Exquisite men's bracelet from the Signature collection. Crafted from high-grade platinum and premium leather, this accessory combines industrial strength with elegant design. Perfect for a sophisticated modern look."
+    },
+    "diamondPrestigeBracelet": {
+      "name": "Diamond Bracelet Prestige",
+      "materials": ["Yellow Gold", "White Gold", "Leather"],
+      "stones": ["Diamond"],
+      "description": "An exceptional piece from the Prestige collection. This men's bracelet features a sophisticated blend of yellow and white gold with genuine diamonds, set on a premium leather band."
+    },
+    "beadedSignatureBracelet": {
+      "name": "Beaded Bracelet Signature",
+      "materials": ["Beaded", "Silver"],
+      "stones": [],
+      "description": "A stylish and versatile men's bracelet from the Signature collection. Featuring high-quality beads and 925 sterling silver accents, this piece is perfect for layering or wearing as a standalone accessory."
+    },
+    "leatherTimelessBracelet": {
+      "name": "Leather Bracelet Timeless",
+      "materials": ["Leather", "Silver"],
+      "stones": [],
+      "description": "A staple of the Timeless collection, this bracelet is designed for longevity and style. Combining premium braided leather with a minimalist silver closure, it is the perfect everyday accessory that never goes out of fashion."
+    },
+    "goldChainTimelessBracelet": {
+      "name": "Gold Chain Bracelet",
+      "materials": ["White Gold"],
+      "stones": ["Diamond"],
+      "description": "A sophisticated chain bracelet from the Timeless collection, crafted in 14K white gold. Featuring a subtle diamond accent, this piece offers a modern take on a classic design, perfect for the man who appreciates understated luxury."
+    },
+    "silverTimelessBracelet": {
+      "name": "Silver Bracelet Timeless",
+      "materials": ["Silver", "Leather"],
+      "stones": [],
+      "description": "A refined men's accessory from the Timeless collection. Combining high-quality sterling silver with genuine leather, this bracelet features a timeless aesthetic that balances masculine strength with modern elegance."
+    },
+    "gemstonePrestigeBracelet": {
+      "name": "Gemstone Bracelet  Prestige ",
+      "materials": ["White Gold", "Leather"],
+      "stones": ["Diamond"],
+      "description": "A masterpiece of the Prestige collection, designed for the most discerning collectors. This exceptional bracelet pairs lustrous white gold with hand-selected diamonds of superior clarity, set upon a bespoke leather band. A true statement of luxury and success."
+    },
+    "goldTimelessCufflinks": {
+      "name": "Gold Cufflinks Timeless ",
+      "materials": ["Yellow Gold", "White Gold"],
+      "stones": [],
+      "description": "Sophisticated cufflinks from the Timeless collection, featuring a masterful combination of yellow and white gold. These essential accessories offer a clean, geometric design that adds a touch of classic luxury to any formal attire."
+    },
+    "silverSignatureCufflinks": {
+      "name": "Silver Cufflinks Signature",
+      "materials": ["Silver"],
+      "stones": ["Swarovski"],
+      "description": "Modern and original cufflinks from the Signature collection. Crafted from 925 sterling silver with a deep red rhodium plating, these cufflinks feature a harmonious combination of dark metal and Swarovski crystals."
+    },
+    "goldSilverTimelessCufflinks": {
+      "name": "Gold & Silver Cufflinks",
+      "materials": ["Silver", "Yellow Gold"],
+      "stones": [],
+      "description": "Essential cufflinks from the Timeless collection, featuring a balanced mix of sterling silver and 14K yellow gold accents. The bicolor design offers maximum versatility, making them a perfect match for any timepiece or jewelry."
+    },
+    "pearlSignatureCufflinks": {
+      "name": "Pearl Cufflinks Signature",
+      "materials": ["Rose Gold"],
+      "stones": ["Pearl"],
+      "description": "Natural pearls set in 14K rose gold. The design focuses on the contrast between the warm polished metal and the pearl's surface. A clean, distinctive accessory from the Signature collection."
+    },
+    "diamondPrestigeCufflinks": {
+      "name": "Diamond Cufflinks",
+      "materials": ["Yellow Gold"],
+      "stones": ["Diamond"],
+      "description": "These 14-karat yellow gold cufflinks from the Prestige collection feature diamonds set in a geometric frame. This statement accessory shines with the sparkle of pure gold and diamonds."
+    },
+    "silverLazuliCufflinks": {
+      "name": "Silver Lazuli Cufflinks",
+      "materials": ["Silver"],
+      "stones": ["Lazuli"],
+      "description": "Sterling silver cufflinks with natural polished lapis lazuli. The design highlights the stone's deep blue hue. This accessory is from the Signature collection, which emphasizes natural materials and color combinations."
+    },
+    "silverTimelessCufflinks": {
+      "name": "Silver & Rose Gold Cufflinks",
+      "materials": ["Silver", "Rose Gold"],
+      "stones": [],
+      "description": "A combination of 925 sterling silver and 14-karat rose gold, these cufflinks from the Timeless collection feature a design that harmoniously blends two metallic tones. An accessory for a modern and practical look."
+    },
+    "bicolorPrestigeCufflinks": {
+      "name": "Bicolor Cufflinks Prestige",
+      "materials": ["Silver", "Yellow Gold"],
+      "stones": ["Swarovski"],
+      "description": "Premium cufflinks crafted from sterling silver and yellow gold. The silver surface is coated with a protective rhodium plating, ensuring a long-lasting shine. Each piece is adorned with a Swarovski crystal."
+    },
+    "bicolorTimelessCufflinks": {
+      "name": "Bicolor Cufflinks Timeless",
+      "materials": ["White Gold", "Yellow Gold"],
+      "stones": [],
+      "description": "A classic accessory from the Timeless collection. An elegant combination of white and yellow gold. These solid gold cufflinks feature a minimalist design, without stones, emphasizing the combination of the two precious metals."
+    },
+    "silverSignatureNecklace": {
+      "name": "Silver Necklace Signature",
+      "materials": ["Silver"],
+      "stones": [],
+      "description": "This Signature Collection necklace is crafted from rhodium-plated 925 sterling silver and genuine African ebony. The design highlights the exquisite combination of rare wood and polished metal."
+    },
+    "roseGoldSignatureNecklace": {
+      "name": "Rose Gold Necklace",
+      "materials": ["Rose Gold", "Silver", "Leather"],
+      "stones": ["Swarovski"],
+      "description": "This unique necklace from the Signature collection combines rose gold and rhodium-plated silver on a high-quality leather strap. The centerpiece is adorned with Swarovski crystals. The accessory is based on a combination of warm gold, dark leather, and glitter."
+    },
+    "swarovskiSignatureNecklace": {
+      "name": "Swarovski Necklace Signature",
+      "materials": ["Silver"],
+      "stones": ["Swarovski"],
+      "description": "Rhodium-plated 925 sterling silver necklace featuring a sequence of precision-cut Swarovski stones. The design integrates multiple crystals into a sleek geometric frame for enhanced light reflection. A sharp, contemporary piece from the Signature collection defined by its brilliant, multi-stone finish."
+    },
+    "biGoldLeatherNecklace": {
+      "name": "Bi-Gold & Leather Necklace",
+      "materials": ["Yellow Gold", "White Gold", "Leather"],
+      "stones": [],
+      "description": "A minimalist necklace crafted from 14-karat yellow and white gold with a durable leather strap. This piece from the Signature collection combines polished metals and leather. A modern and understated accessory for everyday wear."
+    },
+    "crossPrestigeNecklace": {
+      "name": "Cross Necklace Prestige",
+      "materials": ["Silver", "Yellow Gold"],
+      "stones": [],
+      "description": "A structural cross pendant from the Prestige collection, crafted from 925 sterling silver with 14K yellow gold detailing. The design features a layered, bicolor aesthetic with a protective rhodium finish on the silver elements. A substantial and symbolic piece defined by its clean, architectural lines."
+    },
+    "beBetterSignatureNecklace": {
+      "name": "Be Better Necklace",
+      "materials": ["Silver"],
+      "stones": [],
+      "description": "A conceptual piece from the Signature collection, crafted from high-grade 925 sterling silver with a durable rhodium finish. The design centers on the 'Be Better' engraving, combining a raw, industrial aesthetic. A meaningful, solid-weight accessory for a distinct personal statement."
+    },
+    "goldPrestigeRing": {
+      "name": "Gold Diamond Ring Prestige",
+      "materials": ["White Gold"],
+      "stones": ["Diamond"],
+      "description": "An elite statement ring from the Prestige collection, crafted from solid 14K white gold. The design is defined by hand-applied blue rhodium lines that create a sharp, modern contrast against the polished metal. Centered with a premium diamond, this piece merges high-end luxury with a bold, technical aesthetic."
+    },
+    "diamondPrestigeRing": {
+      "name": "Diamond Bicolor Ring",
+      "materials": ["Yellow Gold", "White Gold"],
+      "stones": ["Diamond"],
+      "description": "A prestigious bicolor ring crafted from yellow and white gold. The architectural design features a striking contrast between the two gold tones, crowned with a brilliant-cut diamond. A high-value accessory from the Prestige collection precise craftsmanship."
+    },
+    "silverSignatureRing": {
+      "name": "Silver Ring Signature",
+      "materials": ["Silver"],
+      "stones": ["Swarovski"],
+      "description": "A bold statement ring from the Signature collection, crafted from 925 sterling silver with a protective rhodium finish. The design features integrated Swarovski stones that add a sharp, light-reflecting contrast to the polished metallic surface."
+    },
+    "emeraldPrestigeRing": {
+      "name": "Emerald & Diamond Ring",
+      "materials": ["White Gold"],
+      "stones": ["Emerald", "Diamond"],
+      "description": "A masterpiece of the Prestige collection, this elite ring is crafted from solid 14K white gold. It features a magnificent natural emerald centerpiece, flanked by precision-cut diamonds. A high-jewelry investment piece that combines rare gemstones."
+    },
+    "silverSwarovskiRing": {
+      "name": "Silver Swarovski Ring",
+      "materials": ["Silver"],
+      "stones": ["Swarovski"],
+      "description": "This solid 925 sterling silver ring from the Signature collection is adorned with Swarovski crystals, giving it a modern and elegant look. This high-quality accessory is designed to last and highlight your individual style."
+    },
+    "yellowGoldWeddingRing": {
+      "name": "Wedding Ring",
+      "materials": ["Yellow Gold"],
+      "stones": ["Diamond"],
+      "description": "A wedding ring from the bridal collection, crafted from 14-karat yellow gold. This men's wedding ring is encrusted with diamonds, combining sparkle with refined luxury."
+    },
+    "whiteGoldWeddingRing": {
+      "name": "Wedding Ring",
+      "materials": ["White Gold"],
+      "stones": ["Diamond"],
+      "description": "Solid 14K white gold ring with a mirror-polish finish. Diamonds are integrated into the metal frame. Clean and durable design for daily wear."
+    },
+    "sapphirePrestigeRing": {
+      "name": "Sapphire & Diamond Ring",
+      "materials": ["Rose Gold"],
+      "stones": ["Sapphire", "Diamond"],
+      "description": "Solid rose gold ring featuring a natural sapphire and diamond accents. The stones are set into a geometric, heavy-weight frame. High-end finish for a distinct masculine look."
+    },
+    "crossRingSignature": {
+      "name": "Cross & Ring Signature",
+      "materials": ["White Gold"],
+      "stones": ["Swarovski"],
+      "description": "Solid 14K white gold transformer piece that functions as both a ring and a cross pendant. Features Swarovski stones integrated into the frame."
+    }
+  },
+  "productCard": {
+    "book": "Book an item"
+  },
+  "errors": {
+    "default": "Something went wrong. Please try again later"
+  },
+  "footer": {
+    "stayConnected": "Stay Connected",
+    "getInsiderInfo": "Get insider information about exclusive",
+    "offersEvents": "offers, events and more",
+    "signUpForEmail": "Sign Up For Email",
+    "contactUs": "Contact Us",
+    "copyright": "© {{year}} Kassaman. All rights reserved",
+    "columns": {
+      "help": "Help",
+      "faq": "FAQ",
+      "contactUs": "Contact Us",
+      "ourServices": "Our Services",
+      "booking": "Booking",
+      "checkout": "Checkout",
+      "workingHours": "Working Hours",
+      "resources": "Resources",
+      "catalog": "Catalog",
+      "collections": "Collections",
+      "product": "Product",
+      "payment": "Payment",
+      "followUs": "Follow Us",
+      "address": "Address",
+      "about": "About",
+      "blog": "Blog",
+      "aboutUs": "About Us",
+      "rings": "Rings",
+      "bracelets": "Bracelets",
+      "cufflinks": "Cufflinks",
+      "necklaces": "Necklaces"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
+  },
+  "emailSignup": {
+    "title": "Stay Connected",
+    "firstTimeText": "First-time customer? Sign up for free shipping on your first order.",
+    "alreadyShopText": "Already shop with us? Sign up to get early access to new drops, styling inspiration, and exclusive offers.",
+    "placeholder": "Enter your email address",
+    "buttonText": "Subscribe",
+    "successMessage": "Thanks for subscribing!",
+    "errorMessage": "Invalid email address",
+    "emptyEmailMessage": "Please enter your email address"
+  }
+}

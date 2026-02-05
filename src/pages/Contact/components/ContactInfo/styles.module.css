@@ -1,0 +1,42 @@
+.contactInfoWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 80px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.contactInfoLinks {
+  position: relative;
+  color: var(--dark-primary);
+  text-decoration: none;
+  top: 14px;
+}
+
+.contactInfoLinks::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark-primary);
+  transition: width 0.3s ease;
+}
+
+.contactInfoLinks:hover {
+  opacity: 0.8;
+}
+
+.contactInfoLinks:hover::after {
+  width: 0;
+}
+
+
+
+@media (max-width: 1023px) {
+  .contactInfoWrapper {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+}

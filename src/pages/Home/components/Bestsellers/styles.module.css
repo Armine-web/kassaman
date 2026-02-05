@@ -1,0 +1,13 @@
+.bestsellers {
+  padding: var(--section-padding-y) 0;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .bestsellers {
+    padding: var(--section-padding-mobile) 0;
+  }
+}

@@ -1,0 +1,135 @@
+.modal .ant-modal-content {
+  padding: 48px 32px;
+  background: linear-gradient(180deg, #e8f4f8 0%, #ffffff 100%);
+}
+
+.modal .ant-modal-close {
+  top: 16px;
+  right: 16px;
+}
+
+.modal .ant-modal-close-x {
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: var(--fs-300);
+  line-height: 1.2;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.firstTimeText {
+  font-size: var(--fs-100);
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  display: block;
+}
+
+.alreadyShopText {
+  font-size: var(--fs-100);
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  display: block;
+  line-height: 24px;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  padding: 32px;
+  border: 1px solid var(--color-text);
+  border-radius: 12px;
+  background: var(--color-white);
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--color-text) !important;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: var(--fs-200);
+}
+
+.input:focus {
+  border-color: var(--color-text) !important;
+  box-shadow: 0 0 0 2px rgba(44, 44, 44, 0.1) !important;
+}
+
+.input::placeholder {
+  color: #999 !important;
+}
+
+.button {
+  background: var(--color-secondary) !important;
+  border: none !important;
+  border-radius: 30px;
+  padding: 8px;
+  height: auto;
+  font-size: var(--fs-100);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: #000 !important;
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .modal .ant-modal-content {
+    padding: 32px 24px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .formSection {
+    padding: 24px;
+  }
+
+  .textSection {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .firstTimeText {
+    font-size: var(--fs-200);
+  }
+
+  .alreadyShopText {
+    font-size: var(--fs-100);
+  }
+}

@@ -1,0 +1,19 @@
+.drawerUser {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.mobileUserText {
+  font-size: var(--fs-100);
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  letter-spacing: var(--ls-200);
+  text-transform: uppercase;
+}
+
+.mobileUserText:active,
+.drawerUser:active {
+  color: rgba(29, 28, 28, 0.6);
+}

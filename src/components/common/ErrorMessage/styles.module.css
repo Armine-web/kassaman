@@ -1,0 +1,16 @@
+.errorWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.errorText {
+  font-family: var(--font-heading);
+  font-size: var(--fs-300);
+  font-weight: 500;
+  line-height: var(--lh-200);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-large);
+  color: var(--color-hover-link);
+}

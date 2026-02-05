@@ -1,0 +1,17 @@
+.cartIcon {
+  font-size: var(--text-large);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cartIcon {
+  color: var(--dark-primary);
+  opacity: 0.7;
+
+  background-color: none;
+}
+
+.cartIcon:hover {
+  color: var(--color-hover-link);
+}
+

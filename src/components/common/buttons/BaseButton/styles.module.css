@@ -1,0 +1,55 @@
+.baseButton {
+  font-family: var(--font-body);
+  font-size: var(--fs-200);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: var(--ls-200);
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--color-text);
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.shadow {
+  color: var(--color-text-inverse);
+  font-size: var(--fs-200);
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 20px;
+  background-color: transparent;
+  box-shadow:
+    0 0 4px 0 #e7d1cf inset,
+    0 0 6px 4px #e7d1cf;
+}
+
+.shadow:hover {
+  box-shadow:
+    0 0 6px 0 #e7d1cf inset,
+    0 0 8px 5px #e7d1cf;
+  transform: translateY(-2px);
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  width: fit-content;
+  overflow: hidden;
+  background-image: linear-gradient(to right, var(--color-text) 50%, transparent 50%);
+  background-size: 200% 1px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition:
+    background-position 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.2s ease;
+}
+
+.link:hover {
+  background-position: 100% 100%;
+  opacity: 0.6;
+}

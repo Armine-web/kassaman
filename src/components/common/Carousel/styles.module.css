@@ -1,0 +1,28 @@
+.mySwiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+:global(.swiper-slide) {
+  display: flex;
+  justify-content: center;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: var(--color-hover-link);
+}
+
+:global(.swiper-button-next::after),
+:global(.swiper-button-prev::after) {
+  color: var(--color-hover-link);
+}
+
+:global(.swiper-pagination-bullet) {
+  background: #ccc;
+  opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: var(--color-hover-link);
+}
