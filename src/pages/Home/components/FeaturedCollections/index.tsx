@@ -11,7 +11,7 @@ const FeaturedCollections = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-  const { data: collections, isLoading, isError } = useCollections();
+  const { data: collections } = useCollections();
 
   return (
     <section className={styles.collections}>
