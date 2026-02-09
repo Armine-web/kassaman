@@ -1,12 +1,19 @@
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
+import styles from './styles.module.css';
+import HeroSection from './HeroSection';
+import { useSmoothScroll } from './utils';
+import OurBrand from './OurBrand';
 const About = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
+
+  useSmoothScroll();
 
   return (
-    <div>
-      <h1>{t('about.title')}</h1>
-      <p>{t('about.description')}</p>
+    <div className={styles.wrapper}>
+      <div className={styles.backgroundOverlay} />
+      <HeroSection />
+      <OurBrand />
     </div>
   );
 };
