@@ -38,11 +38,10 @@
 }
 
 .mainTitle {
-  font-family: 'Playfair Display', serif !important;
-  /* font-size: clamp(36px, 5vw, 62px) !important; */
-  font-size: var(--text-large) !important;
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-large);
   font-weight: bold;
-  color: #1a1a1a !important;
+  color: #1a1a1a;
   text-transform: uppercase;
   margin-bottom: 15px;
 }

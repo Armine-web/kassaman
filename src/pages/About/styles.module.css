@@ -10,101 +10,26 @@
 .backgroundOverlay {
   position: absolute;
   inset: 0;
-  top: 100px;
+  top: 120px;
   left: 0;
   right: 0;
+  bottom: 0;
   background:
     radial-gradient(circle at top center, rgba(212, 175, 55, 0.08), transparent 70%),
     linear-gradient(to bottom, rgba(246, 242, 234, 0.9), rgba(246, 242, 234, 0.9));
   pointer-events: none;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  
+ 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+  margin-bottom: 50px;
 }
-
-
 
 .sectionContainer {
   position: relative;
-  /* padding: 100px 16px; */
-  /* max-width: 1280px; */
   margin: 0 auto;
   z-index: 2;
 }
 
-.goldSubtitle {
-  color: #c5a059;
-  letter-spacing: 6px;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
 
-.mainTitle {
-  font-family: serif;
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 300;
-  margin: 0;
-  line-height: 1.1;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 100px 10%;
-  gap: 80px;
-  align-items: center;
-}
-
-.imageBox {
-  width: 100%;
-  overflow: hidden;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
-}
-
-.globalImage {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.textSide h2 {
-  font-family: serif;
-  font-size: 3rem;
-  font-weight: 300;
-  margin-bottom: 25px;
-}
-
-.globalText {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  opacity: 0.8;
-  max-width: 500px;
-}
-
-.ctaSection {
-  text-align: center;
-  padding: 150px 20px;
-}
-
-.goldButton {
-  padding: 16px 40px;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #1a1a1a;
-  background: transparent;
-  border: 1px solid #c5a059;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-
-.goldButton:hover {
-  background: #c5a059;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-    padding: 50px 20px;
-    gap: 40px;
-  }
-}
