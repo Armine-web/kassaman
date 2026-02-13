@@ -11,14 +11,12 @@ const Home = () => {
   return (
     <>
       <HomeBanner />
-      <div className="container">
         <div className={styles.homeContent}>
           <FeaturedCategories />
           <FeaturedCollections />
           <Bestsellers />
           <Philosophy />
         </div>
-      </div>
       <Advantages />
     </>
   );

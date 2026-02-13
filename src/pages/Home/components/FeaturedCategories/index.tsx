@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 import VisualCard from '../../../../components/common/cards/VisualCard';
 import { Line } from '../../../../components/common/AppearingLines';
 import MainButton from '../../../../components/common/MainButton';
+import AppearingText from '../../../../components/common/AppearingText';
 
 const FeaturedCategories = () => {
   useScrollReveal();
@@ -16,53 +17,57 @@ const FeaturedCategories = () => {
 
   return (
     <section className={styles.categories}>
-      <h2 className={`${styles.homeCategories} scrollReveal`}>
-        {t('home.featuredCategories.title')
-          .split('\n')
-          .map((line, index) => (
-            <p key={index} className={index === 1 ? styles.secondLine : ''}>
-              {line}
-            </p>
-          ))}
-      </h2>
       {isError ? (
         <div className="errorMessage">{t(`errors.failedToLoad`)}</div>
       ) : isLoading ? (
         <div className="loading">Loading Categories...</div>
       ) : (
-        <div className={styles.categoryList}>
-          {categories?.map((category, index) => (
-            <VisualCard
-              className={`${styles.homeCategoriesCard} scrollReveal`}
-              style={{ transitionDelay: `${index * 0.5}s` }}
-              key={category.id}
-              width={300}
-              image={{ src: category.image, alt: category.slug }}
-              hoverEffect={true}
-              onClick={() => navigate(`/catalog/${category.slug}`)}
-            >
-              <div
-                className={styles.featuredCategoriesInner}
-              >
-                <Line
-                  thin
-                  className={`${styles.featuredCategoriesLineThin} scrollReveal myCustomScrollReveal`}
-                  style={{ transitionDelay: `${index * .8}s` }}
-                />
-                <Line
-                  className={`${styles.featuredCategoriesLine} scrollReveal myCustomScrollReveal`}
-                  style={{ transitionDelay: `${index * .8}s` }}
-                />
-                <MainButton
-                  text={t(`${category.slug}`)}
-                  route={`/catalog/${category.slug}`}
-                  className={`${styles.featuredCategoriesButton} scrollReveal`}
-                  style={{ transitionDelay: `${index * .8}s` }}
-                />
+        <>
+          <h2 className={`${styles.homeCategories} scrollReveal`}>
+            {t('home.featuredCategories.title')
+              .split('\n')
+              .map((line, index) => (
+                <p key={index} className={index === 1 ? styles.secondLine : ''}>
+                  {line}
+                </p>
+              ))}
+          </h2>
+          <div className={`${styles.homeCategoriesWrapper} scrollReveal`}>
+            <div className={`${styles.featuredCategoriesLines} scrollReveal myCustomScrollReveal`}>
+              <Line thin className={styles.featuredCategoriesLineThin} />
+              <Line className={styles.featuredCategoriesLine} />
+              <AppearingText
+                text={t('home.featuredCategories.text')}
+                className={styles.featuredCategoriestext}
+              />
+            </div>
+
+            <div className={`${styles.homeCategoriesCardWrapper} scrollReveal`}>
+              <div className={styles.categoryList}>
+                {categories?.map((category, index) => (
+                  <VisualCard
+                    className={`${styles.homeCategoriesCard} scrollReveal`}
+                    style={{ transitionDelay: `${index * 0.5}s` }}
+                    key={category.id}
+                    width={300}
+                    image={{ src: category.image, alt: category.slug }}
+                    hoverEffect={true}
+                    onClick={() => navigate(`/catalog/${category.slug}`)}
+                  >
+                    <div className={styles.featuredCategoriesInner}>
+                      <MainButton
+                        text={t(`categories.${category.slug}.title`)}
+                        route={`/catalog/${category.slug}`}
+                        className={`${styles.featuredCategoriesButton} scrollReveal`}
+                        style={{ transitionDelay: `${index * 0.8}s` }}
+                      />
+                    </div>
+                  </VisualCard>
+                ))}
               </div>
-            </VisualCard>
-          ))}
-        </div>
+            </div>
+          </div>
+        </>
       )}
     </section>
   );

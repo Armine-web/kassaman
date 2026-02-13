@@ -73,7 +73,8 @@
       }
     ],
     "featuredCategories": {
-      "title": "Shop by \nCategory"
+      "title": "Shop by \nCategory",
+      "text": "Your everyday choice"
     },
     "philosophy": {
       "title": "Always in progress",
