@@ -29,7 +29,7 @@ import ring4 from '../assets/img/rings/ring4.jpg';
 import ring5 from '../assets/img/rings/ring5.jpg';
 import ring6 from '../assets/img/rings/ring6.jpg';
 import ring7 from '../assets/img/rings/ring7.jpg';
-import ring8 from '../assets/img/rings/ring8.jpg';
+import ringBlue from '../assets/img/rings/ringBlue.jpg';
 import ring10 from '../assets/img/rings/ring10.jpg';
 
 export const MOCK_PRODUCTS: Product[] = [
@@ -433,7 +433,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 1200,
     currency: 'USD',
-    image: ring8,
+    image: ringBlue,
     inStock: true,
   },
   {

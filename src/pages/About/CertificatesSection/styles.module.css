@@ -1,0 +1,94 @@
+.certificatesSection {
+  position: relative;
+  padding: 80px 0;
+  background: transparent;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.subtitle {
+  color: #c5a059;
+  letter-spacing: 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-style: italic;
+  display: block;
+  margin-top: 20px;
+}
+
+.title {
+  font-family: serif; 
+  font-weight: 300;
+  font-size: var(--text-large);
+  text-transform: uppercase;
+  margin: 0 ;
+  color: #1a1a1a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  text-align: center;
+  padding: 50px 30px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card:hover {
+  background: #fff;
+  border-color: #c5a059;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(197, 160, 89, 0.08);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 30px;
+  background: rgba(197, 160, 89, 0.08);
+  border-radius: 50%;
+  font-size: 30px;
+  color: #c5a059;
+  transition: all 0.4s ease;
+}
+
+.card:hover .iconWrapper {
+  background: #c5a059;
+  color: #fff;
+}
+
+.itemTitle {
+  font-family: serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 15px !important;
+}
+
+.itemDesc {
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
