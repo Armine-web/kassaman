@@ -39,17 +39,17 @@ hr {
   border: 0;
 }
 
+
 @media (max-width: 1024px) {
   .nav:not(.drawerNav) {
     display: none;
   }
 
-    .navItem {
-      width: 100%;
-      border-bottom: 1px solid var(--light-primary);
-      padding: 10px 0;
-    }
-
+  .navItem {
+    width: 100%;
+    border-bottom: 1px solid var(--light-primary);
+    padding: 10px 0;
+  }
 
   .navItem:last-child {
     border-bottom: none;
@@ -60,22 +60,21 @@ hr {
     width: 0;
   }
 
-    .navItem > a:hover {
-      color: var(--color-hover-link);
-    }
+  .navItem > a:hover {
+    color: var(--color-hover-link);
+  }
 
-    .navItem > a:hover::after {
-      width: 0;
-    }
+  .navItem > a:hover::after {
+    width: 0;
+  }
 
-    .mobailHr {
-      position: relative;
-      left: -24px;
-      width: calc(100% + 48px);
-      border: 0;
-      border-top: 1.8px solid var(--light-primary);
-    }
-  
+  .mobailHr {
+    position: relative;
+    left: -24px;
+    width: calc(100% + 48px);
+    border: 0;
+    border-top: 1.8px solid var(--light-primary);
+  }
 }
 
 @media (max-width: 480px) {

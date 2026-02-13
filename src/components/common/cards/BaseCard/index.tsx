@@ -10,11 +10,12 @@ const BaseCard = ({
   onImageClick,
   imageClassName,
   className,
+  style,
   children,
 }: BaseCardProps) => (
   <Card
     className={`${styles.card} ${className ?? ''}`}
-    style={{ width: width ?? '100%' }}
+    style={{ width: width ?? '100%', ...style }}
     cover={
       <div
         className={styles.imgWrapper}

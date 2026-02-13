@@ -1,14 +1,84 @@
-.categories {
+.homeCategories {
+  font-size: 2.5rem;
+  letter-spacing: var(--letter-spacing-medium);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+  color: var(--dark-primary);
+}
+
+.homeCategories p {
+  display: block;
+}
+
+.secondLine {
+  margin-left: 1.5rem;
+}
+.homeCategoriesWrapper {
+  background-color: var(--light-primary);
+  position: relative;
+  height: 60vh;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.homeCategoriesCardWrapper {
+  position: absolute;
+  right: 0;
+  top: -120px;
+}
+
+.featuredCategoriesLines {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
   width: 100%;
-  padding: var(--section-padding-y) 0;
+  z-index: 2;
+}
+
+.featuredCategoriesLineThin,
+.featuredCategoriesLine {
+  background: var(--dark-primary) !important;
+}
+
+.featuredCategoriestext {
+  color: var(--dark-primary) !important;
+  font-family: var(--font-accent) !important;
+  font-size: 2rem !important;
+}
+
+.categories {
+  padding-left: 10%;
+  width: 100%;
 }
 
 .categoryList {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: stretch;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.homeCategoriesCard {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.featuredCategoriesInner {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.featuredCategoriesButton {
+  text-transform: uppercase;
+  text-align: center;
+  left: 25%;
+  transform: translateX(-50%);
+  position: relative;
 }
 
 @media (max-width: 992px) {

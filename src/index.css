@@ -2,11 +2,11 @@
   --font-heading: 'Brilliant Cut Pro';
   --font-body: 'Fancy Cut Pro', 'Almarai', 'Inter', sans-serif;
   --font-accent: 'Playwrite CU', cursive;
-  --color-background: #ffffff;
+  --color-background: linear-gradient(180deg, white 50%, #f2eadf 100%);
   --color-secondary: #b13024;
   --color-hover-link: #921813;
   --dark-primary: #1d1c1c;
-  --light-primary: #d9d9d9;
+  --light-primary: #ebe0cf;
   --text-small: 14px;
   --text-regular: 16px;
   --text-large: 22px;
@@ -14,7 +14,6 @@
   --letter-spacing-medium: 0.8px;
   --line-height-text: 1.5;
   --line-height-title: 1.2;
-
 }
 
 *,
@@ -27,7 +26,7 @@
 
 body {
   margin: 0;
-  background-color: var(--color-background);
+  background: var(--color-background);
   color: var(--dark-primary);
   font-size: var(--text-small);
   font-family: var(--font-body);
@@ -45,7 +44,6 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  color: var(--dark-primary)
 }
 
 a {
@@ -75,8 +73,9 @@ button {
   font-size: inherit;
 }
 
-.badge{
-  background-color: var(--color-secondary);
+.badge {
+  background-color: var(--light-primary);
+  color: var(--dark-primary);
 }
 
 .underlineEffect {
@@ -113,6 +112,44 @@ button {
 
 .luxuryImage:hover {
   transform: scale(1.1);
+}
+
+.scrollReveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 1s ease,
+    transform 1.6s ease;
+  transition-delay: 0s;
+}
+
+.scrollReveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.myCustomScrollReveal.scrollReveal {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.myCustomScrollReveal.scrollReveal.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes lineGrowLeftToRight {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 @keyframes luxuryFadeUp {

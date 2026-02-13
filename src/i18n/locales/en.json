@@ -3,9 +3,9 @@
     "heroBanners": [
       {
         "id": "1",
-        "image": "ring9",
-        "title": "Fine Jewelry. Handmade.",
-        "alt": "Handmade fine jewelry ring with diamonds",
+        "image": "bannerImg1",
+        "text": "Tiger Eye. Sterling Silver.",
+        "alt": "Handmade tiger eye silver necklace with Swarovski accents",
         "cta": {
           "book": "Book an Item",
           "shop": "Shop Now"
@@ -13,9 +13,9 @@
       },
       {
         "id": "2",
-        "image": "ring10",
-        "title": "Latest Rings Collection.",
-        "alt": "Close-up of luxury ring from latest collection",
+        "image": "bannerImg2",
+        "text": "Yerevan Collection. Cultural Elegance.",
+        "alt": "Yerevan-inspired sterling silver necklace with elegant design",
         "cta": {
           "book": "Book an Item",
           "shop": "Shop Now"
@@ -23,9 +23,9 @@
       },
       {
         "id": "3",
-        "image": "cufflinks5",
-        "title": "Premium Cufflinks.",
-        "alt": "Set of premium men’s cufflinks",
+        "image": "bannerImg3",
+        "text": "Ornament Design. Handmade Bracelets.",
+        "alt": "Set of handmade silver and leather bracelets with enamel",
         "cta": {
           "book": "Book an Item",
           "shop": "Shop Now"
@@ -33,9 +33,39 @@
       },
       {
         "id": "4",
-        "image": "necklace3",
-        "title": "Luxury Necklaces for Men.",
-        "alt": "Luxury necklace for men made from gold",
+        "image": "bannerImg4",
+        "text": "925 Silver. Swarovski Accents.",
+        "alt": "Tiger eye 925 silver necklace accented with Swarovski crystals",
+        "cta": {
+          "book": "Book an Item",
+          "shop": "Shop Now"
+        }
+      },
+      {
+        "id": "5",
+        "image": "bannerImg5",
+        "text": "Yerevan Collection. Timeless Details.",
+        "alt": "Luxury cufflinks from the Yerevan collection with onyx",
+        "cta": {
+          "book": "Book an Item",
+          "shop": "Shop Now"
+        }
+      },
+      {
+        "id": "6",
+        "image": "bannerImg6",
+        "text": "Baguette Cut. Modern Luxury.",
+        "alt": "Kassaman baguette ring and bracelet set with Swarovski",
+        "cta": {
+          "book": "Book an Item",
+          "shop": "Shop Now"
+        }
+      },
+      {
+        "id": "7",
+        "image": "bannerImg7",
+        "text": "Baguette Collection. Pure Brilliance.",
+        "alt": "Baguette collection ring crafted in 925 silver with Swarovski",
         "cta": {
           "book": "Book an Item",
           "shop": "Shop Now"
@@ -43,7 +73,8 @@
       }
     ],
     "featuredCategories": {
-      "title": "Featured Categories"
+      "title": "Shop by \nCategory",
+      "text": "Your everyday choice"
     },
     "philosophy": {
       "title": "Always in progress",
