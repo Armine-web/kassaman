@@ -142,7 +142,7 @@
     "title": "About Us",
     "description": "This is the About page. You can add information about your company here."
   },
-  "contact": {
+    "contact": {
     "title": "Contact Us",
     "description": "Our Kassaman Ambassadors are delighted to assist you with your orders, style advice, gift ideas, and more. Please select your preferred method of contact below.",
     "callUs": "Call Us",
@@ -180,6 +180,7 @@
     "typeMessage": "Type your message...",
     "signIn": "Sign In",
     "contactUsHero": "We invite you to write to us with any question you may have. Our client advisors would be delighted to assist you with your enquiry."
+
   },
   "faq": {
     "title": "FAQ",
@@ -479,52 +480,5 @@
     "successMessage": "Thanks for subscribing!",
     "errorMessage": "Invalid email address",
     "emptyEmailMessage": "Please enter your email address"
-  },
-  "aboutUs": {
-    "ourBrand": {
-      "title": "Our brand",
-      "description": [
-        "Kassaman is a premium Armenian brand specializing in exclusive, handcrafted jewelry. In our atelier, natural gemstones, gold, and silver are transformed into high-end masterpieces, infused with the essence of centuries-old Armenian jewelry traditions and modern aesthetics.",
-        "Every accessory is a unique narrative, meticulously crafted by the skilled hands of our master artisans. We use exclusively natural stones, preserving the pure energy of nature and passing it on to those who value individuality and uncompromising quality.",
-        "Kassaman shatters stereotypes, proving that men's jewelry can be equally captivating, powerful, and profound. This is more than a brand; it is a character, a unique lifestyle, and a philosophy that harmonizes strength with elegance."
-      ]
-    },
-    "ourStory": {
-      "title": "Our Story",
-      "description": [
-        "At the heart of Kassaman lies eight years of dedicated craftsmanship by founder Azat Kyasinyan and the core principle of 'Be in Progress.' What began as a small initiative and a single piece made for a friend has evolved into a global brand with a distinctive identity. Azat’s journey is a testament to the fact that through the mastery of Armenian artisans, it is possible to build a manufacturing house from the ground up, redefining Armenian culture and art for the modern era.",
-        "For the founder, inspiration is everywhere—from the architectural patterns of Yerevan's streets to the untamed beauty of nature. A prime example is the 'Yerevan' collection, which captures the city's soul in jewelry. A pivotal moment in Azat’s life was raising the Kassaman flag atop Mount Ararat, symbolizing not just a physical ascent but the brand’s mission: to conquer new horizons step by step and bring global recognition to Armenian jewelry art.",
-        "'By choosing jewelry with natural stones, we decide to keep a piece of nature alive within us,' says Azat Kyasinyan. Today, the Kassaman boutique in the heart of Yerevan stands as a sanctuary where individuality, character, and supreme craftsmanship meet, allowing every visitor to become a part of this enduring legacy."
-      ]
-    },
-    "workshop": {
-      "title": "Our Workshop",
-      "subtitle": "Where Art Comes to Life",
-      "description": "Every piece of jewelry undergoes a long creative journey, from the initial sketch to the final polish. In our workshop, master artisans blend centuries-old traditions with modern technology to create timeless values."
-    },
-    "certificates": {
-      "subtitle": "Quality Assurance",
-      "title": "Our Commitment to Excellence",
-      "items": {
-        "quality": {
-          "title": "Certified Gold & Stones",
-          "description": "We use only high-grade 14K/18K gold and ethically sourced gemstones, each accompanied by a quality certificate."
-        },
-        "handmade": {
-          "title": "Master Craftsmanship",
-          "description": "Every piece is handcrafted with precision in our workshop, ensuring a unique touch and superior durability."
-        },
-        "shipping": {
-          "title": "Secure Global Delivery",
-          "description": "Safe, insured, and tracked international shipping to ensure your jewelry reaches you in perfect condition."
-        }
-      }
-    },
-    "visit": {
-      "subtitle": "Experience Our World",
-      "title": "Visit Our Boutique",
-      "description": "Discover the artistry of Kassaman in person. Our boutique offers a private sanctuary where you can explore our latest collections, receive expert guidance, and find the perfect piece that resonates with your story.",
-      "button": "Find us on  Maps"
-    }
   }
 }
