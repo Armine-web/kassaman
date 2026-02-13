@@ -12,6 +12,7 @@ const VisualCard = ({
   height,
   className = '',
   imgClassName = '',
+  style: _style,
 }: VisualCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -21,6 +22,7 @@ const VisualCard = ({
       width={width}
       height={height}
       className={`${className}`}
+      style={_style}
       onImageClick={onClick}
       imageClassName={`${imgClassName} ${styles.image} ${hoverEffect && isHovered ? styles.zoomed : ''}`}
     >
@@ -29,7 +31,6 @@ const VisualCard = ({
           onMouseEnter={() => hoverEffect && setIsHovered(true)}
           onMouseLeave={() => hoverEffect && setIsHovered(false)}
           onClick={onClick}
-          className={hoverEffect ? 'underlineEffect' : ''}
           style={{ width: 'max-content' }}
         >
           {children}

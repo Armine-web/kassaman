@@ -11,5 +11,6 @@ export type BaseCardProps = {
   width?: string | number;
   height?: string | number;
   className?: string;
+  style?: React.CSSProperties;
   imageClassName?: string;
 };

@@ -1,10 +1,12 @@
 .header {
+  position: relative;
+  z-index: 10;
   transition: background-color 0.3s ease;
   width: 100%;
 }
 
 .headerDark {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(230, 226, 226, 0.335);
   opacity: 0;
   transition: opacity 0.8s ease;
 }

@@ -12,4 +12,5 @@ export type VisualCardProps = {
   height?: string | number;
   className?: string;
   imgClassName?: string;
+  style?: React.CSSProperties;
 };
