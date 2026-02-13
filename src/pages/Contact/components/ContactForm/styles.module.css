@@ -2,7 +2,7 @@
   border: 0;
   height: 1px;
   background-color: var(--light-primary);
-  margin: 120px 0;
+  margin: 160px 0 120px 0;
   display: block;
 }
 
@@ -10,7 +10,7 @@
   border: 0;
   height: 1px;
   background-color: var(--light-primary);
-  margin: 60px 0;
+  margin: 80px 0 60px 0;
   display: none;
 }
 
@@ -24,6 +24,7 @@
 
 .contactFormImageWrapper {
   justify-self: end;
+  width: 100%;
 }
 
 .contactForm {
@@ -230,10 +231,18 @@
 }
 
 @media (max-width: 1024px) {
+  .contactFormDecstopHr {
+    margin: 120px 0 100px 0;
+  }
   .contactFormWrapper {
     display: flex;
     flex-direction: column-reverse;
     gap: 80px;
+  }
+
+  .contactForm {
+    margin: auto;
+    width: 80%;
   }
 
   .contactFormImageWrapper {
@@ -252,12 +261,14 @@
 }
 
 @media (max-width: 768px) {
-  .contactFormImageWrapper {
-    width: 100%;
+  .contactFormDecstopHr {
+    margin: 100px 0 80px 0;
   }
 
   .contactFormDecstopHr {
     margin: 80px 0;
+  .contactFormImageWrapper {
+    width: 100%;
   }
 
   .contactForm {

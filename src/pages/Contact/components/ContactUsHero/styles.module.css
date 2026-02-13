@@ -6,7 +6,7 @@
 }
 
 .contactUsHeroContent {
-  margin-top: 120px;
+  margin-top: 160px;
   padding: 60px 0;
   text-align: center;
   font-size: var(--text-large);
@@ -34,7 +34,7 @@
 
 @media (max-width: 768px) {
   .contactUsHeroContent {
-    margin-top: 80px;
+    margin-top: 100px;
     padding: 40px 15px;
     font-size: var(--text-regular);
   }

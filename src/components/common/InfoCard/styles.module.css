@@ -24,3 +24,18 @@
   color: var(--dark-primary);
   font-family: var(--font-body);
 }
+
+@media (max-width: 480px) {
+  .infoIcon {
+    font-size: var(--text-regular);
+  }
+
+  .infoTitle {
+    font-size: var(--text-small);
+    letter-spacing: var(--letter-spacing-small);
+  }
+
+  .infoDescription {
+    font-size: var(--text-small);
+  }
+}
