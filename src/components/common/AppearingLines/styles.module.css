@@ -1,0 +1,25 @@
+.line {
+  width: 0;
+  height: 3px;
+  background: var(--light-primary);
+  margin-bottom: 20px;
+  animation: lineGrow 1.5s forwards;
+}
+
+.lineThin {
+  width: 0;
+  height: 1px;
+  background: var(--light-primary);
+  margin-bottom: 10px;
+  margin-top: 20px;
+  animation: lineGrow 1.5s forwards;
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
