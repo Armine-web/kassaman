@@ -24,7 +24,7 @@ const ContactInfo = () => {
     <div className="container">
       <div className={styles.contactInfoWrapper}>
         {mockContactInfo.map(card => (
-          <InfoCard className={styles.infoCard}
+          <InfoCard
             key={card.id}
             icon={iconMap[card.icon]}
             title={t(card.titleKey)}

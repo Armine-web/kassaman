@@ -6,7 +6,7 @@
   --color-secondary: #b13024;
   --color-hover-link: #921813;
   --dark-primary: #1d1c1c;
-  --light-primary: #d9d9d9;
+  --light-primary: #ebe0cf;
   --text-small: 14px;
   --text-regular: 16px;
   --text-large: 22px;
@@ -14,9 +14,7 @@
   --letter-spacing-medium: 0.8px;
   --line-height-text: 1.5;
   --line-height-title: 1.2;
-
 }
-
 
 *,
 *::before,
@@ -75,8 +73,9 @@ button {
   font-size: inherit;
 }
 
-.badge{
-  background-color: var(--color-secondary);
+.badge {
+  background-color: var(--light-primary);
+  color: var(--dark-primary);
 }
 
 .underlineEffect {
@@ -118,7 +117,9 @@ button {
 .scrollReveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1s ease, transform 1.6s ease;
+  transition:
+    opacity 1s ease,
+    transform 1.6s ease;
   transition-delay: 0s;
 }
 
@@ -130,7 +131,9 @@ button {
 .myCustomScrollReveal.scrollReveal {
   opacity: 0;
   transform: translateX(-30px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
 }
 
 .myCustomScrollReveal.scrollReveal.active {
