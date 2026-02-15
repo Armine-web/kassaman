@@ -43,12 +43,8 @@
       }
     ],
     "featuredCategories": {
-<<<<<<< HEAD
-      "title": "Featured Categories"
-=======
       "title": "Shop by \nCategory",
       "text": "Your everyday choice"
->>>>>>> b8248898521e9acd6e01eb7e96c1e6acd867782b
     },
     "philosophy": {
       "title": "Always in progress",

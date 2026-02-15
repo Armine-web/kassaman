@@ -69,7 +69,14 @@
   transform: scale(1.05);
 }
 
-.socialLinks {
+.socialContainer {
+  display: block;
+  width: 100%;
+  margin-top: 24px; 
+  clear: both;
+}
+
+/* .socialLinks {
   display: flex;
   gap: 20px;
   margin-top: 6px;
@@ -104,8 +111,73 @@
 }
 .socialLink:hover {
   color: var(--color-hover-link);
+} */
+
+/* Հիմնական շրջանակը բոլորի համար */
+.socialLink {
+  width: 52px;
+  height: 52px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 26px;
+  background: #ffffff; /* Սպիտակ մաքուր ֆոն */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  position: relative;
 }
 
+/* Բրենդային գույները սկզբնական վիճակում (միշտ գունավոր) */
+.TwitterOutlined { color: #1DA1F2; }
+.InstagramOutlined { color: #E1306C; }
+.FacebookOutlined { color: #1877F2; }
+.YoutubeOutlined { color: #FF0000; }
+
+/* --- Hover էֆեկտներ --- */
+
+.socialLink:hover {
+  transform: translateY(-8px) scale(1.05); /* Բարձրանում է և մի փոքր մեծանում */
+  color: #fff !important; /* Hover-ի ժամանակ պատկերակը դառնում է սպիտակ */
+}
+
+/* Twitter Hover */
+.TwitterOutlined:hover {
+  background: #1DA1F2 !important;
+  box-shadow: 0 10px 20px rgba(29, 161, 242, 0.4);
+  border-color: transparent;
+}
+
+/* Instagram Hover (Գրադիենտով) */
+.InstagramOutlined:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+  box-shadow: 0 10px 20px rgba(225, 48, 108, 0.4);
+  border-color: transparent;
+}
+
+/* Facebook Hover */
+.FacebookOutlined:hover {
+  background: #1877F2 !important;
+  box-shadow: 0 10px 20px rgba(24, 119, 242, 0.4);
+  border-color: transparent;
+}
+
+/* Youtube Hover */
+.YoutubeOutlined:hover {
+  background: #FF0000 !important;
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4);
+  border-color: transparent;
+}
+
+/* Facebook-ի տեքստային 'f'-ի համար */
+.facebookIcon {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1;
+}
 @media (max-width: 1200px) {
   .stayConnected {
     margin-left: 0;
