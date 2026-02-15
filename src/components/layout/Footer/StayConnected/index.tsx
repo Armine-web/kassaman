@@ -4,33 +4,29 @@ import { useTranslation } from 'react-i18next';
 import { Space } from 'antd';
 import type { StayConnectedProps } from './types';
 import { formatPhone } from './utils';
+import { Space } from 'antd';
 import styles from './styles.module.css';
 
 const StayConnected = ({ socialLinks, contactInfo, onOpenModal }: StayConnectedProps) => {
   const { t } = useTranslation();
 
-  // const CustomFacebookIcon = () => <span className={styles.facebookIcon}>f</span>;
-
-  // const getIconComponent = (iconName: string) => {
-  //   if (iconName === 'TwitterOutlined') return <TwitterOutlined />;
-  //   if (iconName === 'FacebookOutlined') return <CustomFacebookIcon />;
-  //   if (iconName === 'InstagramOutlined') return <InstagramOutlined />;
-  //   if (iconName === 'YoutubeOutlined') return <YoutubeOutlined style={{ fontSize: '33px' }} />;
-  //   return null;
-  // };
-
   const getIconComponent = (iconName: string) => {
     const style = { fontSize: 'inherit' };
 
     switch (iconName) {
-      case 'TwitterOutlined': return <TwitterOutlined style={style} />;
-      case 'InstagramOutlined': return <InstagramOutlined style={style} />;
-      case 'YoutubeOutlined': return <YoutubeOutlined style={style} />;
-      case 'FacebookOutlined': return <span className={styles.facebookIcon}>f</span>;
-      default: return null;
+      case 'TwitterOutlined':
+        return <TwitterOutlined style={style} />;
+      case 'InstagramOutlined':
+        return <InstagramOutlined style={style} />;
+      case 'YoutubeOutlined':
+        return <YoutubeOutlined style={style} />;
+      case 'FacebookOutlined':
+        return <span className={styles.facebookIcon}>f</span>;
+      default:
+
+        return null;
     }
   };
-
   return (
     <div className={styles.stayConnected}>
       <h1 className={styles.stayConnectedTitle}>{t('footer.stayConnected')}</h1>
@@ -49,41 +45,27 @@ const StayConnected = ({ socialLinks, contactInfo, onOpenModal }: StayConnectedP
           {contactInfo.email}
         </a>
       </div>
-      {/* <div className={styles.socialLinks}>
-        {socialLinks.map((social, index: number) => (
-          <a
-            key={index}
-            href={social.href}
-            className={styles.socialLink}
-            aria-label={t(social.label)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {getIconComponent(social.icon)}
-          </a>
-        ))}
-      </div> */}
+
       <div className={styles.socialContainer}>
-  <Space size={15} className={styles.socialLinks}>
-    {socialLinks.map((link, index) => {
-      const brandClass = styles[link.icon] || '';
-      
-      return ( // <--- 1. Ուղղված է 'returne'-ը 'return'-ի
-        <a
-          key={index}
-          href={link.href}
-          // 2. Ուղղված է className-ի սինտաքսը
-          className={`${styles.socialLink} ${brandClass}`}
-          aria-label={link.label}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {getIconComponent(link.icon)} 
-        </a>
-      ); // <--- 3. Փակագծերը դասավորված են ճիշտ
-    })}
-  </Space>
-</div>
+        <Space size={15} className={styles.socialLinks}>
+          {socialLinks.map((link, index) => {
+            const brandClass = styles[link.icon] || '';
+
+            return (
+              <a
+                key={index}
+                href={link.href}
+                className={`${styles.socialLink} ${brandClass}`}
+                aria-label={link.label}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {getIconComponent(link.icon)}
+              </a>
+            );
+          })}
+        </Space>
+      </div>
     </div>
   );
 };
