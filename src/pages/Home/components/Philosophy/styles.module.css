@@ -1,11 +1,52 @@
 .philosophy {
   padding: var(--section-padding-y) 0;
+  margin-top: 140px;
+}
+
+.container {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.philosophyLine {
+  background-color: var(--dark-primary);
+}
+
+.philosophyBtn {
+  color: var(--dark-primary) !important;
 }
 
 .content {
+  margin-bottom: 40px;
   padding: 0 2%;
+}
+
+.philosophyBtnWrapper {
+  margin-top: 40px;
 }
 
 .desc {
   padding: 22px 0 14px;
+}
+
+@media (max-width: 1024px) {
+  .philosophy{
+    margin-top: 100px;
+  }
+
+  .container {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }

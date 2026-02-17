@@ -2,11 +2,12 @@
   --font-heading: 'Brilliant Cut Pro';
   --font-body: 'Fancy Cut Pro', 'Almarai', 'Inter', sans-serif;
   --font-accent: 'Playwrite CU', cursive;
-  --color-background: linear-gradient(180deg, white 50%, #f2eadf 100%);
+  --color-background: linear-gradient(180deg, rgb(251, 250, 250) 50%, #fdfbf8 100%);
   --color-secondary: #b13024;
   --color-hover-link: #921813;
   --dark-primary: #1d1c1c;
-  --light-primary: #ebe0cf;
+  --light-primary: #eee6db;
+  --color-text: #454343;
   --text-small: 14px;
   --text-regular: 16px;
   --text-large: 22px;
@@ -14,6 +15,7 @@
   --letter-spacing-medium: 0.8px;
   --line-height-text: 1.5;
   --line-height-title: 1.2;
+  --padding-smoth: clamp(15px, calc(15px + (192 - 15) * ((100vw - 1460px) / (1920 - 1460))), 192px);
 }
 
 *,
@@ -26,6 +28,7 @@
 
 body {
   margin: 0;
+  background-color: var(--color-background);
   background: var(--color-background);
   color: var(--dark-primary);
   font-size: var(--text-small);
@@ -38,12 +41,9 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: var(--font-heading);
+  font-size: 2rem;
 }
 
 a {
@@ -141,6 +141,31 @@ button {
   transform: translateX(0);
 }
 
+.backgroundMainButton {
+  display: inline-block;
+  position: relative;
+  background-color: #c2cdd0;
+  padding: 25px;
+}
+
+.borderMainButton {
+  border: 2px solid var(--dark-primary);
+  padding: 5px;
+  position: relative;
+  width: 200px;
+  height: 120px;
+}
+
+.borderThinMainButton {
+  border: 1px solid var(--dark-primary);
+  padding: 5px;
+  position: absolute;
+  width: 180px;
+  height: 140px;
+  top: -10px;
+  left: 10px;
+}
+
 @keyframes lineGrowLeftToRight {
   from {
     width: 0;
@@ -166,4 +191,10 @@ button {
 .animate-monolith {
   opacity: 0;
   animation: luxuryFadeUp 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@media (max-width: 612px) {
+  .backgroundMainButton{
+    position: static;
+  }
 }

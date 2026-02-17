@@ -4,7 +4,7 @@
       {
         "id": "1",
         "image": "bannerImg1",
-        "text": "Tiger Eye. Sterling Silver.",
+        "text": "Tiger Eye Sterling Silver",
         "alt": "Handmade tiger eye silver necklace with Swarovski accents",
         "cta": {
           "book": "Book an Item",
@@ -14,7 +14,7 @@
       {
         "id": "2",
         "image": "bannerImg2",
-        "text": "Yerevan Collection. Cultural Elegance.",
+        "text": "Collection Cultural Elegance.",
         "alt": "Yerevan-inspired sterling silver necklace with elegant design",
         "cta": {
           "book": "Book an Item",
@@ -24,7 +24,7 @@
       {
         "id": "3",
         "image": "bannerImg3",
-        "text": "Ornament Design. Handmade Bracelets.",
+        "text": "Ornament Design Handmade Bracelets.",
         "alt": "Set of handmade silver and leather bracelets with enamel",
         "cta": {
           "book": "Book an Item",
@@ -34,7 +34,7 @@
       {
         "id": "4",
         "image": "bannerImg4",
-        "text": "925 Silver. Swarovski Accents.",
+        "text": "Silver Swarovski Accents",
         "alt": "Tiger eye 925 silver necklace accented with Swarovski crystals",
         "cta": {
           "book": "Book an Item",
@@ -44,7 +44,7 @@
       {
         "id": "5",
         "image": "bannerImg5",
-        "text": "Yerevan Collection. Timeless Details.",
+        "text": "Collection Timeless Details",
         "alt": "Luxury cufflinks from the Yerevan collection with onyx",
         "cta": {
           "book": "Book an Item",
@@ -54,7 +54,7 @@
       {
         "id": "6",
         "image": "bannerImg6",
-        "text": "Baguette Cut. Modern Luxury.",
+        "text": "Baguette Cut Modern Luxury.",
         "alt": "Kassaman baguette ring and bracelet set with Swarovski",
         "cta": {
           "book": "Book an Item",
@@ -64,7 +64,7 @@
       {
         "id": "7",
         "image": "bannerImg7",
-        "text": "Baguette Collection. Pure Brilliance.",
+        "text": "Baguette Collection Pure Brilliance.",
         "alt": "Baguette collection ring crafted in 925 silver with Swarovski",
         "cta": {
           "book": "Book an Item",
@@ -217,21 +217,23 @@
     }
   },
   "productCollections": {
+    "heading": "Discover Our Signature Collections",
+    "viewCollection":"View the collection",
     "signature": {
       "title": "Signature",
-      "subtitle": "The essence of our brand's unique identity"
+      "subtitle": "Where our vision meets craftsmanship,and every element reflects our true identity"
     },
     "timeless": {
       "title": "Timeless",
-      "subtitle": "Classic elegance that transcends generations"
+      "subtitle": "Timeless elegance, untouched by fleeting trends,living gracefully across generations"
     },
     "prestige": {
       "title": "Prestige",
-      "subtitle": "Exceptional craftsmanship for special moments"
+      "subtitle": "Masterful craftsmanship, designed to elevate and celebrate the most cherished moments in life"
     },
     "wedding": {
       "title": "Wedding",
-      "subtitle": "Elegant symbols for your beginning of forever"
+      "subtitle": "Timeless, elegant symbols designed to mark the start of your journey together"
     }
   },
   "products": {

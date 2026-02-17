@@ -12,4 +12,3 @@ export const BookingCart = ({ count, onClick }: BookingCartIconProps) => {
 };
 
 export default BookingCart;
-

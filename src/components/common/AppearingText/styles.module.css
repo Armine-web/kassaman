@@ -19,3 +19,9 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 480px){
+  .appearingText{
+    font-size: 1.8rem;
+  }
+}

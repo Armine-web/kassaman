@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-
 import type { CSSProperties } from 'react';
 
 export type AppTitleProps = {

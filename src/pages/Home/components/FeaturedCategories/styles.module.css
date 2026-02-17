@@ -1,10 +1,17 @@
+.categories {
+  padding-left: var(--padding-smoth);
+  width: 100%;
+  margin-top: 140px;
+}
+
 .homeCategories {
   font-size: 2.5rem;
   letter-spacing: var(--letter-spacing-medium);
   font-weight: bold;
   margin-bottom: 20px;
   font-family: var(--font-heading);
-  color: var(--dark-primary);
+  color: var(--color-text);
+  padding-left: 15px;
 }
 
 .homeCategories p {
@@ -14,12 +21,23 @@
 .secondLine {
   margin-left: 1.5rem;
 }
+
 .homeCategoriesWrapper {
   background-color: var(--light-primary);
   position: relative;
-  height: 60vh;
+  height: 65vh;
   border-radius: 8px;
   z-index: 1;
+}
+
+.homeCategoriesWrapper::before {
+  content: '';
+  position: absolute;
+  left: 120px;
+  top: 0;
+  width: 1px;
+  height: 90%;
+  background: var(--dark-primary);
 }
 
 .homeCategoriesCardWrapper {
@@ -42,21 +60,15 @@
 }
 
 .featuredCategoriestext {
-  color: var(--dark-primary) !important;
+  color: var(--color-text) !important;
   font-family: var(--font-accent) !important;
   font-size: 2rem !important;
-}
-
-.categories {
-  padding-left: 10%;
-  width: 100%;
 }
 
 .categoryList {
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
-  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -69,20 +81,68 @@
 .featuredCategoriesInner {
   position: absolute;
   bottom: 60px;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .featuredCategoriesButton {
   text-transform: uppercase;
   text-align: center;
-  left: 25%;
-  transform: translateX(-50%);
-  position: relative;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1500px) {
+  .homeCategoriesCardWrapper {
+    position: static;
+  }
   .categories {
     padding: var(--section-padding-mobile) 0;
+    margin-top: 40px;
+  }
+
+  .homeCategoriesWrapper {
+    padding: 20px 0 140px 0;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .homeCategoriesWrapper::before {
+    left: 5%;
+  }
+}
+
+@media (max-width: 1312px) {
+  .homeCategoriesWrapper::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .categories {
+    margin-top: 100px;
+  }
+
+  .categoryList {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 612px) {
+  .categories {
+    margin-top: 10px;
+  }
+  .categoryList {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .homeCategoriesWrapper {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .featuredCategoriesLines {
+    bottom: 5px;
   }
 }

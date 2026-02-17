@@ -1,7 +1,7 @@
 import InfoCard from '../../../../components/common/InfoCard';
 import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
-import { mockContactInfo } from '../../../../moc/mockContact';
+import { mockContactInfo } from '../../../../mokc/mockContact';
 
 import {
   PhoneOutlined,
@@ -24,7 +24,8 @@ const ContactInfo = () => {
     <div className="container">
       <div className={styles.contactInfoWrapper}>
         {mockContactInfo.map(card => (
-          <InfoCard className={styles.infoCard}
+          <InfoCard
+            className={styles.infoCard}
             key={card.id}
             icon={iconMap[card.icon]}
             title={t(card.titleKey)}

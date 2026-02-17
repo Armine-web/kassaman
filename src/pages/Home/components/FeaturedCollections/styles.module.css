@@ -1,23 +1,133 @@
-.ratio {
-  --card-aspect-ratio: 3 / 2.2;
+.collections {
+  margin-top: 160px;
+  padding: 0 10px;
 }
 
-.collections {
-  padding: 60px 0;
+.collectionList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.outsideCol {
+  background: var(--light-primary);
+  overflow: visible;
+}
+
+.cardRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ratio {
+  max-width: 400px;
+  height: 400px;
+}
+
+.collectionsCardContect {
+  width: 200px;
+  margin-left: 20px;
 }
 
 .title {
   margin-bottom: 40px;
 }
 
-@media (max-width: 992px) {
-  .collections {
-    padding: var(--section-padding-mobile) 0;
+.cardRow:not(.reverse) {
+  flex-direction: row;
+}
+
+.cardRow.reverse {
+  flex-direction: row-reverse;
+}
+
+.collectionBtn {
+  top: 120px;
+  left: 80px;
+  z-index: 1;
+}
+
+.collectionBtnReverse {
+  left: -80px;
+}
+
+.featuredCollectionButton {
+  color: var(--text-color);
+}
+
+.collectonsLine {
+  background-color: var(--dark-primary);
+}
+
+@media (max-width: 1300px) {
+  .collectionList {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px) {
+  .collections {
+    margin-top: 80px;
+  }
+
+  .wrapper {
+    max-width: 600px;
+  }
+
+  .collectionBtn {
+    top: 40px;
+  }
+}
+
+@media (max-width: 612px) {
+  .collections {
+    padding: var(--section-padding-mobile) 0;
+  }
+  .cardRow {
+    flex-direction: column !important;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .collectionBtn {
+    top: 120px;
+    left: 80px;
+    z-index: 1;
+  }
+
+  .collectionBtnReverse {
+    left: -80px;
+  }
+  .collectionsCardContect {
+    width: 400px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collections{
+    margin-top: 80px;
+  }
+  .cardRow{
+    margin: auto;
+  }
+  .cardRow > * {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .ratio {
-    --card-aspect-ratio: 1 / 1;
+    width: 100% !important;
   }
 }

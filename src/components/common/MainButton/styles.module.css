@@ -59,3 +59,9 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 480px) {
+  .mainButton {
+    font-size: 1.2rem;
+  }
+}
