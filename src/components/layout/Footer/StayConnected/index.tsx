@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { Space } from 'antd';
 import type { StayConnectedProps } from './types';
 import { formatPhone } from './utils';
-import { Space } from 'antd';
 import styles from './styles.module.css';
 
 const StayConnected = ({ socialLinks, contactInfo, onOpenModal }: StayConnectedProps) => {
