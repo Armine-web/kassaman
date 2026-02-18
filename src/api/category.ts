@@ -1,4 +1,4 @@
-import { MOCK_CATEGORIES } from '../mokc/mockCategories';
+import { MOCK_CATEGORIES } from '../mock/mockCategories';
 import type { ProductCategory } from '../types/category';
 
 export const getCategories = async (): Promise<ProductCategory[]> => {

@@ -1,4 +1,4 @@
-import { MOCK_COLLECTIONS } from '../mokc/mockCollections';
+import { MOCK_COLLECTIONS } from '../mock/mockCollections';
 import type { ProductCollection } from '../types/collection';
 
 export const getCollections = async (): Promise<ProductCollection[]> => {

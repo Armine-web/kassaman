@@ -1,7 +1,7 @@
 import InfoCard from '../../../../components/common/InfoCard';
 import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
-import { mockContactInfo } from '../../../../mokc/mockContact';
+import { mockContactInfo } from '../../../../mock/mockContact';
 
 import {
   PhoneOutlined,
