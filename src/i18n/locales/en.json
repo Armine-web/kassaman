@@ -247,6 +247,7 @@
     }
   },
   "products": {
+    "title": "Bestsellers",
     "goldPrestigeBracelet": {
       "name": "Gold Bracelet Prestige",
       "materials": ["Yellow Gold", "Leather"],

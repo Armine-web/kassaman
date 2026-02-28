@@ -247,6 +247,7 @@
     }
   },
   "products": {
+    "title": "Бестселлеры",
     "goldPrestigeBracelet": {
       "name": "Золотой браслет Prestige",
       "materials": ["Жёлтое золото", "Кожа"],

@@ -246,6 +246,7 @@
     }
   },
   "products": {
+    "title": "Բեսթսելլերներ",
     "goldPrestigeBracelet": {
       "name": "Ոսկյա թևնոց Prestige",
       "materials": ["Դեղին ոսկի", "Կաշի"],

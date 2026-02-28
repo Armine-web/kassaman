@@ -26,6 +26,10 @@ export const SimilarProducts = ({ products }: Props) => {
   };
 
   useEffect(() => {
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}, []);
+
+  useEffect(() => {
     updateScrollButtons();
 
     const el = scrollRef.current;
@@ -51,6 +55,7 @@ export const SimilarProducts = ({ products }: Props) => {
 
   return (
     <div className={styles.similarWrapper}>
+      
       <div className={styles.header}>
         <h2 className="scrollReveal"> {t('product.similarProducts.title')}</h2>
 

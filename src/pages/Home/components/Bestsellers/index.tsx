@@ -61,7 +61,7 @@ const Bestsellers = () => {
       viewport={{ once: true, amount: 0.2 }}
     >
       <AppTitle as="h2" variant="sectionTitle" className={`${styles.title} scrollReveal`}>
-        {t('categories.bracelets.title')}
+        {t('products.title')}
       </AppTitle>
 
       {isError ? (
