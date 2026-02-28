@@ -1,0 +1,238 @@
+.parallaxContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #fcf9f5;
+  padding: 40px 5% 80px 5%;
+  overflow: hidden;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbWrapper {
+  align-self: flex-start;
+  margin-bottom: 40px;
+}
+
+.imageMosaic {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto 100px auto;
+}
+
+.mosaicItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.mosaicItem:nth-child(1) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.mosaicItem:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.mosaicItem:nth-child(3) {
+  grid-column: span 6;
+  grid-row: span 1;
+}
+.mosaicItem:nth-child(4) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.mosaicItem:nth-child(5) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.mosaicItem:nth-child(6) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.showcaseImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.5s ease;
+}
+
+.mosaicItem:hover .showcaseImage {
+  transform: scale(1.1);
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.upperTitleCustom {
+  font-size: 11px !important;
+  font-family: var(--font-accent) !important;
+  letter-spacing: 8px !important;
+  text-transform: uppercase;
+
+  margin-bottom: 10px !important;
+  display: block;
+}
+
+.mainTitleCustom {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(2.2rem, 5vw, 4rem) !important;
+  color: #1a1a1a !important;
+  margin-bottom: 5px !important;
+  line-height: 1.2;
+}
+
+.lineBox {
+  width: 160%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.thickLineWrapper {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.growingLineThick {
+  width: 0;
+  height: 2px;
+  background-color: #c5a059;
+  animation: growFull 1.5s forwards;
+  animation-delay: 1.2s;
+}
+
+.growingLineThin {
+  width: 0;
+  height: 1px;
+  background-color: rgba(197, 160, 89, 0.4);
+  margin-top: 10px;
+  animation: growFull 1.8s forwards;
+  animation-delay: 1.4s;
+}
+
+.thickLineWrapper::before,
+.thickLineWrapper::after {
+  content: '◆';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  font-size: 10px;
+  color: #c5a059;
+}
+
+.thickLineWrapper::before {
+  left: -10px;
+}
+.thickLineWrapper::after {
+  right: -10px;
+}
+
+@keyframes growFull {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@media (max-width: 1024px) {
+  .imageMosaic {
+    grid-template-rows: repeat(2, 200px);
+    margin-bottom: 60px;
+  }
+
+  .lineBox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageMosaic {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+
+  .mosaicItem:nth-child(n) {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    height: 200px;
+  }
+
+  .mosaicItem:nth-child(3) {
+    grid-column: span 2 !important;
+  }
+
+  .mainTitleCustom {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .parallaxContainer {
+    padding: 20px 15px 40px 15px;
+  }
+
+  .breadcrumbWrapper {
+    margin-bottom: 20px;
+  }
+
+  .imageMosaic {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .mosaicItem:nth-child(n) {
+    grid-column: span 1 !important;
+    height: 180px;
+  }
+
+  .upperTitleCustom {
+    letter-spacing: 4px !important;
+  }
+
+  .mainTitleCustom {
+    font-size: 1.5rem !important;
+  }
+
+  .lineBox {
+    width: 90%;
+  }
+
+  .thickLineWrapper::before,
+  .thickLineWrapper::after {
+    display: none;
+  }
+}

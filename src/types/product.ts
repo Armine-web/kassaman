@@ -30,4 +30,5 @@ export type Product = {
   currency: Currency;
   image: string;
   inStock: boolean;
+  isNew: true;
 };
