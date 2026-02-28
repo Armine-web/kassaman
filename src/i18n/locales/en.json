@@ -113,7 +113,17 @@
   },
   "product": {
     "title": "Product Details",
-    "description": "Information about the selected product."
+    "description": "Information about the selected product.",
+    "materialsAndStones": "Materials & Stones",
+    "availability": "Availability:",
+    "sku": "SKU:",
+    "weight": "Weight:",
+    "size": "Size:",
+    "inStock": "In stock",
+    "outOfStock": "Out of stock",
+    "similarProducts": {
+      "title": "You may also like"
+    }
   },
   "collections": {
     "title": "Collections",

@@ -28,6 +28,11 @@ export type Product = {
   gender: Gender;
   price: number;
   currency: Currency;
-  image: string;
+  images: string[];
   inStock: boolean;
+
+  sku?: string;
+  descriptionKey?: string;
+  weight?: string;
+  size?: string;
 };

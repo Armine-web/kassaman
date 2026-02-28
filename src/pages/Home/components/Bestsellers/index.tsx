@@ -76,7 +76,7 @@ const Bestsellers = () => {
             aria-label="Previous products"
             className={styles.arrow}
           >
-            ←
+            <span>&lt;</span>
           </button>
 
           <div className={styles.viewport}>
@@ -108,7 +108,7 @@ const Bestsellers = () => {
             aria-label="Next products"
             className={styles.arrow}
           >
-            →
+            <span>&gt;</span>
           </button>
         </div>
       )}

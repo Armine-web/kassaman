@@ -43,7 +43,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 3500,
     currency: 'USD',
-    image: bracelet1,
+    images: [bracelet1, bracelet2, bracelet3],
     inStock: true,
   },
   {
@@ -56,7 +56,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 250,
     currency: 'USD',
-    image: bracelet2,
+    images: [bracelet2, bracelet3,  bracelet4],
     inStock: true,
   },
   {
@@ -69,7 +69,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 3100,
     currency: 'USD',
-    image: bracelet5,
+    images: [bracelet3,  bracelet4, bracelet5],
     inStock: true,
   },
   {
@@ -82,7 +82,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 120,
     currency: 'USD',
-    image: bracelet4,
+    images: [bracelet4, bracelet2, bracelet3],
     inStock: true,
   },
   {
@@ -95,7 +95,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 100,
     currency: 'USD',
-    image: bracelet3,
+    images: [bracelet5, bracelet2, bracelet4],
     inStock: true,
   },
   {
@@ -108,7 +108,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 1700,
     currency: 'USD',
-    image: bracelet6,
+    images: [bracelet6, bracelet7, bracelet8],
     inStock: true,
   },
   {
@@ -121,7 +121,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 175,
     currency: 'USD',
-    image: bracelet7,
+    images: [bracelet7, bracelet6, bracelet5],
     inStock: true,
   },
   {
@@ -134,7 +134,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 6200,
     currency: 'USD',
-    image: bracelet8,
+    images: [bracelet8, bracelet7, bracelet6],
     inStock: true,
   },
   {
@@ -147,7 +147,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 320,
     currency: 'USD',
-    image: cufflinks1,
+    images: [cufflinks1, cufflinks2, cufflinks3],
     inStock: true,
   },
   {
@@ -160,7 +160,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 130,
     currency: 'USD',
-    image: cufflinks2,
+    images: [cufflinks2, cufflinks1, cufflinks3],
     inStock: true,
   },
   {
@@ -173,7 +173,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 120,
     currency: 'USD',
-    image: cufflinks3,
+    images: [cufflinks3, cufflinks2, cufflinks1],
     inStock: true,
   },
   {
@@ -186,7 +186,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 200,
     currency: 'USD',
-    image: cufflinks4,
+    images: [cufflinks4, cufflinks1, cufflinks2],
     inStock: true,
   },
   {
@@ -199,7 +199,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 2100,
     currency: 'USD',
-    image: cufflinks5,
+    images: [cufflinks5, cufflinks1, cufflinks2]  ,
     inStock: true,
   },
   {
@@ -212,7 +212,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 110,
     currency: 'USD',
-    image: cufflinks6,
+    images: [cufflinks6, cufflinks1, cufflinks2],
     inStock: true,
   },
   {
@@ -225,7 +225,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 110,
     currency: 'USD',
-    image: cufflinks7,
+    images: [cufflinks7, cufflinks1, cufflinks2],
     inStock: true,
   },
   {
@@ -238,7 +238,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 400,
     currency: 'USD',
-    image: cufflinks8,
+    images: [cufflinks8, cufflinks1, cufflinks2],
     inStock: true,
   },
   {
@@ -251,7 +251,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 220,
     currency: 'USD',
-    image: cufflinks9,
+    images: [cufflinks9, cufflinks1, cufflinks2],
     inStock: true,
   },
   {
@@ -264,7 +264,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 260,
     currency: 'USD',
-    image: necklace1,
+    images: [necklace1, necklace2, necklace3],
     inStock: true,
   },
   {
@@ -277,7 +277,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 320,
     currency: 'USD',
-    image: necklace2,
+    images: [necklace2, necklace1, necklace3],
     inStock: true,
   },
   {
@@ -290,7 +290,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 320,
     currency: 'USD',
-    image: necklace3,
+    images: [necklace3, necklace1, necklace2],
     inStock: true,
   },
   {
@@ -303,7 +303,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 350,
     currency: 'USD',
-    image: necklace4,
+    images: [necklace4, necklace1, necklace2],
     inStock: true,
   },
   {
@@ -316,7 +316,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 750,
     currency: 'USD',
-    image: necklace5,
+    images: [necklace5, necklace1, necklace2],
     inStock: true,
   },
   {
@@ -329,7 +329,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 350,
     currency: 'USD',
-    image: necklace6,
+    images: [necklace6, necklace1, necklace2],
     inStock: true,
   },
   {
@@ -342,7 +342,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 2800,
     currency: 'USD',
-    image: ring1,
+    images: [ring1, ring2, ring3],
     inStock: true,
   },
   {
@@ -355,7 +355,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 2200,
     currency: 'USD',
-    image: ring2,
+    images: [ring2, ring1, ring3],
     inStock: true,
   },
   {
@@ -368,7 +368,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 200,
     currency: 'USD',
-    image: ring3,
+    images: [ring3, ring1, ring2],
     inStock: true,
   },
   {
@@ -381,7 +381,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 6000,
     currency: 'USD',
-    image: ring4,
+    images: [ring4, ring1, ring2],
     inStock: true,
   },
   {
@@ -394,7 +394,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 350,
     currency: 'USD',
-    image: ring5,
+    images: [ring5, ring1, ring2],
     inStock: true,
   },
   {
@@ -407,7 +407,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 800,
     currency: 'USD',
-    image: ring6,
+    images: [ring6, ring1, ring2],
     inStock: true,
   },
   {
@@ -420,7 +420,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 700,
     currency: 'USD',
-    image: ring7,
+    images: [ring7, ring1, ring2],
     inStock: true,
   },
   {
@@ -433,7 +433,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 1200,
     currency: 'USD',
-    image: ring8,
+    images: [ring8, ring1, ring2],
     inStock: true,
   },
   {
@@ -446,7 +446,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 920,
     currency: 'USD',
-    image: ring10,
+    images: [ring10, ring1, ring2],
     inStock: true,
   },
 ];

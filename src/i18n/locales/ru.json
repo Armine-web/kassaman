@@ -117,7 +117,17 @@
   },
   "product": {
     "title": "Детали продукта",
-    "description": "Информация о выбранном продукте."
+    "description": "Информация о выбранном продукте.",
+    "materialsAndStones": "Материалы и камни",
+    "availability": "Наличие:",
+    "sku": "Артикул:",
+    "weight": "Вес:",
+    "size": "Размер:",
+    "inStock": "В наличии", 
+    "outOfStock": "Нет в наличии",
+    "similarProducts":{
+      "title": "Похожие товары"
+    }
   },
   "collections": {
     "title": "Коллекции",

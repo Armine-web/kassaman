@@ -116,7 +116,17 @@
   },
   "product": {
     "title": "Ապրանքի մանրամասներ",
-    "description": "Տեղեկատվություն ընտրված ապրանքի մասին։"
+    "description": "Տեղեկատվություն ընտրված ապրանքի մասին։",
+    "materialsAndStones": "Նյութեր և քարեր",
+    "availability": "Առկա է",
+    "sku": "SKU",
+    "weight": "Քաշ",
+    "size": "Չափս",
+    "inStock": "Առկա է",
+    "outOfStock": "Առկա չէ",
+    "similarProducts":{
+      "title": "Դուք կարող եք նաև հավանել այս ապրանքները"
+    } 
   },
   "collections": {
     "title": "Հավաքածուներ",

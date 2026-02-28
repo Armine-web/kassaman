@@ -14,7 +14,7 @@ const ProductCard = ({ product, width, height, onClickProduct}: ProductCardProps
     <BaseCard
       width={width}
       height={height}
-      image={{ src: product.image, alt: t(`products.${product.nameKey}.name`) }}
+      image={{ src: product.images[0], alt: t(`products.${product.nameKey}.name`) }}
       onImageClick={onClickProduct}
     >
       <div className={styles.topRow}>
