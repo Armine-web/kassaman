@@ -31,8 +31,12 @@ export type Product = {
   images: string[];
   inStock: boolean;
 
+
   sku?: string;
   descriptionKey?: string;
   weight?: string;
   size?: string;
+
+  isNew: true;
+
 };

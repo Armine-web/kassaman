@@ -228,7 +228,7 @@
   },
   "productCollections": {
     "heading": "Discover Our Signature Collections",
-    "viewCollection":"View the collection",
+    "viewCollection": "View the collection",
     "signature": {
       "title": "Signature",
       "subtitle": "Where our vision meets craftsmanship,and every element reflects our true identity"
@@ -540,5 +540,65 @@
       "description": "Discover the artistry of Kassaman in person. Our boutique offers a private sanctuary where you can explore our latest collections, receive expert guidance, and find the perfect piece that resonates with your story.",
       "button": "Find us on  Maps"
     }
+  },
+  "common": {
+    "home": "Home",
+    "new": "NEW",
+    "viewDetails": "VIEW DETAILS",
+    "handcraftedInArmenia": "Handcrafted in Armenia",
+    "prev": "Prev",
+    "next": "Next",
+    "clearAll": "Clear All",
+    "apply": "Apply Filters",
+    "pieces": "Pieces",
+    "page": "Page",
+    "of": "of",
+    "timelessElegance": "Timeless Elegance",
+    "filter": "Filter",
+    "sort": "Sort",
+    "price": "Price",
+    "category": "Category",
+    "material": "Material",
+    "stone": "Stone",
+    "catalog": "Catalog",
+    "categories": "Categories",
+    "title": "Collections",
+    "filterBy": "Refine Selection",
+    "sortBy": "Sort by",
+    "itemsFound": "Pieces Found",
+    "curatedBy": "Handcrafted Luxury",
+    "headerTitle": "The Fine Jewelry Catalog",
+    "goodMorning": "Good Morning",
+    "goodAfternoon": "Good Afternoon",
+    "goodEvening": "Good Evening",
+    "rings": "Rings",
+    "necklaces": "Necklaces",
+    "bracelets": "Bracelets",
+    "earrings": "Earrings",
+    "cufflinks": "Cufflinks",
+    "pendants": "Pendants",
+    "watches": "Watches",
+    "wedding": "Wedding Bands",
+    "explore": "Explore"
+  },
+  "materials": {
+    "yellowGold": "Yellow Gold",
+    "whiteGold": "White Gold",
+    "roseGold": "Rose Gold",
+    "platinum": "Platinum",
+    "silver": "Silver"
+  },
+  "stones": {
+    "diamond": "Diamond",
+    "emerald": "Emerald",
+    "sapphire": "Sapphire",
+    "ruby": "Ruby",
+    "noStone": "No Stone"
+  },
+  "sortOptions": {
+    "newest": "Newest Arrivals",
+    "price_asc": "Price: Low to High",
+    "price_desc": "Price: High to Low",
+    "popular": "Most Popular"
   }
 }
