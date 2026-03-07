@@ -1,0 +1,6 @@
+.container,
+.categorySection,
+.gridPlaceholder,
+.loader {
+  display: block;
+}

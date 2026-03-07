@@ -224,6 +224,14 @@
     "cufflinks": {
       "title": "Cufflinks",
       "subtitle": "Refined style for special occasions"
+    },
+    "earrings": {
+      "title": "Earrings",
+      "subtitle": "Elegant and timeless designs"
+    },
+    "pendants": { 
+      "title": "Pendants", 
+      "subtitle": "Elegant Neckpieces" 
     }
   },
   "productCollections": {
@@ -404,12 +412,7 @@
       "stones": ["Swarovski"],
       "description": "A bold statement ring from the Signature collection, crafted from 925 sterling silver with a protective rhodium finish. The design features integrated Swarovski stones that add a sharp, light-reflecting contrast to the polished metallic surface."
     },
-    "emeraldPrestigeRing": {
-      "name": "Emerald & Diamond Ring",
-      "materials": ["White Gold"],
-      "stones": ["Emerald", "Diamond"],
-      "description": "A masterpiece of the Prestige collection, this elite ring is crafted from solid 14K white gold. It features a magnificent natural emerald centerpiece, flanked by precision-cut diamonds. A high-jewelry investment piece that combines rare gemstones."
-    },
+
     "silverSwarovskiRing": {
       "name": "Silver Swarovski Ring",
       "materials": ["Silver"],
@@ -439,6 +442,78 @@
       "materials": ["White Gold"],
       "stones": ["Swarovski"],
       "description": "Solid 14K white gold transformer piece that functions as both a ring and a cross pendant. Features Swarovski stones integrated into the frame."
+    },
+    "aquamarineHaloEarrings": {
+      "name": "Signature Aquamarine & Diamond Earrings",
+      "materials": ["14K White Gold"],
+      "stones": ["Natural Aquamarine", "Diamond"],
+      "description": "Some people are irreplaceable. And some gifts are unforgettable. Irreplaceable people deserve unforgettable gifts.  This masterpiece features 4 premium natural aquamarines (3.82ct), 2 center diamonds (E/VVS, 0.32ct), and a halo of 80 diamonds (F-G/VVS, 0.76ct) set in a 585 white gold base."
+    },
+    "rubelliteEmeraldCutEarrings": {
+      "name": "Signature Rubellite & Emerald-Cut Diamond Earrings",
+      "materials": ["14K White Gold"],
+      "stones": ["Rubellite Tourmaline", "Diamond"],
+      "description": "Sometimes one touch is enough…  These exquisite earrings are crafted in a 585 white gold base, featuring a 7.60ct pair of premium natural rubellite tourmalines and two G/VVS emerald-cut diamonds totaling 0.64ct."
+    },
+    "emeraldPrestigeRing": {
+      "name": "Emerald & Diamond Ring",
+      "materials": ["White Gold"],
+      "stones": ["Emerald", "Diamond"],
+      "description": "A masterpiece of the Prestige collection, this elite ring is crafted from solid 14K white gold. It features a magnificent natural emerald centerpiece, flanked by precision-cut diamonds. A high-jewelry investment piece that combines rare gemstones."
+    },
+    "blackPearlSignatureEarrings": {
+      "name": "Natural Black Pearl & Diamond Earrings",
+      "materials": ["14K White Gold"],
+      "stones": ["Natural Black Pearl", "Diamond"],
+      "description": "These earrings will add luxury and elegance to any look.  Emphasize your individual style with this sophisticated combination of 585 white gold, natural black pearls, and 0.20ct G/VVS diamonds."
+    },
+    "zambianEmeraldSignature": {
+      "name": "Natural Zambian Emerald & Diamond Earrings",
+      "materials": ["18K White Gold", "18K Yellow Gold"],
+      "stones": ["Zambian Emerald", "Diamond"],
+      "description": "The depth of emerald and the brilliance of diamonds in one delicate, classic piece...  These earrings feature a sophisticated combination of 750 yellow and white gold, holding 2 premium Zambian emeralds (1.89ct total), 2 center E/VVS diamonds (0.26ct), and 52 accent E-F/VVS diamonds (0.58ct)."
+    },
+    "annaSapphireSignature": {
+      "name": " Sri Lankan Sapphire & Diamond Earrings",
+      "materials": ["18K White Gold"],
+      "stones": ["Natural Sapphire (Sri Lanka)", "Diamond"],
+      "description": "Blue like the ocean. Bold like you.  From the prestigious 'ANNA' Collection, these earrings are crafted in a 750 white gold base. They feature 3.71ct of deep natural sapphires from Sri Lanka, surrounded by 94 brilliant E-F/VVS diamonds totaling 0.75ct."
+    },
+    "pinkSpinelRoseGold": {
+      "name": "Natural Pink Spinel & Diamond Earrings",
+      "materials": ["14K Rose Gold"],
+      "stones": ["Natural Pink Spinel", "Diamond"],
+      "description": "There are gifts that are never forgotten, and the emotions associated with them never grow old... These elegant earrings are crafted in 585 rose gold, featuring 0.60ct of natural pink spinels accented by 40 G/VVS diamonds with a total weight of 0.20ct."
+    },
+    "tigerEyeEnamelEarrings": {
+      "name": "Tiger Eye: White & Red Enamel Earrings",
+      "materials": ["Rhodium-plated Silver", "Enamel"],
+      "stones": ["Swarovski"],
+      "description": "Kassaman “Tiger Eye” Collection  We mark her unreal beauty with bold White & Red  details. These earrings are crafted on a rhodium-plated silver base with artistic enamel finishes and sparkling Swarovski stones."
+    },
+    "tourmalineRoseGoldSignature": {
+      "name": "Natural Tourmaline & Diamond Rose Gold Earrings",
+      "materials": ["14K Rose Gold"],
+      "stones": ["Natural Tourmaline", "Diamond"],
+      "description": "Highlight the natural sparkle of your eyes...  A fiery and elegant combination featuring 1.50ct of vibrant natural tourmalines set in warm 585 rose gold, accented by 0.32ct of brilliant G/VVS diamonds."
+    },
+    "ovalSapphireHarmony": {
+      "name": "Oval Sapphire & Diamond Harmony Earrings",
+      "materials": ["14K White Gold"],
+      "stones": ["Natural Sapphire", "Diamond"],
+      "description": "Nothing can highlight the beauty of brown, green, and honey-colored eyes more perfectly  These earrings are crafted in a 585 white gold base, featuring 4 natural oval-cut sapphires with a total weight of 4.52ct, accompanied by 2 G/VVS diamonds (0.18ct) and 100 G/VVS diamonds (0.35ct)."
+    },
+    "rubellitePearlMasterpiece": {
+      "name": "Kassaman Signature: Rubellite, Pearl & Diamond Earrings",
+      "materials": ["18K White Gold"],
+      "stones": ["Natural Rubellite Tourmaline", "Natural Pearl", "Diamond"],
+      "description": "For when she says she loves unique and one-of-a-kind jewelry  These masterpiece earrings are crafted in a 750 white gold base, featuring 4.51ct of pear-cut natural rubellite tourmalines, two large 13.5mm natural pearls, and 0.75ct of premium E-F/VVS diamonds."
+    },
+    "rubellitePearlExclusive": {
+      "name": "Exclusive Rubellite & Natural Pearl Earrings",
+      "materials": ["18K White Gold"],
+      "stones": ["Natural Rubellite Tourmaline", "Natural Pearl", "Diamond"],
+      "description": "A new exclusive masterpiece  These earrings are crafted in a 750 white gold base, featuring 4.51ct pear-cut natural rubellite tourmalines, two rare 13.5mm natural pearls, and 0.75ct of premium E-F/VVS diamonds."
     }
   },
   "productCard": {
@@ -571,6 +646,8 @@
     "goodMorning": "Good Morning",
     "goodAfternoon": "Good Afternoon",
     "goodEvening": "Good Evening",
+    "viewMore": "View More",
+    "allLoaded": "End of Collection",
     "rings": "Rings",
     "necklaces": "Necklaces",
     "bracelets": "Bracelets",

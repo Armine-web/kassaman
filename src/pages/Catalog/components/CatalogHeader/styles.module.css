@@ -70,6 +70,69 @@
   transform: scale(1.1);
 }
 
+.categoryInfo {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.buttonWrapper {
+  position: relative;
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+/* .mosaicButton {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.mosaicButton span {
+  font-family: var(--font-heading) !important;
+  font-weight: bold;
+  color: #c5a059 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+.mosaicButton img {
+  filter: brightness(0) invert(1);
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  margin-left: 10px;
+  width: 18px;
+}
+
+.mosaicItem:hover .animatedLine {
+  transform: scaleX(1);
+}
+
+.mosaicItem:hover .mosaicButton img {
+  opacity: 1;
+  transform: translateX(0);
+} */
+
+/* .categoryDescription {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.mosaicItem:hover .categoryDescription {
+  opacity: 1;
+} */
+
 .titleGroup {
   display: flex;
   flex-direction: column;
@@ -90,15 +153,14 @@
   font-family: var(--font-accent) !important;
   letter-spacing: 8px !important;
   text-transform: uppercase;
-
   margin-bottom: 10px !important;
   display: block;
 }
 
 .mainTitleCustom {
-  font-family: 'Playfair Display', serif !important;
+  font-family: var(--font-heading) !important;
   font-size: clamp(2.2rem, 5vw, 4rem) !important;
-  color: #1a1a1a !important;
+  color: var(--dark-primary) !important;
   margin-bottom: 5px !important;
   line-height: 1.2;
 }

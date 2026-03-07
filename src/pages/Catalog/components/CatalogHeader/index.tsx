@@ -1,4 +1,5 @@
 import { Breadcrumb } from 'antd';
+import MainButton from '../../../../components/common/MainButton';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { HEADER_IMAGES, containerVariants, itemVariants } from './const';
@@ -7,11 +8,7 @@ import AppearingText from '../../../../components/common/AppearingText';
 import type { CatalogHeaderProps } from './types';
 import styles from './styles.module.css';
 
-export function CatalogHeader({
-  onCategoryClick,
-  subtitle,
-  showBreadcrumb = true,
-}: CatalogHeaderProps) {
+export function CatalogHeader({ subtitle, showBreadcrumb = true }: CatalogHeaderProps) {
   const { t } = useTranslation();
 
   return (
@@ -42,13 +39,22 @@ export function CatalogHeader({
               className={styles.mosaicItem}
               variants={itemVariants}
               whileHover={{ y: -8 }}
-              onClick={() => onCategoryClick?.(image.category)}
             >
               <img
                 src={image.src}
                 alt={image.alt || image.title}
                 className={styles.showcaseImage}
               />
+
+              <div className={styles.categoryInfo}>
+                <div className={styles.buttonWrapper}>
+                  <MainButton
+                    text={t(`categories.${image.category}.title`, image.title)}
+                    route={`/catalog/${image.category}`}
+                    // className={styles.mosaicButton}
+                  />
+                </div>
+              </div>
             </motion.div>
           ))}
         </motion.div>

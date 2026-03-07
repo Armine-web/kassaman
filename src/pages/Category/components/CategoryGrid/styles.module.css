@@ -1,0 +1,83 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.gridContainer {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(16px, 3vw, 24px);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.viewMoreBtn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 25px 0;
+  cursor: pointer;
+  color: var(--dark-primary, #1a1a1a);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
+
+.viewMoreBtn:hover {
+  color: #c5a059;
+}
+
+.btnText {
+  position: relative;
+  padding-bottom: 4px;
+}
+.plusIcon {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #c5a059;
+}
+.btnText::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #c5a059;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.viewMoreBtn:hover .btnText::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.allLoadedText {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: -20px;
+  width: 100%;
+  text-align: center;
+}
