@@ -9,7 +9,7 @@ const MainButton = ({ text, route, className, style, disabled, onClick }: Props)
   const handleClick = () => {
     if (onClick) {
       onClick();
-    } else {
+    } else if (route) {
       navigate(route);
     }
   };
