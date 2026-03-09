@@ -4,11 +4,22 @@ import MainButton from '../../../../components/common/MainButton';
 import { Line } from '../../../../components/common/AppearingLines';
 import useScrollReveal from '../../../../hooks/useScrollReveal';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setSelectedProduct } from '../../../../store/slices/bookingSlice';
 import styles from './styles.module.css';
 
 export const ProductInfo = ({ product }: Props) => {
   useScrollReveal();
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleBook = () => {
+    dispatch(setSelectedProduct(product));
+    navigate('/booking');
+  };
   return (
     <div className={styles.info}>
       <h1 className="scrollReveal">{getProductText(product.nameKey, 'name')}</h1>
@@ -57,8 +68,7 @@ export const ProductInfo = ({ product }: Props) => {
           <div className="borderMainButton">
             <div className="borderThinMainButton">
               <MainButton
-                className=""
-                route={'/booking'}
+                onClick={handleBook}
                 disabled={!product.inStock}
                 text={'Book this item'}
               />

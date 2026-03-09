@@ -9,3 +9,8 @@
 .bookingcarticon:hover {
   color: var(--color-hover-link);
 }
+
+:global(.ant-badge-count) {
+  background-color: var(--light-primary) !important;
+  color: var(--dark-primary) !important;
+}

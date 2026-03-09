@@ -46,6 +46,7 @@ export const MOCK_PRODUCTS: Product[] = [
     images: [bracelet1, bracelet2, bracelet3],
     inStock: true,
     isNew: true,
+    quantity: 1,
   },
   {
     id: '2',
@@ -57,9 +58,10 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 250,
     currency: 'USD',
-    images: [bracelet2, bracelet3,  bracelet4],
+    images: [bracelet2, bracelet3, bracelet4],
     inStock: true,
     isNew: true,
+    quantity: 1,
   },
   {
     id: '3',
@@ -71,9 +73,10 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 3100,
     currency: 'USD',
-    images: [bracelet3,  bracelet4, bracelet5],
+    images: [bracelet3, bracelet4, bracelet5],
     inStock: true,
     isNew: true,
+    quantity: 1,
   },
   {
     id: '4',
@@ -88,6 +91,7 @@ export const MOCK_PRODUCTS: Product[] = [
     images: [bracelet4, bracelet2, bracelet3],
     inStock: true,
     isNew: true,
+    quantity: 1,
   },
   {
     id: '5',
@@ -102,6 +106,7 @@ export const MOCK_PRODUCTS: Product[] = [
     images: [bracelet5, bracelet2, bracelet4],
     inStock: true,
     isNew: true,
+    quantity: 1,
   },
   {
     id: '6',
@@ -115,7 +120,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [bracelet6, bracelet7, bracelet8],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '7',
@@ -129,7 +135,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [bracelet7, bracelet6, bracelet5],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '8',
@@ -143,7 +150,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [bracelet8, bracelet7, bracelet6],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '9',
@@ -157,7 +165,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks1, cufflinks2, cufflinks3],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '10',
@@ -171,7 +180,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks2, cufflinks1, cufflinks3],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '11',
@@ -185,7 +195,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks3, cufflinks2, cufflinks1],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '12',
@@ -199,7 +210,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks4, cufflinks1, cufflinks2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '13',
@@ -211,9 +223,10 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 2100,
     currency: 'USD',
-    images: [cufflinks5, cufflinks1, cufflinks2]  ,
+    images: [cufflinks5, cufflinks1, cufflinks2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '14',
@@ -227,7 +240,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks6, cufflinks1, cufflinks2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '15',
@@ -241,7 +255,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks7, cufflinks1, cufflinks2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '16',
@@ -255,7 +270,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks8, cufflinks1, cufflinks2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '17',
@@ -269,7 +285,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [cufflinks9, cufflinks1, cufflinks2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '18',
@@ -283,7 +300,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [necklace1, necklace2, necklace3],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '19',
@@ -297,7 +315,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [necklace2, necklace1, necklace3],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '20',
@@ -311,7 +330,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [necklace3, necklace1, necklace2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '21',
@@ -325,7 +345,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [necklace4, necklace1, necklace2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '22',
@@ -339,7 +360,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [necklace5, necklace1, necklace2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '23',
@@ -353,7 +375,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [necklace6, necklace1, necklace2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '24',
@@ -367,7 +390,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring1, ring2, ring3],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '25',
@@ -381,7 +405,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring2, ring1, ring3],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '26',
@@ -395,7 +420,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring3, ring1, ring2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '27',
@@ -409,7 +435,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring4, ring1, ring2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '28',
@@ -423,7 +450,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring5, ring1, ring2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '29',
@@ -437,7 +465,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring6, ring1, ring2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '30',
@@ -451,7 +480,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring7, ring1, ring2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '31',
@@ -465,7 +495,8 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring8, ring1, ring2],
     inStock: true,
-     isNew: true,
+    isNew: true,
+    quantity: 1,
   },
   {
     id: '32',
@@ -479,7 +510,7 @@ export const MOCK_PRODUCTS: Product[] = [
     currency: 'USD',
     images: [ring10, ring1, ring2],
     inStock: true,
-     isNew: true,
-  
+    isNew: true,
+    quantity: 1,
   },
 ];

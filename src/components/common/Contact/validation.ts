@@ -23,8 +23,6 @@ export const emailRule: Rule = ({ getFieldValue }) => ({
       throw new Error('Invalid email');
     }
 
-    await new Promise(resolve => setTimeout(resolve, 500));
-
     return true;
   },
 });

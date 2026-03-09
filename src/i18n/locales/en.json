@@ -143,7 +143,13 @@
   },
   "booking": {
     "title": "Booking",
-    "description": "Book your service or product here."
+    "description": "Book your service or product here.",
+    "selectedItems": "Selected Items",
+    "noItemsSelected": "You have not selected any items yet.",
+    "contactDetails": "Please fill in your contact details.",
+    "confirmButton": "Confirm Booking",
+    "consentText": "I agree to processing of personal data",
+    "remove": "Remove"
   },
   "checkout": {
     "title": "Checkout",

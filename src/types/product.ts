@@ -30,7 +30,7 @@ export type Product = {
   currency: Currency;
   images: string[];
   inStock: boolean;
-
+  quantity: number;
 
   sku?: string;
   descriptionKey?: string;
@@ -38,5 +38,4 @@ export type Product = {
   size?: string;
 
   isNew: true;
-
 };

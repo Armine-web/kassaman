@@ -11,9 +11,12 @@ import Hamburger from './Hamburger';
 import ShoppingCartDrawer from './ShopCartDrawer';
 import MenuDrawer from './MenuDrawer';
 import styles from './styles.module.css';
+import { useAppSelector } from '../../../store/hook';
 
 const Header = () => {
   const { pathname } = useLocation();
+
+  const { selectedItems } = useAppSelector(state => state.booking);
 
   const isDarkHeader = pathname === '/' || pathname.startsWith('/home');
 
@@ -25,9 +28,7 @@ const Header = () => {
 
   return (
     <header
-      className={`${styles.header} ${
-        isDarkHeader ? styles['headerDark'] : styles['headerLight']
-      }`}
+      className={`${styles.header} ${isDarkHeader ? styles['headerDark'] : styles['headerLight']}`}
     >
       <div className="container">
         <div className={styles.headerContent}>
@@ -43,7 +44,7 @@ const Header = () => {
             <div className={styles.hideOnMobile}>
               <User />
             </div>
-            <BookingCart count={0} onClick={() => navigate('/booking')} />
+            <BookingCart count={selectedItems.length} onClick={() => navigate('/booking')} />
             <ShoppingCart count={0} onClick={cart.toggle} />
             <ShoppingCartDrawer open={cart.isOpen} onClose={cart.close} />
             <MenuDrawer open={menu.isOpen} onClose={menu.close} />

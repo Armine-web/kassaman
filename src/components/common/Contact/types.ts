@@ -9,4 +9,4 @@ export type ContactRequest = {
   topic: string;
   message: string;
   consent: boolean;
-}
+};

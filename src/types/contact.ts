@@ -13,3 +13,11 @@ export type ContactCardMock = {
   links?: ContactLinkMock[];
   extraTextKey?: string;
 };
+
+export type ContactInfo = {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+  consent?: boolean;
+};

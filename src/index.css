@@ -73,11 +73,6 @@ button {
   font-size: inherit;
 }
 
-.badge {
-  background-color: var(--light-primary);
-  color: var(--dark-primary);
-}
-
 .underlineEffect {
   position: relative;
   display: inline-block;
@@ -194,7 +189,7 @@ button {
 }
 
 @media (max-width: 612px) {
-  .backgroundMainButton{
+  .backgroundMainButton {
     position: static;
   }
 }
