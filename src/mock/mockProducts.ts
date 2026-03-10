@@ -32,6 +32,14 @@ import ring7 from '../assets/img/rings/ring7.jpg';
 import ring8 from '../assets/img/rings/ring8.jpg';
 import ring10 from '../assets/img/rings/ring10.jpg';
 
+import bannerImg1 from '../assets/img/home/kassaman-tiger-eye-silver-necklace-enamel-swarovski.jpg';
+import bannerImg2 from '../assets/img/home/yerevan-collection-kassaman-necklace.jpg';
+import bannerImg3 from '../assets/img/home/kassaman-ornament-silver-leather-enamel-bracelets.jpg';
+import bannerImg4 from '../assets/img/home/tiger-eye-925-silver-necklace-swarovski.jpg';
+import bannerImg5 from '../assets/img/home/yerevan-collection-cufflinks-onyx.jpg';
+import bannerImg6 from '../assets/img/home/kassaman-baguette-ring-bracelet-swarovski.jpg';
+import bannerImg7 from '../assets/img/home/baguette-collection-ring-swarovski-925silver.jpg';
+
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: '1',
@@ -47,6 +55,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '2',
@@ -62,6 +71,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '3',
@@ -77,6 +87,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '4',
@@ -92,6 +103,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '5',
@@ -107,6 +119,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '6',
@@ -122,6 +135,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '7',
@@ -137,6 +151,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '8',
@@ -152,6 +167,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '9',
@@ -167,6 +183,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '10',
@@ -182,6 +199,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '11',
@@ -197,6 +215,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '12',
@@ -212,6 +231,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '13',
@@ -227,6 +247,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '14',
@@ -242,6 +263,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '15',
@@ -257,6 +279,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '16',
@@ -272,6 +295,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '17',
@@ -287,6 +311,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '18',
@@ -302,6 +327,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '19',
@@ -317,6 +343,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '20',
@@ -332,6 +359,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '21',
@@ -347,6 +375,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '22',
@@ -362,6 +391,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '23',
@@ -377,6 +407,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '24',
@@ -392,6 +423,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '25',
@@ -407,6 +439,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '26',
@@ -422,6 +455,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '27',
@@ -437,6 +471,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '28',
@@ -452,6 +487,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '29',
@@ -467,6 +503,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '30',
@@ -482,6 +519,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '31',
@@ -497,6 +535,7 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
   },
   {
     id: '32',
@@ -512,5 +551,119 @@ export const MOCK_PRODUCTS: Product[] = [
     inStock: true,
     isNew: true,
     quantity: 1,
+    isHeroBanner: false,
+  },
+
+  {
+    id: '33',
+    nameKey: 'tigerEyeSilverNecklace',
+    category: 'necklaces',
+    collections: ['signature'],
+    material: ['whiteGold'],
+    stone: ['swarovski'],
+    gender: 'men',
+    price: 420,
+    currency: 'USD',
+    images: [bannerImg1],
+    inStock: true,
+    isNew: true,
+    quantity: 1,
+     isHeroBanner: true,
+  },
+  {
+    id: '34',
+    nameKey: 'yerevanCollectionNecklace',
+    category: 'necklaces',
+    collections: ['timeless'],
+    material: ['silver'],
+    stone: ['swarovski'],
+    gender: 'women',
+    price: 390,
+    currency: 'USD',
+    images: [bannerImg2],
+    inStock: true,
+    isNew: true,
+    quantity: 1,
+     isHeroBanner: true,
+  },
+  {
+    id: '35',
+    nameKey: 'ornamentSilverBracelet',
+    category: 'bracelets',
+    collections: ['timeless'],
+    material: ['silver'],
+    stone: ['swarovski'],
+    gender: 'men',
+    price: 310,
+    currency: 'USD',
+    images: [bannerImg3],
+    inStock: true,
+    isNew: true,
+    quantity: 1,
+     isHeroBanner: true,
+  },
+  {
+    id: '36',
+    nameKey: 'tigerEye925Necklace',
+    category: 'necklaces',
+    collections: ['timeless'],
+    material: ['silver'],
+    stone: ['swarovski'],
+    gender: 'men',
+    price: 450,
+    currency: 'USD',
+    images: [bannerImg4],
+    inStock: true,
+    isNew: true,
+    quantity: 1,
+     isHeroBanner: true,
+  },
+  {
+    id: '37',
+    nameKey: 'yerevanOnyxCufflinks',
+    category: 'cufflinks',
+    collections: ['timeless'],
+    material: ['silver'],
+    stone: ['swarovski'],
+    gender: 'men',
+    price: 280,
+    currency: 'USD',
+    images: [bannerImg5],
+    inStock: true,
+    isNew: true,
+    quantity: 1,
+     isHeroBanner: true,
+  },
+  {
+    id: '38',
+    nameKey: 'baguetteBracelet',
+    category: 'bracelets',
+    collections: ['timeless'],
+    material: ['silver'],
+    stone: ['swarovski'],
+    gender: 'women',
+    price: 360,
+    currency: 'USD',
+    images: [bannerImg6],
+    inStock: true,
+    isNew: true,
+    quantity: 1,
+     isHeroBanner: true,
+  },
+  {
+    id: '39',
+    nameKey: 'baguetteRing',
+    category: 'rings',
+    collections: ['timeless'],
+    material: ['silver'],
+    stone: ['swarovski'],
+    gender: 'women',
+    price: 250,
+    currency: 'USD',
+    images: [bannerImg7],
+    inStock: true,
+    isNew: true,
+    quantity: 1,
+     isHeroBanner: true,
   },
 ];

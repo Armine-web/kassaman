@@ -1,14 +1,21 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './styles.module.css';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import type { Product } from '../../../../types/product';
 import { HeroBanners } from './const';
 import AppearingText from '../../../../components/common/AppearingText';
 import { Line } from '../../../../components/common/AppearingLines';
 import MainButton from '../../../../components/common/MainButton';
+import { setSelectedProduct } from '../../../../store/slices/bookingSlice';
+import styles from './styles.module.css';
 
 const HomeBanner = () => {
   const { t } = useTranslation();
   const [current, setCurrent] = useState(0);
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,6 +23,11 @@ const HomeBanner = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleSelectProduct = (product: Product) => {
+    dispatch(setSelectedProduct(product));
+    navigate('/booking');
+  };
 
   return (
     <div className={styles.bannerWrapper}>
@@ -33,7 +45,13 @@ const HomeBanner = () => {
               <Line />
               <div className={styles.buttons}>
                 <MainButton text={t(banner.cta.shop)} route="/catalog" />
-                <MainButton text={t(banner.cta.book)} route="/booking" />
+
+                {banner.product && (
+                  <MainButton
+                    text={t(banner.cta.book)}
+                    onClick={() => handleSelectProduct(banner.product!)}
+                  />
+                )}
               </div>
             </>
           )}

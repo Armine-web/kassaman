@@ -31,6 +31,7 @@ export type Product = {
   images: string[];
   inStock: boolean;
   quantity: number;
+  isHeroBanner: true | false;
 
   sku?: string;
   descriptionKey?: string;

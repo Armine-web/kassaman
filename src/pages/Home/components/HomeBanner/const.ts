@@ -1,76 +1,15 @@
-import {
-  bannerImg1,
-  bannerImg2,
-  bannerImg3,
-  bannerImg4,
-  bannerImg5,
-  bannerImg6,
-  bannerImg7,
-} from '../../../../assets/img/home';
+import { MOCK_PRODUCTS } from '../../../../mock/mockProducts';
 import type { Banner } from './types';
 
-export const HeroBanners: Banner[] = [
-  {
-    image: bannerImg1,
-    text: 'home.heroBanners.0.text',
-    alt: 'home.heroBanners.0.alt',
+export const HeroBanners: Banner[] = MOCK_PRODUCTS.filter(p => p.isHeroBanner).map(
+  (product, index) => ({
+    image: product.images[0],
+    product,
+    text: `home.heroBanners.${index}.text`,
+    alt: `home.heroBanners.${index}.alt`,
     cta: {
-      book: 'home.heroBanners.0.cta.book',
-      shop: 'home.heroBanners.0.cta.shop',
+      book: `home.heroBanners.${index}.cta.book`,
+      shop: `home.heroBanners.${index}.cta.shop`,
     },
-  },
-  {
-    image: bannerImg2,
-    text: 'home.heroBanners.1.text',
-    alt: 'home.heroBanners.1.alt',
-    cta: {
-      book: 'home.heroBanners.1.cta.book',
-      shop: 'home.heroBanners.1.cta.shop',
-    },
-  },
-  {
-    image: bannerImg3,
-    text: 'home.heroBanners.2.text',
-    alt: 'home.heroBanners.2.alt',
-    cta: {
-      book: 'home.heroBanners.2.cta.book',
-      shop: 'home.heroBanners.2.cta.shop',
-    },
-  },
-  {
-    image: bannerImg4,
-    text: 'home.heroBanners.3.text',
-    alt: 'home.heroBanners.3.alt',
-    cta: {
-      book: 'home.heroBanners.3.cta.book',
-      shop: 'home.heroBanners.3.cta.shop',
-    },
-  },
-  {
-    image: bannerImg5,
-    text: 'home.heroBanners.4.text',
-    alt: 'home.heroBanners.4.alt',
-    cta: {
-      book: 'home.heroBanners.4.cta.book',
-      shop: 'home.heroBanners.4.cta.shop',
-    },
-  },
-  {
-    image: bannerImg6,
-    text: 'home.heroBanners.5.text',
-    alt: 'home.heroBanners.5.alt',
-    cta: {
-      book: 'home.heroBanners.5.cta.book',
-      shop: 'home.heroBanners.5.cta.shop',
-    },
-  },
-  {
-    image: bannerImg7,
-    text: 'home.heroBanners.6.text',
-    alt: 'home.heroBanners.6.alt',
-    cta: {
-      book: 'home.heroBanners.6.cta.book',
-      shop: 'home.heroBanners.6.cta.shop',
-    },
-  },
-];
+  }),
+);
