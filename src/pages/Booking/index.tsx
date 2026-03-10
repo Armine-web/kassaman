@@ -32,7 +32,7 @@ const BookingPage = () => {
   };
 
   const onFinish = (values: ContactInfo) => {
-    console.log('Final Booking Data:', { products: selectedItems, contact: values });
+    console.log('Booking Data:', { products: selectedItems, contact: values });
   };
 
   return (
@@ -56,6 +56,7 @@ const BookingPage = () => {
                       </Text>
                     </div>
                   </Flex>
+
                   <Flex align="center" gap="middle" className={styles.productControls}>
                     <Flex align="center" gap="middle" className={styles.productControlsWrapper}>
                       <Button onClick={() => dispatch(decreaseQuantity(item.id))} type="text">
@@ -74,6 +75,8 @@ const BookingPage = () => {
                     />
                   </Flex>
                 </div>
+                <Text type="secondary">{getProductText(item.nameKey, 'description')}</Text>
+                <Divider className={styles.cardDivaider} />
                 {index < selectedItems.length - 1 && <Divider className={styles.cardDivaider} />}
               </div>
             ))

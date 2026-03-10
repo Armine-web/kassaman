@@ -1,6 +1,12 @@
-export type CategorySlug = 'rings' | 'necklaces' | 'bracelets' | 'cufflinks' | (string & {});
+export type CategorySlug =
+  | 'rings'
+  | 'necklaces'
+  | 'bracelets'
+  | 'cufflinks'
+  | 'earrings'
+  | (string & {});
 
-export type Collection = 'signature' | 'timeless' | 'prestige' | 'wedding';
+export type Collection = 'signature' | 'timeless' | 'prestige' | 'wedding' | 'anna' | 'Tiger Eye';
 
 export type Material =
   | 'yellowGold'
@@ -12,7 +18,18 @@ export type Material =
   | 'steel'
   | 'beaded';
 
-export type Stone = 'diamond' | 'emerald' | 'sapphire' | 'lazuli' | 'pearl' | 'swarovski';
+export type Stone =
+  | 'diamond'
+  | 'emerald'
+  | 'sapphire'
+  | 'lazuli'
+  | 'pearl'
+  | 'swarovski'
+  | 'aquamarine'
+  | 'rubellite'
+  | 'tourmaline'
+  | 'blackPearl'
+  | 'spinel';
 
 export type Gender = 'men' | 'women';
 
@@ -32,7 +49,6 @@ export type Product = {
   inStock: boolean;
   quantity: number;
   isHeroBanner: true | false;
-
   sku?: string;
   descriptionKey?: string;
   weight?: string;

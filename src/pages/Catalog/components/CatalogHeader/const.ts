@@ -1,18 +1,18 @@
 import type { HeaderImage } from './types';
 import type { Variants } from 'framer-motion';
 
-import ringSwarovsky from '../../../../assets/img/catalog/ringSwarovsky.jpg';
+import categoryRing from '../../../../assets/img/category/categoryRing.jpg';
 import catalogNackles from '../../../../assets/img/catalog/catalogNackles.jpg';
-import catalogItems from '../../../../assets/img/catalog/catalogItems.jpg';
-import silverBraclet from '../../../../assets/img/catalog/silverBraclet.jpg';
+import uniqueEarrings from '../../../../assets/img/earrings/uniqueEarrings.jpg';
+import GoldenBraclet from '../../../../assets/img/category/GoldenBraslet.jpg';
 import goldCross from '../../../../assets/img/catalog/goldCross.jpg';
 import catalogCafflink from '../../../../assets/img/catalog/catalogCafflink.jpg';
 
 export const HEADER_IMAGES: HeaderImage[] = [
   {
     id: 1,
-    src: ringSwarovsky,
-    alt: 'Swarovsky Ring',
+    src: categoryRing,
+    alt: 'Golden Ring',
     category: 'rings',
     title: 'Rings',
     description: 'Eternal symbols of love',
@@ -29,8 +29,8 @@ export const HEADER_IMAGES: HeaderImage[] = [
   },
   {
     id: 3,
-    src: catalogItems,
-    alt: 'Our Brand',
+    src: uniqueEarrings,
+    alt: 'Unique Earrings',
     category: 'earrings',
     title: 'Earrings',
     description: 'Sparkling elegance',
@@ -38,8 +38,8 @@ export const HEADER_IMAGES: HeaderImage[] = [
   },
   {
     id: 4,
-    src: silverBraclet,
-    alt: 'Silver Bracelet',
+    src: GoldenBraclet,
+    alt: 'Golden Bracelet',
     category: 'bracelets',
     title: 'Bracelets',
     description: 'Timeless adornments',
@@ -66,10 +66,10 @@ export const HEADER_IMAGES: HeaderImage[] = [
 ];
 
 export const PREVIEW_IMAGES = {
-  ringSwarovsky,
+  categoryRing,
   catalogNackles,
-  catalogItems,
-  silverBraclet,
+  uniqueEarrings,
+  GoldenBraclet,
   goldCross,
   catalogCafflink,
 } as const;
@@ -85,15 +85,15 @@ export const containerVariants: Variants = {
 };
 
 export const itemVariants: Variants = {
-  hidden: { 
-    opacity: 0, 
-    y: 40, 
-    clipPath: "inset(100% 0% 0% 0%)" 
+  hidden: {
+    opacity: 0,
+    y: 40,
+    clipPath: 'inset(100% 0% 0% 0%)',
   },
   visible: {
     opacity: 1,
     y: 0,
-    clipPath: "inset(0% 0% 0% 0%)",
+    clipPath: 'inset(0% 0% 0% 0%)',
     transition: {
       duration: 1.2,
       ease: [0.19, 1, 0.22, 1],

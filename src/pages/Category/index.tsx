@@ -1,14 +1,16 @@
-import { useTranslation } from 'react-i18next';
+import { CategoryIntro } from './components/CategoryIntro';
+import { CategorySectionManager } from './components/CategorySectionManager';
+import styles from './styles.module.css';
 
 const Category = () => {
-  const { t } = useTranslation();
-
   return (
-    <div>
-      <h1>{t('category.title')}</h1>
-      <p>{t('category.description')}</p>
+    <div className={styles.pageWrapper}>
+      <CategoryIntro />
+
+      <main className={styles.mainContent}>
+        <CategorySectionManager />
+      </main>
     </div>
   );
 };
-
 export default Category;

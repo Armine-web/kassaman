@@ -1,7 +1,7 @@
 import i18n from '../index';
 
 type ProductField = 'name' | 'description';
-type ProductFieldList = 'materials' | 'stones';
+type ProductFieldList = 'materials' | 'stones' ;
 
 export const getProductText = (nameKey: string, field: ProductField): string => {
   return i18n.t(`products.${nameKey}.${field}`, { defaultValue: nameKey });

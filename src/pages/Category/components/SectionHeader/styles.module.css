@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--dark-primary);
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.lineWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.goldLine {
+  width: 320px;
+  height: 1px;
+  background-color: #c5a059;
+  transform-origin: center;
+  margin: 20px 0;
+}
+
+.subtitle {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}

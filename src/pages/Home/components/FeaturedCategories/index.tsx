@@ -23,7 +23,7 @@ const FeaturedCategories = () => {
         <div className="loading">Loading Categories...</div>
       ) : (
         <>
-          <h2 className={`${styles.homeCategories} scrollReveal`}>
+          <h2 className={`${styles.featureCategories} scrollReveal`}>
             {t('home.featuredCategories.title')
               .split('\n')
               .map((line, index) => (
@@ -32,7 +32,7 @@ const FeaturedCategories = () => {
                 </p>
               ))}
           </h2>
-          <div className={`${styles.homeCategoriesWrapper} scrollReveal`}>
+          <div className={`${styles.featureCategoriesWrapper} scrollReveal`}>
             <div className={`${styles.featuredCategoriesLines} scrollReveal myCustomScrollReveal`}>
               <Line thin className={styles.featuredCategoriesLineThin} />
               <Line className={styles.featuredCategoriesLine} />
@@ -42,11 +42,11 @@ const FeaturedCategories = () => {
               />
             </div>
 
-            <div className={`${styles.homeCategoriesCardWrapper} scrollReveal`}>
+            <div className={`${styles.featureCategoriesCardWrapper} scrollReveal`}>
               <div className={styles.categoryList}>
                 {categories?.map((category, index) => (
                   <VisualCard
-                    className={`${styles.homeCategoriesCard} scrollReveal`}
+                    className={`${styles.featureCategoriesCard} scrollReveal`}
                     style={{ transitionDelay: `${index * 0.5}s` }}
                     key={category.id}
                     width={300}
