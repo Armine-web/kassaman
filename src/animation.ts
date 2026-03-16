@@ -1,4 +1,4 @@
-// src/animations.js
+
 export const luxuryTransition = {
   duration: 1.8,
   ease: [0.19, 1, 0.22, 1] as const,

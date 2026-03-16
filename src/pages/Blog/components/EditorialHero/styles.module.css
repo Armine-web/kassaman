@@ -1,0 +1,209 @@
+.hero {
+  padding: 0 8% 20px;
+  background: #fff;
+  min-height: 400px;
+}
+
+.cardRow {
+  margin-top: -200px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+}
+
+.collectionsCardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.label {
+  font-size: var(--text-large);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #c5a059;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-medium);
+  font-weight: 300;
+  color: var(--dark-primary);
+  max-width: 400px;
+}
+
+.middleGroup {
+  position: relative;
+}
+
+.description {
+  font-size: var(--text-regular);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  letter-spacing: var(--letter-spacing-medium);
+  color: var(--color-text);
+  font-weight: 300;
+  font-style: italic;
+  max-width: 450px;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.bottomGroup {
+  margin-top: 10px;
+}
+
+.outsideCol {
+  position: relative;
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.outsideCol::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  bottom: -40px;
+  left: -200px;
+  right: -40px;
+  background: #f9f7f2;
+  z-index: -1;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 1/ 1.3;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.collectionBtn {
+  position: absolute;
+  bottom: 40px;
+  left: -20px;
+  /* background: #4d4b4b; */
+  padding: 18px 28px;
+  color: #fff;
+}
+
+.btnText {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 0 5% 20px;
+  }
+  .outsideCol::before {
+    left: -100px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 0 !important;
+    min-height: auto !important;
+  }
+
+  .cardRow {
+    margin-top: -180px;
+    padding: 20px;
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .collectionsCardContent {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .title {
+    max-width: 100%;
+    font-size: 24px;
+    margin: 0 auto 20px;
+  }
+
+  .description {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .outsideCol {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .outsideCol::before {
+    display: none;
+  }
+
+  .imageWrapper {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 0 15px 10px;
+    min-height: auto;
+  }
+
+  .cardRow {
+    padding: 10px 15px;
+  }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .collectionBtn {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    width: 80%;
+    text-align: center;
+  }
+}

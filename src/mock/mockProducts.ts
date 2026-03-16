@@ -605,7 +605,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isNew: true,
   },
   {
-    id: '40',
+    id: '41',
     nameKey: 'tourmalineRoseGoldSignature',
     category: 'earrings',
     collections: ['signature'],
@@ -619,7 +619,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isNew: true,
   },
   {
-    id: '41',
+    id: '42',
     nameKey: 'ovalSapphireHarmony',
     category: 'earrings',
     collections: ['signature'],
@@ -633,7 +633,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isNew: true,
   },
   {
-    id: '42',
+    id: '43',
     nameKey: 'rubellitePearlMasterpiece',
     category: 'earrings',
     collections: ['signature'],
@@ -647,7 +647,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isNew: true,
   },
   {
-    id: '43',
+    id: '44',
     nameKey: 'rubellitePearlExclusive',
     category: 'earrings',
     collections: ['signature'],
