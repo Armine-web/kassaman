@@ -1,13 +1,30 @@
-import { useTranslation } from 'react-i18next';
+import ServiceHero from './components/ServiceHero';
+import ServiceCards from './components/ServiceCard';
+import ParallaxDivider from './components/ParralexDivider';
+import ServiceForm from './components/ServiceForm';
+import styles from './styles.module.css';
 
 const Services = () => {
-  const { t } = useTranslation();
-
   return (
-    <div>
-      <h1>{t('services.title')}</h1>
-      <p>{t('services.description')}</p>
-    </div>
+    <main className={styles.pageWrapper}>
+      <ServiceHero />
+      <section className={styles.cardsSection}>
+        <div className={styles.container}>
+          <ServiceCards />
+        </div>
+      </section>
+
+      <ParallaxDivider />
+
+      <section className={styles.formSection}>
+        <div className={styles.container}>
+          {' '}
+          <div className={styles.splitWrapper}>
+            <ServiceForm />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 };
 
