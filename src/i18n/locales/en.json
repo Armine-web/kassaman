@@ -204,7 +204,8 @@
   },
   "blog": {
     "title": "Blog",
-    "description": "Read our latest news and articles."
+    "description": "Read our latest news and articles.",
+    "search": "Search articles"
   },
   "account": {
     "title": "My Account",
@@ -235,9 +236,9 @@
       "title": "Earrings",
       "subtitle": "Elegant and timeless designs"
     },
-    "pendants": { 
-      "title": "Pendants", 
-      "subtitle": "Elegant Neckpieces" 
+    "pendants": {
+      "title": "Pendants",
+      "subtitle": "Elegant Neckpieces"
     }
   },
   "productCollections": {
@@ -725,5 +726,48 @@
     "price_asc": "Price: Low to High",
     "price_desc": "Price: High to Low",
     "popular": "Most Popular"
+  },
+  "blogPage": {
+    "home": "Home",
+    "blog": "Blog",
+    "featured": "Featured Story",
+    "explore": "Explore the Article",
+    "shop_now": "Shop Now",
+    "read_more": "Read More",
+    "new_story": "New Release",
+    "featured_edition": "Spring Edition 2026",
+    "latest_stories": "Latest Stories",
+    "editors_picks": "Editor’s picks",
+    "Kassaman_posts": "Kassaman Posts",
+    "pick": "Pick",
+    "bestsellers": "Bestsellers",
+    "newsletter_kicker": "Newsletter",
+    "newsletter_title": "Kassaman Journal — in your inbox",
+    "newsletter_desc": "A quiet dispatch of new releases, craft notes, and styling stories. No noise.",
+    "newsletter_placeholder": "Email address",
+    "newsletter_button": "Subscribe",
+    "article_not_found": "Article not found",
+    "newsletter_thanks": "Thank You!",
+    "newsletter_success_msg": "You have been successfully added to our gallery mailing list.",
+    "related_articles": "Related articles",
+    "min": "min",
+    "category": {
+      "general": "Journal",
+      "StyleGuide": "Style Guide",
+      "Heritage": "Heritage",
+      "Collection": "Collection"
+    },
+    "articles": {
+      "philosophy": {
+        "title": "The Philosophy of Gold",
+        "preview": "Discover the timeless allure and cultural significance of the world's most precious metal.",
+        "contentKey": "Full content about gold..."
+      },
+      "styling": {
+        "title": "Minimalist Pendants",
+        "preview": "A guide to effortless elegance: how to style delicate pieces for any occasion.",
+        "content": "Full content about styling..."
+      }
+    }
   }
 }

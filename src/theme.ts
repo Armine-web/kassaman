@@ -49,5 +49,19 @@ export const antdTheme: ThemeConfig = {
 
       colorTextPlaceholder: 'inherit',
     },
+
+    Pagination: {
+      colorPrimary: '#c5a059',
+      colorPrimaryHover: '#c5a059',
+      itemActiveBg: 'transparent',
+
+      colorText: '#1a1a1a',
+      colorTextDisabled: '#d9d9d9',
+
+      controlItemBgHover: 'transparent',
+      colorPrimaryActive: '#c5a059',
+      itemLinkBg: 'transparent',
+      controlOutline: 'transparent',
+    },
   },
 };
