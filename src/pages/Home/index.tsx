@@ -1,5 +1,5 @@
 import FeaturedCategories from './components/FeaturedCategories/index';
-import FeaturedCollections from './components/FeaturedCollections';
+import FeaturedCollections from '../../components/common/FeaturedCollections';
 import Bestsellers from './components/Bestsellers/index';
 import Philosophy from './components/Philosophy';
 import Advantages from './components/Advantages';

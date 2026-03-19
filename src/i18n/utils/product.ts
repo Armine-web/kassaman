@@ -28,3 +28,5 @@ export const getProductMaterialsAndStones = (
 
   return combined.length ? combined.join(separator) : undefined;
 };
+
+

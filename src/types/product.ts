@@ -39,7 +39,7 @@ export type Product = {
   id: string;
   nameKey: string;
   category: CategorySlug;
-  collections: Collection[];
+  collections: String[];
   material?: Material[];
   stone?: Stone[];
   gender: Gender;
@@ -48,11 +48,11 @@ export type Product = {
   images: string[];
   inStock: boolean;
   quantity: number;
-  isHeroBanner: true | false;
+  isHeroBanner: boolean;
   sku?: string;
   descriptionKey?: string;
   weight?: string;
   size?: string;
 
-  isNew: true;
+  isNew: boolean;
 };

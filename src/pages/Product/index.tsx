@@ -35,7 +35,7 @@ const Product = () => {
       <div className="container">
         <Row gutter={[32, 32]}>
           <Col xs={24} md={9}>
-            <ProductGallery images={product.images} nameKey={product.nameKey} />
+            <ProductGallery images={product.images} nameKey={product.nameKey} key={product.id}  />
           </Col>
 
           <Col xs={24} md={15}>

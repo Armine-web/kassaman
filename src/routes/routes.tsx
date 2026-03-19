@@ -15,6 +15,7 @@ import FAQ from '../pages/FAQ';
 import Blog from '../pages/Blog';
 import Account from '../pages/Account';
 import NotFound from '../pages/NotFound';
+import Collection from '../pages/Collection'
 
 const AppRoutes = () => {
   return (
@@ -25,6 +26,7 @@ const AppRoutes = () => {
         <Route path="catalog/:categorySlug" element={<Category />} />
         <Route path="product/:id" element={<ProductPage />} />
         <Route path="collections" element={<Collections />} />
+        <Route path="collections/:slug" element={<Collection />} />
         <Route path="services" element={<Services />} />
         <Route path="booking" element={<Booking />} />
         <Route path="checkout" element={<Checkout />} />

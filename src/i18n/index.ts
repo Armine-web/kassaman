@@ -15,7 +15,8 @@ i18n
       ru: { translation: ru },
 
     },
-    fallbackLng: 'en',
+    lng: 'am',
+    fallbackLng: 'am',
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage', 'cookie'],

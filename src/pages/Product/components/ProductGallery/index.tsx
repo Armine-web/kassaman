@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Image } from 'antd';
 import { getProductText } from '../../../../i18n/utils/product';
 import type { Props } from './types';
@@ -9,11 +9,17 @@ export const ProductGallery = ({ images, nameKey }: Props) => {
   useScrollReveal();
   const [activeImage, setActiveImage] = useState(images[0]);
 
+  useEffect(() => {
+    if (images?.length) {
+      setActiveImage(images[0]);
+    }
+  }, [images]);
+
   return (
     <div className={styles.gallery}>
       <div className={styles.galleryLayout}>
         <div className={`${styles.thumbnails} scrollReveal`}>
-          {images.slice(0, 3).map(img => (
+          {images.slice(1, 4).map(img => (
             <div key={img} className={`${styles.thumbItem} scrollReveal`}>
               <Image
                 src={img}

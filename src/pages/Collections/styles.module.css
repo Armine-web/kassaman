@@ -1,0 +1,16 @@
+.collections{
+    padding: 60px 0;
+}
+
+.featureCollection{
+    margin-top: 60px;
+}
+
+.lines {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}

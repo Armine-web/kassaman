@@ -1,13 +1,20 @@
-import { useTranslation } from 'react-i18next';
+import { Line } from '../../components/common/AppearingLines';
+import FeaturedCollections from '../../components/common/FeaturedCollections';
+import styles from './styles.module.css';
 
 const Collections = () => {
-  const { t } = useTranslation();
-
   return (
-    <div>
-      <h1>{t('collections.title')}</h1>
-      <p>{t('collections.description')}</p>
-    </div>
+    <section className={styles.collections}>
+      <div className={styles.lines}>
+        <Line thin />
+        <Line />
+      </div>
+      <FeaturedCollections className={styles.featureCollection} />
+      <div className={styles.lines}>
+        <Line thin />
+        <Line />
+      </div>
+    </section>
   );
 };
 
