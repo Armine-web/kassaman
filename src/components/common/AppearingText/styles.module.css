@@ -20,8 +20,8 @@
   }
 }
 
-@media (max-width: 480px){
-  .appearingText{
+@media (max-width: 480px) {
+  .appearingText {
     font-size: 1.8rem;
   }
 }

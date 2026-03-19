@@ -1,0 +1,49 @@
+.parallaxContainer {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url('../../../../assets/img/services/paralaxImg.jpg');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallaxSubtext {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: var(--text-regular);
+  font-weight: 300;
+  text-align: center;
+  padding: 0 20px;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .parallaxContainer {
+    background-attachment: scroll;
+    height: 250px;
+  }
+  .parallaxSubtext {
+    letter-spacing: 0.3rem;
+    font-size: 8px;
+    margin: 0 auto;
+  }
+}
