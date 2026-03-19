@@ -113,6 +113,10 @@
   text-transform: uppercase;
 }
 
+.blogButton{
+  font-size: 1.4rem;
+}
+
 @media (max-width: 1200px) {
   .hero {
     padding: 0 5% 20px;

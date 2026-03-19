@@ -31,7 +31,7 @@ export default function EditorialHero({ post }: { post: BlogPost }): JSX.Element
             <div className={`${styles.shopBtn} backgroundMainButton`}>
               <div className="borderMainButton">
                 <div className="borderThinMainButton">
-                  <MainButton text={t('blogPage.read_more')} route={`/blog/${post.slug}`} />
+                  <MainButton text={t('blogPage.read_more')} route={`/blog/${post.slug}`} className={styles.blogButton} />
                 </div>
               </div>
             </div>

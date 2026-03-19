@@ -27,12 +27,12 @@
 .contactLogo {
   width: 150px;
   position: absolute;
-  top: 44%;
+  top: 54%;
   right: 50%;
   transform: translate(50%, 50%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 627px) {
   .contactUsHeroContent {
     margin-top: 80px;
     padding: 40px 15px;
@@ -40,7 +40,7 @@
   }
   .contactLogo {
     width: 120px;
-    top: 34%;
+    top: 46%;
   }
 }
 
@@ -50,11 +50,15 @@
     padding: 40px 15px;
     font-size: var(--text-small);
   }
+
+   .contactLogo {
+    top: 42%;
+  }
 }
 
-@media (max-width: 427px) {
+@media (max-width: 386px) {
   .contactLogo {
     width: 100px;
-    top: 51%;
+    top: 58%;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .featureCategories {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   letter-spacing: var(--letter-spacing-medium);
   font-weight: bold;
   margin-bottom: 20px;
@@ -25,7 +25,7 @@
 .featureCategoriesWrapper {
   background-color: var(--light-primary);
   position: relative;
-  height: 65vh;
+  height: 60vh;
   border-radius: 8px;
   z-index: 1;
 }

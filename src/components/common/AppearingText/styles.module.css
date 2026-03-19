@@ -21,7 +21,14 @@
 }
 
 @media (max-width: 480px) {
-  .appearingText {
+  .appearingText>h2 {
     font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .appearingText>h2 {
+    font-size: 1.4rem;
   }
 }
