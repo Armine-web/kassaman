@@ -767,48 +767,48 @@
         "title": "Minimalist Pendants",
         "preview": "A guide to effortless elegance: how to style delicate pieces for any occasion.",
         "content": "Full content about styling..."
-      },
-      "service": {
-        "hero": {
-          "kicker": "Kassaman Armenia",
-          "title": "Exquisite Stewardship",
-          "subtitle": "Preserving the brilliance and legacy of your most significant timepieces and jewelry."
-        },
-        "items": {
-          "repair": {
-            "title": "Master Restoration",
-            "description": "Breathe new life into your cherished heirlooms. Structural reinforcement and stone tightening performed by our master goldsmiths.",
-            "price": "Starting from $120"
-          },
-          "cleaning": {
-            "title": "Professional Care",
-            "description": "Ultrasonic deep cleaning and steam polishing to restore the original fire and luster of your fine jewelry.",
-            "price": "Complimentary for Kassaman pieces"
-          },
-          "custom": {
-            "title": "Bespoke Design",
-            "description": "Transform your vision into a physical masterpiece. A collaborative journey from initial sketch to a unique, hand-crafted symbol.",
-            "price": "Price on Consultation"
-          }
-        },
-        "parallax": {
-          "subtitle": "Crafting Eternity"
-        },
-        "form": {
-          "title": "Service Inquiry",
-          "subtitle": "Request a consultation for restoration, care, or a bespoke creation.",
-          "name": "Full Name",
-          "email": "Email Address",
-          "service": "Select Service",
-          "message": "Tell us about your piece",
-          "submit": "Send Inquiry",
-          "val_name": "Please enter your name",
-          "val_email": "Please enter a valid email",
-          "val_service": "Please select a service",
-          "success_msg": "Your inquiry has been sent. Our master jeweler will contact you shortly.",
-          "error_msg": "Connection error. Please try again later."
-        }
       }
+    }
+  },
+  "service": {
+    "hero": {
+      "kicker": "Kassaman Armenia",
+      "title": "Exquisite Stewardship",
+      "subtitle": "Preserving the brilliance and legacy of your most significant timepieces and jewelry."
+    },
+    "items": {
+      "repair": {
+        "title": "Master Restoration",
+        "description": "Breathe new life into your cherished heirlooms. Structural reinforcement and stone tightening performed by our master goldsmiths.",
+        "price": "Starting from $120"
+      },
+      "cleaning": {
+        "title": "Professional Care",
+        "description": "Ultrasonic deep cleaning and steam polishing to restore the original fire and luster of your fine jewelry.",
+        "price": "Complimentary for Kassaman pieces"
+      },
+      "custom": {
+        "title": "Bespoke Design",
+        "description": "Transform your vision into a physical masterpiece. A collaborative journey from initial sketch to a unique, hand-crafted symbol.",
+        "price": "Price on Consultation"
+      }
+    },
+    "parallax": {
+      "subtitle": "Crafting Eternity"
+    },
+    "form": {
+      "title": "Service Inquiry",
+      "subtitle": "Request a consultation for restoration, care, or a bespoke creation.",
+      "name": "Full Name",
+      "email": "Email Address",
+      "service": "Select Service",
+      "message": "Tell us about your piece",
+      "submit": "Send Inquiry",
+      "val_name": "Please enter your name",
+      "val_email": "Please enter a valid email",
+      "val_service": "Please select a service",
+      "success_msg": "Your inquiry has been sent. Our master jeweler will contact you shortly.",
+      "error_msg": "Connection error. Please try again later."
     }
   }
 }

@@ -63,5 +63,10 @@
 @media (max-width: 480px) {
   .mainButton {
     font-size: 1.2rem;
+    gap: 10px;
+  }
+  .mainButton img {
+    width: 20px;
+    height: 20px;
   }
 }
