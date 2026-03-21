@@ -1,0 +1,146 @@
+.summaryCard {
+  background: #fff !important;
+  border-radius: 0 !important;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.03) !important;
+  padding: 10px;
+}
+
+.productAvatar {
+  border: 1px solid #eee;
+  object-fit: cover;
+}
+
+.actionControls {
+  background: #f9f9f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: small;
+}
+
+.quantityMiniGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quantityText {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  min-width: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.deleteButtonSmall {
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.deleteButtonSmall:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.itemDivider {
+  margin: 12px 0;
+}
+
+.totalSection {
+  margin-top: 20px;
+}
+
+.goldDivider {
+  border-top-color: #c5a059 !important;
+  color: #c5a059 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem !important;
+}
+
+.totalLabel {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.totalPrice {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--dark-primary);
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 8px;
+  border-bottom: 2px solid #c5a059;
+  padding-bottom: 4px;
+  width: fit-content;
+}
+
+.boutiqueBox {
+  margin-top: 30px;
+}
+
+.addressText {
+  font-family: var(--font-heading);
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--dark-primary);
+}
+
+@media (max-width: 1100px) {
+  .summaryCard {
+    margin-bottom: 24px;
+    padding: 20px;
+  }
+
+  .totalPrice {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .summaryCard {
+    padding: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .productAvatar {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .productName {
+    font-size: 14px !important;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .actionControls {
+    padding: 2px 6px;
+    gap: 2px;
+  }
+
+  .totalPrice {
+    font-size: 20px;
+    border-bottom-width: 1px;
+  }
+
+  .addressText {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .summaryItem :global(.ant-flex) {
+    flex-wrap: wrap;
+    gap: 12px !important;
+  }
+
+  .actionControls {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,150 @@
+.sectionContainer {
+  margin-bottom: 45px;
+}
+
+.goldDivider {
+  border-top-color: #c5a059 !important;
+  color: #c5a059 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem !important;
+}
+
+.paymentRadioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.radioLabel {
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.cardDetailsWrapper {
+  margin: 20px 0;
+  padding: 24px;
+  background-color: #f9f9f9;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  animation: slideIn 0.3s ease-out;
+}
+
+.cardDetailsWrapper :global(.anticon-question-circle) {
+  color: #c5a059;
+}
+
+.minimalInput {
+  border: none !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 8px 0 !important;
+  font-size: 15px !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.minimalInput:focus {
+  border-bottom-color: var(--dark-primary) !important;
+}
+
+.methodInfoBox {
+  margin-top: 15px;
+  padding: 16px;
+  background-color: #fcfcfc;
+  border-left: 2px solid var(--dark-primary);
+  font-size: 13px;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease;
+}
+
+.customCheckbox :global(.ant-checkbox-checked .ant-checkbox-inner) {
+  background-color: #c5a059 !important;
+  border-color: #c5a059 !important;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .sectionContainer {
+    margin-bottom: 35px;
+  }
+
+  .cardDetailsWrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    margin-bottom: 30px;
+  }
+
+  .goldDivider {
+    font-size: 0.7rem !important;
+    letter-spacing: 1.5px;
+  }
+
+  .paymentRadioGroup {
+    gap: 12px;
+  }
+
+  .radioLabel {
+    font-size: 12px;
+  }
+
+  .cardDetailsWrapper {
+    padding: 16px;
+    margin: 15px 0;
+    background-color: #fff;
+    border-left: 2px solid #c5a059;
+  }
+
+  .minimalInput {
+    font-size: 14px !important;
+    padding: 10px 0 !important;
+  }
+
+  .methodInfoBox {
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardDetailsWrapper :global(.ant-row) {
+    flex-direction: column;
+  }
+
+  .cardDetailsWrapper :global(.ant-col) {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 8px;
+  }
+
+  .cardDetailsWrapper :global(.ant-form-item) {
+    margin-bottom: 12px;
+  }
+}
