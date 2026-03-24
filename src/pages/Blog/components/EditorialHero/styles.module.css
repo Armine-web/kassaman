@@ -102,7 +102,6 @@
   position: absolute;
   bottom: 40px;
   left: -20px;
-  /* background: #4d4b4b; */
   padding: 18px 28px;
   color: #fff;
 }
@@ -113,8 +112,13 @@
   text-transform: uppercase;
 }
 
-.blogButton{
+.blogButton {
   font-size: 1.4rem;
+}
+
+.blogButton :global(span),
+.blogButton {
+  color: var(--dark-primary) !important;
 }
 
 @media (max-width: 1200px) {
@@ -174,6 +178,11 @@
     width: 90%;
     max-width: 450px;
     margin: 0 auto;
+  }
+  .bottomGroup {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 

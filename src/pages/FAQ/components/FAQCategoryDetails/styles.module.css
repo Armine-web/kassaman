@@ -1,0 +1,130 @@
+.detailContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  min-height: 80vh;
+}
+
+.detailHeader {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.backButton {
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: var(--color-text) !important;
+  padding: 0 !important;
+  margin-bottom: 30px;
+}
+
+.backButton:hover {
+  color: var(--dark-primary) !important;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.headerIcon {
+  font-size: 32px;
+  color: var(--light-primary);
+}
+
+.categoryTitle {
+  font-family: var(--font-heading) !important;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 !important;
+  font-weight: 400 !important;
+}
+
+.customCollapse {
+  border-top: 1px solid #eee;
+}
+
+.qPanel {
+  border-bottom: 1px solid #eee !important;
+}
+
+.qText {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #000;
+}
+
+.aText {
+  color: #666;
+  line-height: 1.8;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.toggleIcon {
+  color: var(--light-primary);
+  font-size: 14px;
+}
+
+.error {
+  text-align: center;
+  padding: 100px;
+  font-family: var(--font-heading);
+}
+
+@media (max-width: 768px) {
+  .detailContainer {
+    padding: 20px 20px;
+  }
+
+  .detailHeader {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .categoryTitle {
+    font-size: 20px !important;
+    letter-spacing: 2px; 
+  }
+
+  .headerIcon {
+    font-size: 26px;
+  }
+
+  .qText {
+    font-size: 13px; 
+  }
+
+  .aText {
+    font-size: 14px; 
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleWrapper {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .categoryTitle {
+    font-size: 18px !important;
+    letter-spacing: 1.5px;
+  }
+
+  .backButton {
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+
+  
+  :global(.ant-collapse-header) {
+    padding: 16px 0 !important;
+  }
+}

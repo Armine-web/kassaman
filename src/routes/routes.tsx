@@ -12,6 +12,7 @@ import Checkout from '../pages/Checkout';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import FAQ from '../pages/FAQ';
+import FAQCategoryDetails from '../pages/FAQ/components/FAQCategoryDetails';
 import Blog from '../pages/Blog';
 import Account from '../pages/Account';
 import NotFound from '../pages/NotFound';
@@ -33,6 +34,7 @@ const AppRoutes = () => {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="faq" element={<FAQ />} />
+        <Route path="faq/:categoryId" element={<FAQCategoryDetails />} />
         <Route path="blog" element={<Blog />} />
         <Route path="blog/:slug" element={<Blog />} />
         <Route path="account" element={<Account />} />
