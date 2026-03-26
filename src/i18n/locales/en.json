@@ -822,5 +822,70 @@
       "success_msg": "Your inquiry has been sent. Our master jeweler will contact you shortly.",
       "error_msg": "Connection error. Please try again later."
     }
+  },
+  "checkoutPage": {
+    "header": "Secure Your Selection",
+    "yourSelection": "Your Selection",
+    "total": "Total Amount",
+    "boutiqueLocation": "Boutique Location",
+    "visitDetails": "Visit Details",
+    "contactTitle": "Contact Information",
+    "paymentMethod": "Payment Method",
+    "cash": "Cash at Boutique",
+    "card": "Card Payment (POS)",
+    "bankTransfer": "Bank Transfer",
+    "noItemsSelected": "Your selection is empty. Please add items from the catalog.",
+    "successMessage": "Booking received. Our concierge will contact you shortly.",
+    "errorMessage": "Something went wrong. Please try again or call us.",
+    "paypalRedirectNote": "You will be redirected to the PayPal secure portal to complete your payment.",
+    "bankTransferNote": "Please include your Order ID as the transfer reference. Your order will be processed once funds are received."
+  },
+  "labels": {
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "contactMethod": "Preferred Contact Method",
+    "telegram": "Telegram Username",
+    "email": "Email Address (Optional)",
+    "date": "Preferred Date",
+    "time": "Preferred Time",
+    "comment": "Special Requests or Notes",
+    "cardNumber": "Card Number",
+    "expiry": "Expiry Date",
+    "cvv": "CVV",
+    "bankName": "Bank",
+    "accountNumber": "Account Number",
+    "beneficiary": "Beneficiary"
+  },
+  "payment": {
+    "cash": "Cash at Boutique",
+    "card": "Credit Card",
+    "paypal": "PayPal",
+    "bank": "Bank Transfer"
+  },
+  "placeholders": {
+    "name": "Enter your full name",
+    "comment": "Tell us if you have specific size requirements..."
+  },
+  "validation": {
+    "required": "This field is required",
+    "requiredTelegram": "Please provide your @username",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidCard": "Please enter a valid 16-digit card number"
+  },
+  "bookingCheckout": {
+    "placeOrder": "Confirm Order",
+    "confirmButton": "Confirm Booking",
+    "consentText": "I agree to the processing of my personal data for the purpose of this booking."
+  },
+  "contactCheckout": {
+    "consentRequired": "Please accept the terms to proceed"
+  },
+  "actions": {
+    "remove": "Remove from selection"
+  },
+  "currency": {
+    "amd": "AMD",
+    "rub": "RUB",
+    "usd": "USD"
   }
 }

@@ -1,5 +1,6 @@
-import { Form, Button, Card, Avatar, Typography, Flex, Divider, Checkbox } from 'antd';
+import { Form, Button, Card, Avatar, Typography, Flex, Divider, Checkbox, message } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../store/hook';
 import {
   updateContactInfo,
@@ -20,6 +21,7 @@ const BookingPage = () => {
   const { t } = useTranslation();
   const [form] = Form.useForm();
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   const { selectedItems, contactInfo } = useAppSelector(state => state.booking);
 
@@ -33,6 +35,12 @@ const BookingPage = () => {
 
   const onFinish = (values: ContactInfo) => {
     console.log('Booking Data:', { products: selectedItems, contact: values });
+    if (selectedItems.length === 0) {
+      message.warning(t('checkout.noItemsSelected'));
+      return;
+    }
+
+    navigate('/checkout');
   };
 
   return (
