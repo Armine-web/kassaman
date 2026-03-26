@@ -823,6 +823,7 @@
       "error_msg": "Connection error. Please try again later."
     }
   },
+
   "checkoutPage": {
     "header": "Secure Your Selection",
     "yourSelection": "Your Selection",
@@ -887,5 +888,52 @@
     "amd": "AMD",
     "rub": "RUB",
     "usd": "USD"
+  },
+  "faqPage": {
+    "back": "Back to all categories",
+    "notFound": "Page Not Found",
+    "notFoundSubtitle": "The page you are looking for does not exist.",
+    "header": "Client Services & FAQ",
+    "searchPlaceholder": "What can we help you with?",
+    "searchAction": "Search our knowledge base...",
+    "noResults": "No results found for your search. Please try a different keyword.",
+    "sections": {
+      "shipping": {
+        "title": "Delivery & Logistics",
+        "q1": "What are the delivery options within Yerevan?",
+        "a1": "We provide complimentary white-glove delivery within Yerevan for all orders. Deliveries are typically completed within 24 hours of purchase.",
+        "q2": "Do you offer international shipping?",
+        "a2": "Yes, we ship worldwide via DHL Express. Shipping times and duties depend on the destination country, usually ranging from 7 to 14 business days.",
+        "q3": "Is my shipment insured during transit?",
+        "a3": "Every shipment is fully insured by our Maison until it reaches your hands. For security, a signature from an adult is strictly required upon delivery."
+      },
+      "jewelry": {
+        "title": "Sizing & Care",
+        "q1": "How do I care for my boutique jewelry?",
+        "a1": "To maintain brilliance, avoid contact with perfumes, lotions, and water. Use the soft microfiber cloth included in your boutique box for gentle cleaning.",
+        "q2": "What if I don't know my ring size?",
+        "a2": "We recommend a professional fitting at our boutique. Alternatively, you can request a physical multisizer to be delivered to your home.",
+        "q3": "Do you offer professional cleaning services?",
+        "a3": "We offer a complimentary annual 'Spa Service' for all our creations, including ultrasonic cleaning and stone setting checks to ensure a lifetime of brilliance."
+      },
+      "warranty": {
+        "title": "Warranty & Returns",
+        "q1": "What is your return policy?",
+        "a1": "We offer exchanges or boutique credit within 14 days of purchase, provided the item is unworn and in its original signature packaging.",
+        "q2": "Is my jewelry covered by a warranty?",
+        "a2": "Every creation comes with a 24-month international warranty covering manufacturing defects. It does not cover accidental damage or natural wear.",
+        "q3": "How do I prove the authenticity of my piece?",
+        "a3": "Each creation is accompanied by a uniquely numbered Certificate of Authenticity. For diamonds over 0.30ct, an official GIA or IGI report is also provided."
+      },
+      "booking": {
+        "title": "Boutique Experience",
+        "q1": "Why should I book a private appointment?",
+        "a1": "A private appointment ensures a dedicated consultant and exclusive access to our entire collection, including limited edition pieces.",
+        "q2": "Can I request a custom design during my visit?",
+        "a2": "Absolutely. Our master jewelers specialize in bespoke creations. You can discuss your vision with our designers during your scheduled consultation.",
+        "q3": "Do you offer gift services for special occasions?",
+        "a3": "Certainly. Every purchase arrives in our signature gift wrapping. You may also include a hand-written personal message on our boutique stationery."
+      }
+    }
   }
 }
