@@ -5,12 +5,12 @@ import ContactUsHero from './components/ContactUsHero';
 
 const Contact = () => {
   return (
-    <div className="contact-page">
+    <section className='contactPage'>
       <ContactBanner />
       <ContactInfo />
       <ContactUsHero />
       <ContactForm />
-    </div>
+    </section>
   );
 };
 

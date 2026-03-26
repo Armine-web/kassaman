@@ -710,7 +710,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: false,
   },
   {
-    id: '41',
+    id: '42',
     nameKey: 'tourmalineRoseGoldSignature',
     category: 'earrings',
     collections: ['signature'],
@@ -726,7 +726,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: false,
   },
   {
-    id: '42',
+    id: '43',
     nameKey: 'ovalSapphireHarmony',
     category: 'earrings',
     collections: ['signature'],
@@ -742,7 +742,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: false,
   },
   {
-    id: '43',
+    id: '44',
     nameKey: 'rubellitePearlMasterpiece',
     category: 'earrings',
     collections: ['signature'],
@@ -758,7 +758,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: false,
   },
   {
-    id: '44',
+    id: '45',
     nameKey: 'rubellitePearlExclusive',
     category: 'earrings',
     collections: ['signature'],
@@ -775,7 +775,7 @@ export const MOCK_PRODUCTS: Product[] = [
   },
 
   {
-    id: '45',
+    id: '46',
     nameKey: 'tigerEyeSilverNecklace',
     category: 'necklaces',
     collections: ['signature'],
@@ -791,7 +791,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: true,
   },
   {
-    id: '46',
+    id: '47',
     nameKey: 'yerevanCollectionNecklace',
     category: 'necklaces',
     collections: ['timeless'],
@@ -807,7 +807,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: true,
   },
   {
-    id: '47',
+    id: '48',
     nameKey: 'ornamentSilverBracelet',
     category: 'bracelets',
     collections: ['timeless'],
@@ -823,7 +823,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: true,
   },
   {
-    id: '48',
+    id: '49',
     nameKey: 'tigerEye925Necklace',
     category: 'necklaces',
     collections: ['timeless'],
@@ -839,7 +839,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: true,
   },
   {
-    id: '49',
+    id: '50',
     nameKey: 'yerevanOnyxCufflinks',
     category: 'cufflinks',
     collections: ['timeless'],
@@ -855,7 +855,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: true,
   },
   {
-    id: '50',
+    id: '51',
     nameKey: 'baguetteBracelet',
     category: 'bracelets',
     collections: ['timeless'],
@@ -871,7 +871,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isHeroBanner: true,
   },
   {
-    id: '51',
+    id: '52',
     nameKey: 'baguetteRing',
     category: 'rings',
     collections: ['timeless'],

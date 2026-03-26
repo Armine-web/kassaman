@@ -35,11 +35,10 @@ const ContactForm = () => {
             <ContactFields />
 
             <Form.Item
-              label={t('contact.topic')}
               name="topic"
               rules={[requiredRule(t('contact.required'))]}
             >
-              <Select placeholder={t('contact.selectTopic')} className={styles.contactFormSelect}>
+              <Select placeholder={t('contact.selectTopic')} className={styles.contactFormSelect} size="large">
                 {' '}
                 <Select.Option value="general">{t('contact.topicGeneral')}</Select.Option>{' '}
                 <Select.Option value="booking">{t('contact.topicBooking')}</Select.Option>{' '}
@@ -49,11 +48,10 @@ const ContactForm = () => {
             </Form.Item>
 
             <Form.Item
-              label={t('contact.message')}
               name="message"
               rules={[requiredRule(t('contact.required'))]}
             >
-              <Input.TextArea rows={4} />
+              <Input.TextArea rows={4} placeholder={t('contact.message')}/>
             </Form.Item>
 
             <Form.Item

@@ -1,0 +1,18 @@
+.accountSection {
+  padding: 120px;
+}
+
+.accountWrapper {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.loginPrompt {
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}

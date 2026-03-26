@@ -1,0 +1,12 @@
+.googleLogin {
+  width: 200px;
+}
+
+
+div[role="button"] {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+

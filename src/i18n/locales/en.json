@@ -149,7 +149,8 @@
     "contactDetails": "Please fill in your contact details.",
     "confirmButton": "Confirm Booking",
     "consentText": "I agree to processing of personal data",
-    "remove": "Remove"
+    "remove": "Remove",
+    "book": "Book an Item"
   },
   "checkout": {
     "title": "Checkout",
@@ -209,7 +210,18 @@
   },
   "account": {
     "title": "My Account",
-    "description": "Manage your account details."
+    "bookings": "Bookings",
+    "wishlist": "Wishlist",
+    "noBookings": "No bookings yet",
+    "noWishlist": "No saved items",
+    "notLoggedIn": "Please log in",
+    "remove": "Remove",
+    "save": "Save",
+    "book": "Book",
+    "status": {
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled"
+    }
   },
   "notFound": {
     "title": "Page Not Found",

@@ -44,22 +44,12 @@
   grid-row: 2;
 }
 
-.contactFormSelect:hover,
-.contactFormSelect:focus,
-.contactFormSelect:active,
-.contactFormSelect:focus-within {
-  border-color: var(--dark-primary) !important;
-  box-shadow: none !important;
-}
-
 .customCheckbox {
   display: flex;
   align-items: center;
   cursor: pointer;
   gap: 8px;
-  font-size: var(--text-regular) !important;
   font-family: var(--font-body) !important;
-  color: var(--dark-primary) !important;
   letter-spacing: var(--letter-spacing-small) !important;
   font-weight: 400 !important;
   line-height: 1.5 !important;

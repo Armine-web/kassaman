@@ -2,18 +2,23 @@ import type { ThemeConfig } from 'antd';
 
 export const antdTheme: ThemeConfig = {
   token: {
-    colorPrimary: 'var(--light-primary)',
+    colorPrimary: 'transparent',
     fontFamily: 'var(--font-body)',
     controlOutline: 'transparent',
     controlOutlineWidth: 0,
+    colorBgContainer: 'var(--light-primary)',
+    colorBgElevated: 'var(--light-primary)',
+    colorTextPlaceholder: '#7c7a7a',
+    colorText: '#7c7a7a',
   },
 
   components: {
     Input: {
       activeShadow: 'none',
       colorBorder: 'var(--light-primary)',
-      activeBorderColor: 'var(--dark-primary)',
-      hoverBorderColor: 'var(--dark-primary)',
+      activeBorderColor: 'var(--light-primary)',
+      hoverBorderColor: 'var(--light-primary)',
+      colorBgContainer: 'var(--light-primary)',
     },
 
     Checkbox: {
@@ -21,7 +26,16 @@ export const antdTheme: ThemeConfig = {
       colorPrimaryHover: 'var(--light-primary)',
       borderRadiusSM: 2,
       controlInteractiveSize: 18,
-      colorBorder: 'var(--dark-primary)',
+      colorBorder: 'var(--light-primary)',
+      colorBgContainer: 'var(--light-primary)',
+    },
+
+    Select: {
+      colorBorder: 'var(--light-primary)',
+      activeBorderColor: 'var(--light-primary)',
+      hoverBorderColor: 'var(--light-primary)',
+      colorBgContainer: 'var(--light-primary)',
+      controlItemBgActive: 'var(--light-primary)',
     },
 
     Form: {
@@ -48,6 +62,10 @@ export const antdTheme: ThemeConfig = {
       defaultActiveBorderColor: 'transparent',
 
       colorTextPlaceholder: 'inherit',
+
+      colorLink: '#8f6c2c',
+      colorLinkHover: '#c5a059',
+      colorLinkActive: '#c5a059',
     },
 
     Pagination: {

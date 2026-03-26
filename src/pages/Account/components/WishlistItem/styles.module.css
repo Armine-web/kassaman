@@ -1,0 +1,32 @@
+.accountCard {
+  padding: 30px;
+  border: none;
+  margin-top: 40px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.productItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.productAvatar {
+  background-color: rgba(243, 243, 241, 0.8);
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.loginPrompt {
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.accountDivider{
+  border-top-width: 3px;
+}
