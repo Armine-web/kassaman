@@ -38,7 +38,7 @@ const ContactSection = ({ form, t }: ContactProps) => {
           <Select
             options={[...CONTACT_METHODS]}
             className={styles.minimalSelect}
-            variant="borderless"
+            // variant="borderless"
           />
         </Form.Item>
       </div>

@@ -6,8 +6,8 @@ export const antdTheme: ThemeConfig = {
     fontFamily: 'var(--font-body)',
     controlOutline: 'transparent',
     controlOutlineWidth: 0,
-    colorBgContainer: 'var(--light-primary)',
-    colorBgElevated: 'var(--light-primary)',
+    colorBgContainer: '#fff',
+    colorBgElevated: '#fff',
     colorTextPlaceholder: '#7c7a7a',
     colorText: '#7c7a7a',
   },
@@ -18,7 +18,7 @@ export const antdTheme: ThemeConfig = {
       colorBorder: 'var(--light-primary)',
       activeBorderColor: 'var(--light-primary)',
       hoverBorderColor: 'var(--light-primary)',
-      colorBgContainer: 'var(--light-primary)',
+      colorBgContainer: '#fff',
     },
 
     Checkbox: {
@@ -27,15 +27,15 @@ export const antdTheme: ThemeConfig = {
       borderRadiusSM: 2,
       controlInteractiveSize: 18,
       colorBorder: 'var(--light-primary)',
-      colorBgContainer: 'var(--light-primary)',
+      colorBgContainer: '#fff',
     },
 
     Select: {
       colorBorder: 'var(--light-primary)',
       activeBorderColor: 'var(--light-primary)',
       hoverBorderColor: 'var(--light-primary)',
-      colorBgContainer: 'var(--light-primary)',
-      controlItemBgActive: 'var(--light-primary)',
+      colorBgContainer: '#fff',
+      controlItemBgActive: '#fff',
     },
 
     Form: {

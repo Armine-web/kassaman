@@ -81,6 +81,7 @@ const CheckoutPage = () => {
               customer: { preferredContact: 'phone' },
               paymentMethod: 'cash',
             }}
+            className={styles.checkoutForm}
           >
             <ContactSection form={form} t={t} />
             <VisitDetailsSection t={t} />

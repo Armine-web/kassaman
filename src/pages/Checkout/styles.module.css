@@ -73,6 +73,11 @@
   display: inline-block;
 }
 
+.checkoutForm{
+  padding-bottom: 40px;
+}
+
+
 @media (max-width: 1100px) {
   .checkoutWrapper {
     grid-template-columns: 1fr;
