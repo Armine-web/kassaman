@@ -6,10 +6,9 @@
 }
 
 .mobileUserText {
-  font-size: var(--fs-100);
+  font-size: var(--light-primary);
   font-family: var(--font-heading);
-  color: var(--color-text);
-  letter-spacing: var(--ls-200);
+  color: var(--light-primary);
   text-transform: uppercase;
 }
 

@@ -1,6 +1,6 @@
 .baseButton {
   font-family: var(--font-body);
-  font-size: var(--fs-200);
+  font-size: var(--text-regular);
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -15,9 +15,10 @@
   transition: all 0.25s ease;
 }
 
+
 .shadow {
   color: var(--color-text-inverse);
-  font-size: var(--fs-200);
+  font-size: var(--text-regular);
   font-weight: 500;
   border-radius: 2px;
   padding: 8px 20px;

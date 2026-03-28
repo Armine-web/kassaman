@@ -7,12 +7,17 @@ const BaseButton = ({
   children,
   variant = 'link',
   className = '',
+  underlineColor = 'var(--color-text)',
   ...rest
 }: BaseButtonProps) => {
   const buttonClasses = [styles.baseButton, styles[variant], className].join(' ');
 
+   const style = variant === 'link' ? {
+    backgroundImage: `linear-gradient(to right, ${underlineColor} 50%, transparent 50%)`
+  } : {};
+
   return (
-    <button className={buttonClasses} onClick={onClick} {...rest}>
+    <button className={buttonClasses} onClick={onClick} style={style} {...rest}>
       {children ?? label}
     </button>
   );

@@ -7,4 +7,6 @@ export type AppDrawerProps = {
   onClose: () => void;
   className?: string;
   children: ReactNode;
+  backgroundColor?: string;
+  closeIconColor?: string;
 };

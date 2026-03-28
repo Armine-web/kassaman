@@ -9,7 +9,7 @@ const MenuDrawer = ({ open, onClose }: MenuDrawerProps) => {
   const { t } = useTranslation();
 
   return (
-    <AppDrawer side="left" title="" open={open} onClose={onClose}>
+    <AppDrawer side="left" title="" open={open} onClose={onClose} backgroundColor={'rgba(65, 64, 64, 0.48)'} className={styles.myDrawer} closeIconColor={'#fff'}>
       <MainMenu onClick={onClose} isDrawer />
       <div className={styles.drawerUser} onClick={onClose}>
         <User />
