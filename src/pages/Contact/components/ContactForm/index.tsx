@@ -1,14 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import formImg from '../../../../assets/img/contact/form-img.png';
 import styles from './styles.module.css';
-import { App } from 'antd';
+import { App} from 'antd';
 import { Form, Button, Checkbox, Input, Select } from 'antd';
 import ContactFields from '../../../../components/common/Contact/components/ContactFields';
 import { postContact } from '../../../../api/contact';
 import { requiredRule } from '../../../../components/common/Contact/validation';
 import type { ContactRequest } from '../../../../components/common/Contact/types';
+import useScrollReveal from '../../../../hooks/useScrollReveal';
+
 
 const ContactForm = () => {
+  useScrollReveal();
   const { t } = useTranslation();
   const [form] = Form.useForm<ContactRequest>();
   const { message } = App.useApp();
@@ -31,14 +34,23 @@ const ContactForm = () => {
         <hr className={styles.contactFormDecstopHr} />
 
         <div className={styles.contactFormWrapper}>
+          <div className={styles.contactFormImageWrapper}>
+            <img
+              src={formImg}
+              alt="Contact Us"
+              className={`${styles.contactFormImage} scrollReveal`}
+            />
+          </div>
           <Form<ContactRequest> form={form} layout="vertical" onFinish={onFinish}>
+            <h2 className={styles.formHeading}>{t('contact.formHeading')}</h2>
             <ContactFields />
 
-            <Form.Item
-              name="topic"
-              rules={[requiredRule(t('contact.required'))]}
-            >
-              <Select placeholder={t('contact.selectTopic')} className={styles.contactFormSelect} size="large">
+            <Form.Item name="topic" rules={[requiredRule(t('contact.required'))]}>
+              <Select
+                placeholder={t('contact.selectTopic')}
+                className={styles.contactFormSelect}
+                size="large"
+              >
                 {' '}
                 <Select.Option value="general">{t('contact.topicGeneral')}</Select.Option>{' '}
                 <Select.Option value="booking">{t('contact.topicBooking')}</Select.Option>{' '}
@@ -47,11 +59,8 @@ const ContactForm = () => {
               </Select>
             </Form.Item>
 
-            <Form.Item
-              name="message"
-              rules={[requiredRule(t('contact.required'))]}
-            >
-              <Input.TextArea rows={4} placeholder={t('contact.message')}/>
+            <Form.Item name="message" rules={[requiredRule(t('contact.required'))]}>
+              <Input.TextArea rows={4} placeholder={t('contact.message')} />
             </Form.Item>
 
             <Form.Item
@@ -66,10 +75,6 @@ const ContactForm = () => {
               {t('contact.submit')}
             </Button>
           </Form>
-
-          <div className={styles.contactFormImageWrapper}>
-            <img src={formImg} alt="Contact Us" className={styles.contactFormImage} />
-          </div>
         </div>
 
         <hr className={styles.contactFormDecstopHr} />

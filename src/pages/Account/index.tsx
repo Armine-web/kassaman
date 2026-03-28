@@ -26,15 +26,14 @@ const Account = () => {
   return (
     <section className="container">
       <div className={styles.accountSection}>
-        <Title level={2} className={styles.accountTitle}>
-          {t('account.title')}
-        </Title>
+        <div className={styles.accountCardWrapper}>
+          <Title level={4}>
+          {t('account.hello')}, {user?.name}
+        </Title>{' '}
+        <AccountCard />
+        </div>
+        
         <div className={styles.accountWrapper}>
-          <Flex vertical gap="small" align="center">
-            <Line thin />
-            <Line />
-          </Flex>
-          <AccountCard />
           <Flex vertical gap="small" align="center">
             <Line thin />
             <Line />

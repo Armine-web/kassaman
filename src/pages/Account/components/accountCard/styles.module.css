@@ -1,12 +1,13 @@
 .accountCard{
-  margin-top: 60px;
+  width: 300px;
   background-color: transparent;
   border: none;
   border-left: 1px solid rgba(189, 189, 188, 0.8);
   padding-left: 30px;
   border-radius: 0;
+  margin-bottom: 60px;
 }
 
 .changeField {
-  max-width: 85%;
+  max-width: 65%;
 }

@@ -22,7 +22,7 @@ const WishlistItem = () => {
                 <>
                   <div key={item.id} className={styles.productItem}>
                     <Flex align="start" vertical gap="middle">
-                      <p>{item.title}</p>
+                      <p className={styles.itemTitle}>{item.title}</p>
                       <Avatar shape="square" src={item.image} className={styles.productAvatar} />
                     </Flex>
                     <Flex gap="middle" vertical>
@@ -31,7 +31,7 @@ const WishlistItem = () => {
                         <strong>{t('product.availability')}</strong>{' '}
                         {item.inStock ? t('product.inStock') : t('product.outOfStock')}
                       </div>
-                      <p>
+                      <p className={styles.itemPrice}>
                         {item.price} {item.currency}
                       </p>
                       <Flex gap="middle">

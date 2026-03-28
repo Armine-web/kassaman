@@ -26,6 +26,7 @@
 
 .contactInfoLinks:hover {
   opacity: 0.8;
+  color: var(--dark-primary);
 }
 
 .contactInfoLinks:hover::after {

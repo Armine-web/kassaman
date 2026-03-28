@@ -4,6 +4,10 @@
 
 .bookingTitle {
   padding-bottom: 60px;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300 !important;
 }
 
 .bookingWrapper {
@@ -157,27 +161,26 @@ Button > .productControlsText:hover {
   .firstItem {
     align-items: flex-start;
     grid-column: span 1;
-
   }
 
-  .productControlsWrapper{
+  .productControlsWrapper {
     justify-self: flex-end;
   }
 
-  .contactFormButton{
+  .contactFormButton {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
   }
 
-.productTitle {
-  position: absolute; 
-  top: -5px;
-  font-size: 0.8rem;
-}
+  .productTitle {
+    position: absolute;
+    top: -5px;
+    font-size: 0.8rem;
+  }
 
-.bookingTitle {
-  font-size: 1rem;
-}
+  .bookingTitle {
+    font-size: 1rem;
+  }
 }

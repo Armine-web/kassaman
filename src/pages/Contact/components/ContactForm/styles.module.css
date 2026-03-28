@@ -17,13 +17,22 @@
 .contactFormWrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   align-items: start;
-  gap: 80px;
+  gap: 160px;
 }
 
 .contactFormImageWrapper {
   justify-self: end;
+}
+
+.formHeading{
+  font-family: var(--font-heading);
+  font-size: var(--text-large);
+  letter-spacing: var(--letter-spacing-medium);
+  font-weight: 300;
+  line-height: 1.2;
+  padding-bottom: 40px;
 }
 
 .contactForm {
@@ -154,9 +163,15 @@
 
 @media (max-width: 1024px) {
   .contactFormWrapper {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     gap: 80px;
+  }
+
+  .contactFormWrapper > * {
+    width: 80%;
+    margin: auto;
   }
 
   .contactFormImageWrapper {
@@ -190,6 +205,11 @@
   .contactForm {
     width: 100%;
     padding: 40px 20px;
+  }
+
+  .formHeading {
+    font-size: 20px;
+    padding-bottom: 24px;
   }
 }
 

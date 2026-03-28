@@ -12,6 +12,13 @@
   gap: 20px;
 }
 
+:global(.ant-card-head-title) {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 2rem;
+  color:#8f6c2c;
+}
+
 .productAvatar {
   background-color: rgba(243, 243, 241, 0.8);
   padding: 20px;
@@ -29,4 +36,27 @@
 
 .accountDivider{
   border-top-width: 3px;
+}
+
+.itemTitle{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-heading);
+}
+
+.itemPrice {
+  font-size: 16px;
+  color: red;
+}
+
+@media (max-width: 630px) {
+  .productItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .productAvatar {
+    width: 100%;
+    height: auto;
+  }
 }

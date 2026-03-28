@@ -21,7 +21,7 @@ const BookingItem = () => {
                 <div key={item.id}>
                   <div className={styles.productItem}>
                     <Flex align='start' vertical gap="middle">
-                      <div>{item.title}</div>{' '}
+                      <div className={styles.bookingItemTitle}>{item.title}</div>{' '}
                       <Avatar shape="square" src={item.image} className={styles.productAvatar} />
                     </Flex>
                     <Flex  vertical gap="large">
@@ -31,7 +31,7 @@ const BookingItem = () => {
                         {item.inStock ? t('product.inStock') : t('product.outOfStock')}
                       </div>
                       <div>
-                        <Text strong>
+                        <Text strong className={styles.bookingItemPrice}>
                           {item.price} {item.currency}
                         </Text>
                       </div>

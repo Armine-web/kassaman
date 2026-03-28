@@ -22,17 +22,19 @@
 .contactUsHero p {
   max-width: 800px;
   margin: 0 auto;
+  font-weight: 300;
+  font-family: var(--font-heading);
 }
 
 .contactLogo {
   width: 150px;
   position: absolute;
-  top: 54%;
+  top: -104px;
   right: 50%;
   transform: translate(50%, 50%);
 }
 
-@media (max-width: 627px) {
+@media (max-width: 763px) {
   .contactUsHeroContent {
     margin-top: 80px;
     padding: 40px 15px;
@@ -40,7 +42,7 @@
   }
   .contactLogo {
     width: 120px;
-    top: 46%;
+    top: -83px;
   }
 }
 
@@ -50,15 +52,11 @@
     padding: 40px 15px;
     font-size: var(--text-small);
   }
-
-   .contactLogo {
-    top: 42%;
-  }
 }
 
 @media (max-width: 386px) {
   .contactLogo {
     width: 100px;
-    top: 58%;
+    top: -70px;
   }
 }
