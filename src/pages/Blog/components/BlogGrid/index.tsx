@@ -2,7 +2,7 @@ import { Row, Col } from 'antd';
 import { motion } from 'framer-motion';
 import BlogCard from '../BlogCard';
 import type { Props } from './types';
-import { imageScaleReveal, staggerContainer } from '../../../../animation';
+import { imageScaleReveal, staggerContainer } from '../../../../animation.ts';
 
 export default function BlogGrid({ posts }: Props): JSX.Element {
   return (

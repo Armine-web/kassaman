@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { WORKSHOP_IMAGES } from './const';
 import { getWorkshopContent } from './utils';
-import { fadeInUp, imageReveal, stagger } from '../../../animation';
+import { fadeInUp, imageReveal, stagger } from '../../../animation.ts';
 import styles from './styles.module.css';
 import type { GalleryItem } from './types';
 
@@ -17,7 +17,6 @@ const WorkshopSection = () => {
   return (
     <section className={styles.workshopSection}>
       <div className={styles.container}>
-       
         <motion.div
           className={styles.header}
           initial="hidden"
@@ -30,7 +29,6 @@ const WorkshopSection = () => {
           {description && <p className={styles.description}>{description}</p>}
         </motion.div>
 
-       
         <motion.div
           className={styles.gridContainer}
           initial="hidden"

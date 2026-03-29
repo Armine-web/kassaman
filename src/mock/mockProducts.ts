@@ -1,36 +1,36 @@
 import type { Product } from '../types/product';
-import bracelet1 from '../assets/img/bracelets/bracelet1.jpg';
-import bracelet2 from '../assets/img/bracelets/bracelet2.jpg';
-import bracelet3 from '../assets/img/bracelets/bracelet3.jpg';
-import bracelet4 from '../assets/img/bracelets/bracelet4.jpg';
-import bracelet5 from '../assets/img/bracelets/bracelet5.jpg';
-import bracelet6 from '../assets/img/bracelets/bracelet6.jpg';
-import bracelet7 from '../assets/img/bracelets/bracelet7.jpg';
-import bracelet8 from '../assets/img/bracelets/bracelet8.jpg';
-import cufflinks1 from '../assets/img/cufflinks/cufflinks1.jpg';
-import cufflinks2 from '../assets/img/cufflinks/cufflinks2.jpg';
-import cufflinks3 from '../assets/img/cufflinks/cufflinks3.jpg';
-import cufflinks4 from '../assets/img/cufflinks/cufflinks4.jpg';
-import cufflinks5 from '../assets/img/cufflinks/cufflinks5.jpg';
-import cufflinks6 from '../assets/img/cufflinks/cufflinks6.jpg';
-import cufflinks7 from '../assets/img/cufflinks/cufflinks7.jpg';
-import cufflinks8 from '../assets/img/cufflinks/cufflinks8.jpg';
-import cufflinks9 from '../assets/img/cufflinks/cufflinks9.jpg';
-import necklace1 from '../assets/img/necklaces/necklace1.jpg';
-import necklace2 from '../assets/img/necklaces/necklace2.jpg';
-import necklace3 from '../assets/img/necklaces/necklace3.jpg';
-import necklace4 from '../assets/img/necklaces/necklace4.jpg';
-import necklace5 from '../assets/img/necklaces/necklace5.jpg';
-import necklace6 from '../assets/img/necklaces/necklace6.jpg';
-import ring1 from '../assets/img/rings/ring1.jpg';
-import ring2 from '../assets/img/rings/ring2.jpg';
-import ring3 from '../assets/img/rings/ring3.jpg';
-import ring4 from '../assets/img/rings/ring4.jpg';
-import ring5 from '../assets/img/rings/ring5.jpg';
-import ring6 from '../assets/img/rings/ring6.jpg';
-import ring7 from '../assets/img/rings/ring7.jpg';
-import ring8 from '../assets/img/rings/ring8.jpg';
-import ring10 from '../assets/img/rings/ring10.jpg';
+import braceletPearl from '../assets/img/bracelets/braceletPearl.jpg';
+import braceletLuxuary from '../assets/img/bracelets/braceletLuxuary.jpg';
+import braceletBrown from '../assets/img/bracelets/braceletBrown.jpg';
+import braceletCross from '../assets/img/bracelets/braceletCross.jpg';
+import braceletBeautiful from '../assets/img/bracelets/braceletBeautiful.jpg';
+import braceletSilver from '../assets/img/bracelets/braceletSilver.jpg';
+import braceletMix from '../assets/img/bracelets/braceletMix.jpg';
+import braceletDimond from '../assets/img/bracelets/braceletDimond.jpg';
+import cufflinksWoman from '../assets/img/cufflinks/cufflinksWoman.jpg';
+import cufflinksRed from '../assets/img/cufflinks/cufflinksRed.jpg';
+import cufflinksUnique from '../assets/img/cufflinks/cufflinksUnique.jpg';
+import cufflinksWhite from '../assets/img/cufflinks/cufflinksWhite.jpg';
+import cufflinksGold from '../assets/img/cufflinks/cufflinksGold.jpg';
+import cufflinksBlue from '../assets/img/cufflinks/cufflinksBlue.jpg';
+import cufflinksFlower from '../assets/img/cufflinks/cufflinksFlower.jpg';
+import cufflinksSilver from '../assets/img/cufflinks/cufflinksSilver.jpg';
+import cufflinksNice from '../assets/img/cufflinks/cufflinksNice.jpg';
+import necklaceWoman from '../assets/img/necklaces/necklaceWoman.jpg';
+import necklaceArmenia from '../assets/img/necklaces/necklaceArmenia.jpg';
+import necklaceLuxuary from '../assets/img/necklaces/necklaceLuxuary.jpg';
+import necklaceCross from '../assets/img/necklaces/necklaceCross.jpg';
+import necklaceSilver from '../assets/img/necklaces/necklaceSilver.jpg';
+import necklaceBest from '../assets/img/necklaces/necklaceBest.jpg';
+import ringMan from '../assets/img/rings/ringMan.jpg';
+import ringGoldSilver from '../assets/img/rings/ringGoldSilver.jpg';
+import ringSilver from '../assets/img/rings/ringSilver.jpg';
+import ringEmerald from '../assets/img/rings/ringEmerald.jpg';
+import ringBlesk from '../assets/img/rings/ringBlesk.jpg';
+import ringGold from '../assets/img/rings/ringGold.jpg';
+import ringUnique from '../assets/img/rings/ringUnique.jpg';
+import ringLuxuary from '../assets/img/rings/ringLuxuary.jpg';
+import ringSignature from '../assets/img/rings/ringSignature.jpg';
 import acvamarinEarring from '../assets/img/earrings/acvamarinEarring.jpg';
 import beautifulEarring from '../assets/img/earrings/beautifulEarrings.jpg';
 import blackPearlEarring from '../assets/img/earrings/blackPearlEarring.jpg';
@@ -62,12 +62,12 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 3500,
     currency: 'USD',
-    images: [bracelet1, bracelet1, bracelet1, bracelet1],
+    images: [braceletPearl, braceletPearl, braceletPearl, braceletPearl],
     inStock: true,
     isNew: true,
     quantity: 1,
     isHeroBanner: false,
-  },
+  }, 
   {
     id: '2',
     nameKey: 'platinumSignatureBracelet',
@@ -78,7 +78,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 250,
     currency: 'USD',
-    images: [bracelet2, bracelet2, bracelet2, bracelet2],
+    images: [braceletLuxuary],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -94,7 +94,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 3100,
     currency: 'USD',
-    images: [bracelet3, bracelet3, bracelet3, bracelet3],
+    images: [braceletBrown, braceletBrown, braceletBrown, braceletBrown],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -110,7 +110,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 120,
     currency: 'USD',
-    images: [bracelet4, bracelet4, bracelet4, bracelet4],
+    images: [braceletCross],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -126,7 +126,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 100,
     currency: 'USD',
-    images: [bracelet5, bracelet5, bracelet5, bracelet5],
+    images: [braceletBeautiful, braceletBeautiful, braceletBeautiful, braceletBeautiful],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -142,7 +142,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 1700,
     currency: 'USD',
-    images: [bracelet6, bracelet6, bracelet6, bracelet6],
+    images: [braceletSilver, braceletSilver, braceletSilver, braceletSilver],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -158,7 +158,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 175,
     currency: 'USD',
-    images: [bracelet7, bracelet7, bracelet7, bracelet7],
+    images: [braceletMix, braceletMix, braceletMix, braceletMix],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -174,7 +174,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 6200,
     currency: 'USD',
-    images: [bracelet8, bracelet8, bracelet8, bracelet8],
+    images: [braceletDimond, braceletDimond, braceletDimond, braceletDimond],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -190,7 +190,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 320,
     currency: 'USD',
-    images: [cufflinks1, cufflinks1, cufflinks1, cufflinks1],
+    images: [cufflinksWoman, cufflinksWoman, cufflinksWoman, cufflinksWoman],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -206,7 +206,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 130,
     currency: 'USD',
-    images: [cufflinks2, cufflinks2, cufflinks2, cufflinks2],
+    images: [cufflinksRed, cufflinksRed, cufflinksRed, cufflinksRed],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -222,7 +222,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 120,
     currency: 'USD',
-    images: [cufflinks3, cufflinks3, cufflinks3, cufflinks3],
+    images: [cufflinksUnique, cufflinksUnique, cufflinksUnique, cufflinksUnique],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -238,7 +238,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 200,
     currency: 'USD',
-    images: [cufflinks4, cufflinks4, cufflinks4, cufflinks4],
+    images: [cufflinksWhite, cufflinksWhite, cufflinksWhite, cufflinksWhite],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -254,7 +254,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 2100,
     currency: 'USD',
-    images: [cufflinks5, cufflinks5, cufflinks5, cufflinks5],
+    images: [cufflinksGold, cufflinksGold, cufflinksGold, cufflinksGold],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -270,7 +270,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 110,
     currency: 'USD',
-    images: [cufflinks6, cufflinks6, cufflinks6, cufflinks6],
+    images: [cufflinksBlue, cufflinksBlue, cufflinksBlue, cufflinksBlue],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -286,7 +286,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 110,
     currency: 'USD',
-    images: [cufflinks7, cufflinks7, cufflinks7, cufflinks7],
+    images: [cufflinksFlower, cufflinksFlower, cufflinksFlower, cufflinksFlower],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -302,7 +302,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 400,
     currency: 'USD',
-    images: [cufflinks8, cufflinks8, cufflinks8, cufflinks8],
+    images: [cufflinksSilver, cufflinksSilver, cufflinksSilver, cufflinksSilver],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -318,7 +318,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 220,
     currency: 'USD',
-    images: [cufflinks9, cufflinks9, cufflinks9, cufflinks9],
+    images: [cufflinksNice, cufflinksNice, cufflinksNice, cufflinksNice],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -334,7 +334,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 260,
     currency: 'USD',
-    images: [necklace1, necklace1, necklace1, necklace1],
+    images: [necklaceWoman, necklaceWoman, necklaceWoman, necklaceWoman],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -350,7 +350,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 320,
     currency: 'USD',
-    images: [necklace2, necklace2, necklace2, necklace2],
+    images: [necklaceArmenia, necklaceArmenia, necklaceArmenia, necklaceArmenia],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -366,7 +366,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 320,
     currency: 'USD',
-    images: [necklace3, necklace3, necklace3, necklace3],
+    images: [necklaceLuxuary, necklaceLuxuary, necklaceLuxuary, necklaceLuxuary],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -382,7 +382,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 350,
     currency: 'USD',
-    images: [necklace4, necklace4, necklace4 , necklace4],
+    images: [necklaceCross, necklaceCross, necklaceCross, necklaceCross],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -398,7 +398,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 750,
     currency: 'USD',
-    images: [necklace5, necklace5, necklace5, necklace5],
+    images: [necklaceSilver, necklaceSilver, necklaceSilver, necklaceSilver],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -414,7 +414,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 350,
     currency: 'USD',
-    images: [necklace6, necklace6, necklace6, necklace6],
+    images: [necklaceBest, necklaceBest, necklaceBest, necklaceBest],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -430,7 +430,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 2800,
     currency: 'USD',
-    images: [ring1, ring1, ring1, ring1],
+    images: [ringMan, ringMan, ringMan, ringMan],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -446,7 +446,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 2200,
     currency: 'USD',
-    images: [ring2, ring2, ring2, ring2],
+    images: [ringGoldSilver, ringGoldSilver, ringGoldSilver, ringGoldSilver],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -462,7 +462,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 200,
     currency: 'USD',
-    images: [ring3, ring3, ring3, ring3,],
+    images: [ringSilver, ringSilver, ringSilver, ringSilver,],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -478,7 +478,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 6000,
     currency: 'USD',
-    images: [ring4, ring4, ring4, ring4],
+    images: [ringEmerald, ringEmerald, ringEmerald, ringEmerald],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -494,7 +494,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 350,
     currency: 'USD',
-    images: [ring5, ring5, ring5, ring5],
+    images: [ringBlesk, ringBlesk, ringBlesk, ringBlesk],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -510,7 +510,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 800,
     currency: 'USD',
-    images: [ring6, ring6, ring6, ring6],
+    images: [ringGold, ringGold, ringGold, ringGold],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -526,7 +526,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 700,
     currency: 'USD',
-    images: [ring7, ring7, ring7, ring7],
+    images: [ringUnique, ringUnique, ringUnique, ringUnique],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -542,7 +542,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 1200,
     currency: 'USD',
-    images: [ring8, ring8, ring8, ring8],
+    images: [ringLuxuary, ringLuxuary, ringLuxuary, ringLuxuary],
     inStock: true,
     isNew: true,
     quantity: 1,
@@ -558,7 +558,7 @@ export const MOCK_PRODUCTS: Product[] = [
     gender: 'men',
     price: 920,
     currency: 'USD',
-    images: [ring10, ring10, ring10, ring10],
+    images: [ringSignature, ringSignature, ringSignature, ringSignature],
     inStock: true,
     isNew: true,
     quantity: 1,

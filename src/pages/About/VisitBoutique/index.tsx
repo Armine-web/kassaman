@@ -5,7 +5,7 @@ import { EnvironmentOutlined, ArrowRightOutlined } from '@ant-design/icons';
 
 import { BOUTIQUE_IMAGES, BOUTIQUE_MAP_URL } from './const';
 import { getVisitContent } from './utils';
-import { fadeInUp, staggerContainer, imageScaleReveal } from '../../../animation'; // Ստուգեք path-ը
+import { fadeInUp, staggerContainer, imageScaleReveal } from '../../../animation.ts';
 import styles from './styles.module.css';
 
 const VisitBoutique = () => {

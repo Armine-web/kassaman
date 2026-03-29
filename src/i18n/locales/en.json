@@ -938,5 +938,15 @@
         "a3": "Certainly. Every purchase arrives in our signature gift wrapping. You may also include a hand-written personal message on our boutique stationery."
       }
     }
+  },
+  "error": {
+    "404": {
+      "code_label": "Error 404",
+      "subtitle": "Page Not Found",
+      "links": {
+        "home": "Home",
+        "catalog": "Catalog"
+      }
+    }
   }
 }

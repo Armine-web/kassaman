@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import type { EditorsPicksProps } from './types';
-import { fadeInUp, staggerContainer } from '../../../../animation';
+import { fadeInUp, staggerContainer } from '../../../../animation.ts';
 import styles from './styles.module.css';
 
 export default function EditorsPicks({ posts }: EditorsPicksProps): JSX.Element {

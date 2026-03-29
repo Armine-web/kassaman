@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { BlogPost } from '../../../../types/blog';
 import MainButton from '../../../../components/common/MainButton';
-import { fadeInUp, imageReveal, staggerContainer } from '../../../../animation';
+import { fadeInUp, imageReveal, staggerContainer } from '../../../../animation.ts';
 import styles from './styles.module.css';
 
 export default function EditorialHero({ post }: { post: BlogPost }): JSX.Element {
@@ -31,7 +31,11 @@ export default function EditorialHero({ post }: { post: BlogPost }): JSX.Element
             <div className={`${styles.shopBtn} backgroundMainButton`}>
               <div className="borderMainButton">
                 <div className="borderThinMainButton">
-                  <MainButton text={t('blogPage.read_more')} route={`/blog/${post.slug}`} className={styles.blogButton} />
+                  <MainButton
+                    text={t('blogPage.read_more')}
+                    route={`/blog/${post.slug}`}
+                    className={styles.blogButton}
+                  />
                 </div>
               </div>
             </div>

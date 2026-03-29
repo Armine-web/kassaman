@@ -3,14 +3,13 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import type { FeaturedGridProps } from './types';
-import { fadeInUp, staggerContainer } from '../../../../animation';
+import { fadeInUp, staggerContainer } from '../../../../animation.ts';
 import styles from './styles.module.css';
 
 export default function FeaturedGrid({ posts }: FeaturedGridProps): JSX.Element {
   const { t } = useTranslation();
 
   return (
-   
     <section className={styles.gridSection}>
       <motion.div
         variants={staggerContainer}
@@ -18,8 +17,7 @@ export default function FeaturedGrid({ posts }: FeaturedGridProps): JSX.Element 
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
       >
-
-          <header className={styles.header}>
+        <header className={styles.header}>
           <h3 className={styles.picksTitle}>{t('blogPage.bestsellers')}</h3>
           <div className={styles.line} />
         </header>

@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { HERO_IMAGES } from './const';
-import { fadeInUp } from '../../../animation';
+import { fadeInUp } from '../../../animation.ts';
 import styles from './styles.module.css';
 
 const HeroSection = () => {

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { STORY_ASSETS } from './const';
 import { stagger } from '../types';
-import { fadeInUp, imageReveal } from '../../../animation';
+import { fadeInUp, imageReveal } from '../../../animation.ts';
 import { getOurBrandContent } from './utils';
 import styles from './styles.module.css';
 

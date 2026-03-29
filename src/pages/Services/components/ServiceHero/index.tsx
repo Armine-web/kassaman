@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { HERO_ASSETS } from './const';
 import AppearingText from '../../../../components/common/AppearingText';
-import { staggerContainer } from '../../../../animation';
+import { staggerContainer } from '../../../../animation.ts';
 import styles from './styles.module.css';
 
 const verticalImageReveal = {
