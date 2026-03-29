@@ -1,4 +1,3 @@
-
 export const luxuryTransition = {
   duration: 1.8,
   ease: [0.19, 1, 0.22, 1] as const,
@@ -30,16 +29,15 @@ export const stagger = {
   },
 };
 
-// Parallax կամ սահուն հայտնվելու համար (եթե չունեք)
 export const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      delayChildren: 0.1
-    }
-  }
+      delayChildren: 0.1,
+    },
+  },
 };
 
 export const imageScaleReveal = {
@@ -51,6 +49,6 @@ export const imageScaleReveal = {
     transition: {
       duration: 1.2,
       ease: [0.215, 0.61, 0.355, 1] as const,
-    }
-  }
+    },
+  },
 };

@@ -72,3 +72,74 @@
   padding: 20px 60px;
   white-space: nowrap;
 }
+
+@media (max-width: 1024px) {
+  .mainTitle {
+    padding: 15px 40px;
+    letter-spacing: 5px;
+    color: darkkhaki;
+    background: none !important;
+  }
+
+  .panelTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .triptych {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .panel {
+    flex: 1;
+    width: 100%;
+    transition: flex 0.5s ease;
+  }
+
+  .panel:hover {
+    flex: 1.5;
+  }
+
+  .mainOverlay {
+    width: 90%;
+    text-align: center;
+  }
+
+  .mainTitle {
+    font-size: clamp(30px, 8vw, 60px);
+    padding: 10px 20px;
+    border-width: 0.5px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .panelContent {
+    bottom: 5%;
+    left: 5%;
+  }
+
+  .panelTitle {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .mainTitle {
+    letter-spacing: 3px;
+    padding: 8px 15px;
+  }
+
+  .panelTitle {
+    font-size: 0.9rem;
+  }
+
+  .bgImage {
+    height: 100%;
+  }
+}

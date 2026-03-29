@@ -810,5 +810,15 @@
       "success_msg": "Your inquiry has been sent. Our master jeweler will contact you shortly.",
       "error_msg": "Connection error. Please try again later."
     }
+  },
+  "error": {
+    "404": {
+      "code_label": "Error 404",
+      "subtitle": "Page Not Found",
+      "links": {
+        "home": "Home",
+        "catalog": "Catalog"
+      }
+    }
   }
 }

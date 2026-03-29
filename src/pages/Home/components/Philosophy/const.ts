@@ -1,4 +1,4 @@
-import bracelet from '../../../../assets/img/bracelets/bracelet9.jpg';
+import bracelet from '../../../../assets/img/bracelets/braceletUnique.jpg';
 import workTime from '../../../../assets/img/about/workTime.jpg';
 import hardworkHands from '../../../../assets/img/about/hardworkHands.jpg';
 import hardworkTool from '../../../../assets/img/about/hardworkTool.jpg';

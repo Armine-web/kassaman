@@ -21,11 +21,11 @@
 }
 
 .title {
-  font-family: serif; 
+  font-family: serif;
   font-weight: 300;
   font-size: var(--text-large);
   text-transform: uppercase;
-  margin: 0 ;
+  margin: 0;
   color: #1a1a1a;
 }
 
@@ -90,5 +90,9 @@
     grid-template-columns: 1fr;
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  .title {
+    font-size: var(--text-regular);
   }
 }

@@ -1,6 +1,5 @@
 import { Collapse } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { RightOutlined } from '@ant-design/icons';
 import StayConnected from '../StayConnected';
 import type { DesktopFooterProps } from './types';
 import styles from './styles.module.css';
@@ -8,11 +7,20 @@ import styles from './styles.module.css';
 const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }: DesktopFooterProps) => {
   const { t } = useTranslation();
 
+  // const renderCustomExpandIcon = ({ isActive }: { isActive?: boolean }) => {
+  //   return (
+  //     <RightOutlined
+  //       className={`${styles.expandIcon} ${isActive ? styles.expandIconActive : ''}`}
+  //     />
+  //   );
+  // };
+
   const renderCustomExpandIcon = ({ isActive }: { isActive?: boolean }) => {
     return (
-      <RightOutlined
-        className={`${styles.expandIcon} ${isActive ? styles.expandIconActive : ''}`}
-      />
+      <div className={`${styles.accordionBtn} ${isActive ? styles.active : ''}`}>
+        <span className={styles.plusLine}></span>
+        <span className={styles.plusLine}></span>
+      </div>
     );
   };
 
