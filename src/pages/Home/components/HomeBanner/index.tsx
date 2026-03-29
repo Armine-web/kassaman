@@ -29,6 +29,11 @@ const HomeBanner = () => {
     navigate('/booking');
   };
 
+ const handleByProduct = (product: Product) => {
+    dispatch(setSelectedProduct(product));
+    navigate('/checkout');
+  };
+
   return (
     <div className={styles.bannerWrapper}>
       {HeroBanners.map((banner, index) => (
@@ -44,7 +49,8 @@ const HomeBanner = () => {
               <Line thin />
               <Line />
               <div className={styles.buttons}>
-                <MainButton text={t(banner.cta.shop)} route="/catalog" />
+                <MainButton text={t(banner.cta.shop)} 
+                onClick={() => handleByProduct(banner.product!)} />
 
                 {banner.product && (
                   <MainButton

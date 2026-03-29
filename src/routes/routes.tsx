@@ -16,31 +16,35 @@ import FAQCategoryDetails from '../pages/FAQ/components/FAQCategoryDetails';
 import Blog from '../pages/Blog';
 import Account from '../pages/Account';
 import NotFound from '../pages/NotFound';
-import Collection from '../pages/Collection'
+import Collection from '../pages/Collection';
+import ScrollToTop from '../utils/ScrollToTop';
 
 const AppRoutes = () => {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
-        <Route path="catalog" element={<Catalog />} />
-        <Route path="catalog/:categorySlug" element={<Category />} />
-        <Route path="product/:id" element={<ProductPage />} />
-        <Route path="collections" element={<Collections />} />
-        <Route path="collections/:slug" element={<Collection />} />
-        <Route path="services" element={<Services />} />
-        <Route path="booking" element={<Booking />} />
-        <Route path="checkout" element={<Checkout />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="faq" element={<FAQ />} />
-        <Route path="faq/:categoryId" element={<FAQCategoryDetails />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="blog/:slug" element={<Blog />} />
-        <Route path="account" element={<Account />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="catalog" element={<Catalog />} />
+          <Route path="catalog/:categorySlug" element={<Category />} />
+          <Route path="product/:id" element={<ProductPage />} />
+          <Route path="collections" element={<Collections />} />
+          <Route path="collections/:slug" element={<Collection />} />
+          <Route path="services" element={<Services />} />
+          <Route path="booking" element={<Booking />} />
+          <Route path="checkout" element={<Checkout />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="faq" element={<FAQ />} />
+          <Route path="faq/:categoryId" element={<FAQCategoryDetails />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<Blog />} />
+          <Route path="account" element={<Account />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </>
   );
 };
 
