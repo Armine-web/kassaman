@@ -80,6 +80,7 @@
   .heroWrapper {
     height: auto;
     padding: 40px 15px;
+    margin-bottom: -100px;
   }
 
   .compositionContainer {
