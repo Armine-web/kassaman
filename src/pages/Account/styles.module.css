@@ -1,0 +1,42 @@
+.accountSection {
+  margin-top: 40px;
+}
+
+.accountCardWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.accountSection > Title {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.accountWrapper {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.loginPrompt {
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+@media (max-width: 630px) {
+  .accountCardWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .accountCardWrapper > :first-child {
+    align-self: flex-start;
+  }
+}

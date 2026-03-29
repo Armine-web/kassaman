@@ -3,6 +3,8 @@ import { Form, Input, Select } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { emailRule, phoneRule, requiredRule } from '../validation';
 import type { ContactRequest } from '../types';
+import styles from './styles.module.css';
+
 
 const ContactFields = () => {
   const { t } = useTranslation();
@@ -12,32 +14,30 @@ const ContactFields = () => {
   return (
     <>
       <Form.Item
-        label={t('contact.fullName')}
         name="fullName"
         rules={[requiredRule(t('contact.required'))]}
       >
-        <Input placeholder={t('contact.fullName')} />
+        <Input placeholder={t('contact.fullName')}size="large" />
       </Form.Item>
 
       <Form.Item
-        label={t('contact.phone')}
-        name="phone"
+        name='phone'
         rules={[phoneRule(t('contact.invalidPhone'))]}
       >
-        <Input placeholder="+374" />
+        <Input placeholder={t('contact.phone')} size="large"/>
       </Form.Item>
 
-      <Form.Item label={t('contact.email')} name="email" rules={[emailRule]}>
-        <Input placeholder="example@mail.com" />
+      <Form.Item 
+      name="email" rules={[emailRule]}>
+        <Input placeholder="example@mail.com" size="large"/>
       </Form.Item>
 
       <Form.Item
-        label={t('contact.preferredContact')}
         name="preferredContact"
-        initialValue="phone"
+        initialValue={t('contact.preferredContact')}
         rules={[requiredRule(t('contact.required'))]}
       >
-        <Select onChange={value => setPreferredMethod(value)}>
+        <Select onChange={value => setPreferredMethod(value)} size="large"className={styles.formSelect}>
           <Select.Option value="phone">{t('contact.phone')}</Select.Option>
           <Select.Option value="telegram">{t('contact.telegram')}</Select.Option>
           <Select.Option value="email">{t('contact.email')}</Select.Option>
@@ -46,11 +46,10 @@ const ContactFields = () => {
 
       {preferredMethod === 'telegram' && (
         <Form.Item
-          label={t('contact.telegramUsername')}
           name="telegram"
           rules={[requiredRule(t('contact.required'))]}
         >
-          <Input placeholder="@username" />
+          <Input placeholder="@username" size="large" />
         </Form.Item>
       )}
     </>

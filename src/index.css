@@ -9,7 +9,7 @@
   --light-primary: #eee6db;
   --color-text: #454343;
   --text-small: 14px;
-  --text-regular: 16px;
+  c: 16px;
   --text-large: 22px;
   --letter-spacing-small: 0.4px;
   --letter-spacing-medium: 0.8px;
@@ -85,7 +85,7 @@ button {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--color-hover-link);
+  background-color: var(--light-primary);
   transition:
     width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);

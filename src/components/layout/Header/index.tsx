@@ -1,4 +1,4 @@
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useToggle } from '../../../hooks/useToggle';
 import { useLang } from '../../../hooks/useLang';
 import Logo from './Logo/index';

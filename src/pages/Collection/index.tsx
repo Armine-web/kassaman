@@ -45,10 +45,10 @@ const Collection = () => {
           <Line thin />
           <Line />
         </div>
-        <div className={styles.banner}>
-          <Image src={collection.image} preview={false} className={styles.bannerImage} />
+        <div className={styles.banner} >
+          <Image src={collection.image} preview={false} className={`${styles.bannerImage} scrollReveal`} />
 
-          <div className={styles.bannerContent}>
+          <div className={`${styles.bannerContent } scrollReveal`}>
             <h1>{t(collection.titleKey)}</h1>
             <p>{t(collection.subtitleKey)}</p>
           </div>
@@ -61,7 +61,7 @@ const Collection = () => {
 
         <div className={styles.productsGrid}>
           {products.map(product => (
-            <div key={product.id} className={styles.productCard}>
+            <div key={product.id} className={`${styles.productCard} scrollReveal`}>
               <Image src={product.images[0]} preview={false} className={styles.productImage} />
               <h3 className={styles.productH3}>{getProductText(product.nameKey, 'name')}</h3>
 

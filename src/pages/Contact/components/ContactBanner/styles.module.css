@@ -30,7 +30,7 @@
   font-family: var(--font-heading);
   color: var(--dark-primary);
   letter-spacing: var(--letter-spacing-medium);
-  font-weight: 600;
+  font-weight: 300;
   width: 420px;
   text-align: left;
 }
@@ -39,7 +39,7 @@
   font-size: var(--text-regular);
   font-family: var(--font-body);
   color: var(--dark-primary);
-  letter-spacing: var(--letter-spacing-small);
+  letter-spacing: var(--letter-spacing-medium);
   font-weight: 400;
   width: 420px;
   text-align: left;

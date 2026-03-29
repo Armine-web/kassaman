@@ -17,13 +17,22 @@
 .contactFormWrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   align-items: start;
-  gap: 80px;
+  gap: 160px;
 }
 
 .contactFormImageWrapper {
   justify-self: end;
+}
+
+.formHeading{
+  font-family: var(--font-heading);
+  font-size: var(--text-large);
+  letter-spacing: var(--letter-spacing-medium);
+  font-weight: 300;
+  line-height: 1.2;
+  padding-bottom: 40px;
 }
 
 .contactForm {
@@ -44,22 +53,12 @@
   grid-row: 2;
 }
 
-.contactFormSelect:hover,
-.contactFormSelect:focus,
-.contactFormSelect:active,
-.contactFormSelect:focus-within {
-  border-color: var(--dark-primary) !important;
-  box-shadow: none !important;
-}
-
 .customCheckbox {
   display: flex;
   align-items: center;
   cursor: pointer;
   gap: 8px;
-  font-size: var(--text-regular) !important;
   font-family: var(--font-body) !important;
-  color: var(--dark-primary) !important;
   letter-spacing: var(--letter-spacing-small) !important;
   font-weight: 400 !important;
   line-height: 1.5 !important;
@@ -164,9 +163,15 @@
 
 @media (max-width: 1024px) {
   .contactFormWrapper {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     gap: 80px;
+  }
+
+  .contactFormWrapper > * {
+    width: 80%;
+    margin: auto;
   }
 
   .contactFormImageWrapper {
@@ -200,6 +205,11 @@
   .contactForm {
     width: 100%;
     padding: 40px 20px;
+  }
+
+  .formHeading {
+    font-size: 20px;
+    padding-bottom: 24px;
   }
 }
 

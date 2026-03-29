@@ -5,6 +5,7 @@ import Philosophy from './components/Philosophy';
 import Advantages from './components/Advantages';
 import HomeBanner from './components/HomeBanner';
 import styles from './styles.module.css';
+import VisitBoutique from '../About/VisitBoutique';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <div className="container">
         <Philosophy />
         <Advantages />
+        <VisitBoutique />
       </div>
     </>
   );

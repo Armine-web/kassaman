@@ -1,0 +1,111 @@
+.checkoutSection {
+  padding: 80px 24px !important;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.checkoutTitle {
+  font-family: var(--font-heading) !important;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 130px !important;
+  font-weight: 300 !important;
+  color: var(--dark-primary);
+}
+
+.checkoutWrapper {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.formCard {
+  background: #fff !important;
+  border-radius: 0 !important;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.03) !important;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.submitBtn {
+  position: relative !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+  color: var(--dark-primary) !important;
+  font-family: var(--font-heading) !important;
+  font-size: 24px !important;
+  letter-spacing: var(--letter-spacing-medium) !important;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  height: auto !important;
+  width: fit-content !important;
+  display: block;
+  margin-top: 30px;
+}
+
+.submitBtn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark-primary) !important;
+  transition: width 0.3s ease;
+}
+
+.submitBtn:hover::after {
+  width: 0;
+}
+
+.submitBtn:hover {
+  opacity: 0.8 !important;
+  background: none !important;
+  color: var(--dark-primary) !important;
+}
+
+.submitBtn > span {
+  display: inline-block;
+}
+
+.checkoutForm{
+  padding-bottom: 40px;
+}
+
+
+@media (max-width: 1100px) {
+  .checkoutWrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .summaryCard {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkoutSection {
+    padding: 60px 16px !important;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .checkoutTitle {
+    font-size: 16px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .submitBtn {
+    height: 56px !important;
+    font-size: var(--text-regular) !important ;
+  }
+}

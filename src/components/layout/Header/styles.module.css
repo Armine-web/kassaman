@@ -6,7 +6,7 @@
 }
 
 .headerDark {
-  background-color: rgba(230, 226, 226, 0.335);
+  background-color: rgba(37, 36, 36, 0.556);
   opacity: 0;
   transition: opacity 0.8s ease;
 }
@@ -16,7 +16,7 @@
 }
 
 .headerLight {
-  background-color: var(--color-background);
+  background-color: rgba(65, 64, 64, 0.48);
 }
 
 .headerContent {

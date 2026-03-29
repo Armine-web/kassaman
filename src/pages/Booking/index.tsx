@@ -1,5 +1,5 @@
-import { Form, Button, Card, Avatar, Typography, Flex, Divider, Checkbox } from 'antd';
-import { DeleteOutlined } from '@ant-design/icons';
+import { Form, Button, Card, Avatar, Typography, Flex, Divider, message } from 'antd';
+import { useNavigate } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../store/hook';
 import {
   updateContactInfo,
@@ -7,12 +7,12 @@ import {
   increaseQuantity,
   decreaseQuantity,
 } from '../../store/slices/bookingSlice';
-import ContactFields from '.././../components/common/Contact/components/ContactFields';
 import { useTranslation } from 'react-i18next';
-import { requiredRule } from '../../components/common/Contact/validation';
 import type { ContactInfo } from '../../types/contact';
 import { getProductText } from '../../i18n/utils/product';
 import styles from './styles.module.css';
+import { Line } from '../../components/common/AppearingLines';
+import BaseButton from '../../components/common/buttons/BaseButton';
 
 const { Title, Text } = Typography;
 
@@ -20,8 +20,9 @@ const BookingPage = () => {
   const { t } = useTranslation();
   const [form] = Form.useForm();
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
-  const { selectedItems, contactInfo } = useAppSelector(state => state.booking);
+  const { selectedItems } = useAppSelector(state => state.booking);
 
   const handleValuesChange = (changedValues: Partial<ContactInfo>) => {
     dispatch(updateContactInfo(changedValues));
@@ -33,80 +34,89 @@ const BookingPage = () => {
 
   const onFinish = (values: ContactInfo) => {
     console.log('Booking Data:', { products: selectedItems, contact: values });
+    if (selectedItems.length === 0) {
+      message.warning(t('checkout.noItemsSelected'));
+      return;
+    }
+
+    navigate('/checkout');
   };
+
+  const total = selectedItems.reduce((sum, item) => sum + item.price * (item.quantity || 1), 0);
 
   return (
     <section className={`container ${styles.bookingSection}`}>
       <Title level={2} className={styles.bookingTitle}>
         {t('booking.description')}
       </Title>
+      <Flex vertical gap="small" align="center">
+        <Line thin />
+        <Line />
+      </Flex>
       <div className={styles.bookingWrapper}>
         <Card className={styles.bookingCard}>
           {selectedItems.length > 0 ? (
-            selectedItems.map((item, index) => (
-              <div key={item.id}>
-                <div className={styles.productItem}>
-                  <Flex align="start" gap="middle" className={styles.productMain}>
-                    <Avatar shape="square" src={item.images[0]} className={styles.productAvatar} />
+            <>
+              {selectedItems.map(item => (
+                <div key={item.id}>
+                  <div className={styles.productMain}>
+                    <Flex align="center" gap="middle" className={styles.firstItem}>
+                      <Avatar
+                        shape="square"
+                        src={item.images[0]}
+                        className={styles.productAvatar}
+                      />
 
-                    <div>
-                      <div>{getProductText(item.nameKey, 'name')}</div>
-                      <Text type="secondary">
-                        {item.price} {item.currency}
+                      <Text className={styles.productTitle}>
+                        {' '}
+                        {getProductText(item.nameKey, 'name')}
                       </Text>
-                    </div>
-                  </Flex>
-
-                  <Flex align="center" gap="middle" className={styles.productControls}>
+                    </Flex>
                     <Flex align="center" gap="middle" className={styles.productControlsWrapper}>
                       <Button onClick={() => dispatch(decreaseQuantity(item.id))} type="text">
-                        -
+                        <Text className={styles.productControlsText}>-</Text>
                       </Button>
-                      <Text>{item.quantity || 1}</Text>
+                      <Text className={styles.productControlsText}>{item.quantity || 1}</Text>
                       <Button onClick={() => dispatch(increaseQuantity(item.id))} type="text">
-                        +
+                        <Text className={styles.productControlsText}>+</Text>
                       </Button>
                     </Flex>
-                    <Button
-                      danger
-                      type="text"
-                      icon={<DeleteOutlined className={styles.deleteIcon} />}
+
+                    <Text className={styles.productPrice}>
+                      {' '}
+                      {(item.price * (item.quantity || 1)).toFixed(2)} {item.currency}
+                    </Text>
+                    <BaseButton
                       onClick={() => handleRemoveItem(item.id)}
-                    />
-                  </Flex>
+                      underlineColor="red"
+                      className={styles.bookingRemoveButton}
+                    >
+                      {' '}
+                      {t('booking.remove')}
+                    </BaseButton>
+                  </div>
+
+                  <Divider className={styles.cardDivaider} />
                 </div>
-                <Text type="secondary">{getProductText(item.nameKey, 'description')}</Text>
-                <Divider className={styles.cardDivaider} />
-                {index < selectedItems.length - 1 && <Divider className={styles.cardDivaider} />}
+              ))}
+              <div className={styles.contactFormButton}>
+                <Text strong>
+                  {t('booking.total')} <span className={styles.totalPrice}>{total.toFixed(2)} {selectedItems[0]?.currency}</span>
+                </Text>
+                <Form form={form} onValuesChange={handleValuesChange} onFinish={onFinish}>
+                  <BaseButton>{t('booking.confirmButton')}</BaseButton>
+                </Form>
               </div>
-            ))
+            </>
           ) : (
             <Text type="secondary">{t('booking.noItemsSelected')}</Text>
           )}
         </Card>
-
-        <Card title={t('booking.contactDetails')} className={styles.bookingCard}>
-          <Form
-            form={form}
-            layout="vertical"
-            initialValues={contactInfo}
-            onValuesChange={handleValuesChange}
-            onFinish={onFinish}
-          >
-            <ContactFields />
-            <Form.Item
-              name="consent"
-              valuePropName="checked"
-              rules={[requiredRule(t('contact.consentRequired'))]}
-            >
-              <Checkbox className={styles.customCheckbox}>{t('booking.consentText')}</Checkbox>
-            </Form.Item>
-            <Button className={styles.contactFormButton} type="primary" htmlType="submit">
-              {t('booking.confirmButton')}
-            </Button>
-          </Form>
-        </Card>
       </div>
+      <Flex vertical gap="small" align="center">
+        <Line thin />
+        <Line />
+      </Flex>
     </section>
   );
 };

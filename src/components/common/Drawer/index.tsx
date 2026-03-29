@@ -8,9 +8,26 @@ const AppDrawer = ({
   onClose,
   className,
   children,
+  backgroundColor,
+  closeIconColor,
 }: AppDrawerProps) => {
   return (
-    <Drawer placement={side} title={title} onClose={onClose} open={open} className={className}>
+    <Drawer
+      placement={side}
+      title={title}
+      onClose={onClose}
+      open={open}
+      style={{ backgroundColor }}
+      className={className}
+    >
+      <style>
+        {closeIconColor &&
+          `
+          .ant-drawer-close svg {
+            color: ${closeIconColor};
+          }
+        `}
+      </style>
       {children}
     </Drawer>
   );

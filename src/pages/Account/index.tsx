@@ -1,13 +1,56 @@
+import { Flex, Typography } from 'antd';
+import { useAppSelector } from '../../store/hook';
 import { useTranslation } from 'react-i18next';
+import styles from './styles.module.css';
+import GoogleLoginButton from './components/logeIn';
+import AccountCard from './components/accountCard';
+import BookingItem from './components/bookingItem';
+import WishlistItem from './components/WishlistItem';
+import { Line } from '../../components/common/AppearingLines';
+
+const { Title, Text } = Typography;
 
 const Account = () => {
   const { t } = useTranslation();
+  const user = useAppSelector(state => state.account.user);
+
+  if (!user) {
+    return (
+      <div className={styles.loginPrompt}>
+        <Text>{t('account.notLoggedIn')}</Text>
+        <GoogleLoginButton />
+      </div>
+    );
+  }
 
   return (
-    <div>
-      <h1>{t('account.title')}</h1>
-      <p>{t('account.description')}</p>
-    </div>
+    <section className="container">
+      <div className={styles.accountSection}>
+        <div className={styles.accountCardWrapper}>
+          <Title level={4}>
+          {t('account.hello')}, {user?.name}
+        </Title>{' '}
+        <AccountCard />
+        </div>
+        
+        <div className={styles.accountWrapper}>
+          <Flex vertical gap="small" align="center">
+            <Line thin />
+            <Line />
+          </Flex>
+          <BookingItem />
+          <Flex vertical gap="small" align="center">
+            <Line thin />
+            <Line />
+          </Flex>
+          <WishlistItem />
+          <Flex vertical gap="small" align="center">
+            <Line thin />
+            <Line />
+          </Flex>
+        </div>
+      </div>
+    </section>
   );
 };
 

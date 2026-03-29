@@ -62,7 +62,7 @@
 
 .featuredCategoriestext {
   color: var(--color-text) !important;
-  font-family: var(--font-accent) !important;
+  font-family: var(--font-heading) !important;
   font-size: 2rem !important;
 }
 

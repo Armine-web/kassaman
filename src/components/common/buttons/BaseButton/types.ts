@@ -9,4 +9,5 @@ export type BaseButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string;
   onClick?: () => void;
   children?: ReactNode;
+  underlineColor?: string;
 };
