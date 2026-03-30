@@ -1,7 +1,7 @@
 .stayConnectedTitle {
   font-size: var(--fs-200);
   margin-bottom: 20px;
-  color: var(--color-text);
+  color: var(--light-primary);
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: var(--ls-200);
@@ -11,7 +11,7 @@
 }
 
 .description {
-  color: var(--color-text);
+  color: #fff;
   font-family: var(--font-heading);
   font-size: var(--fs-100);
   margin-bottom: 10px;
@@ -22,7 +22,7 @@
 .contactTitle {
   font-size: var(--fs-200);
   font-family: var(--font-heading);
-  color: var(--color-text);
+  color: var(--light-primary);
   letter-spacing: var(--ls-200);
   font-weight: 400;
   margin: 28px;
@@ -35,14 +35,14 @@
 
 .phone {
   font-size: var(--fs-200);
-  color: var(--color-text);
+  color: var(--light-primary);
   margin-bottom: 8px;
   font-weight: 500;
   display: block;
 }
 
 .email {
-  color: var(--color-text);
+  color: #fff;
   font-family: var(--font-heading);
   text-decoration: underline;
   font-size: var(--fs-200);
@@ -51,22 +51,29 @@
 }
 
 .email:hover {
-  color: var(--color-hover-link);
+  color: var(--light-primary);
 }
 
 .signUpButton {
-  padding: 12px 24px;
-  margin: 8px 0;
-  font-size: var(--fs-100);
-  font-family: var(--font-heading);
-  font-weight: 500;
-  color: var(--color-hover-link);
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  width: fit-content;
   cursor: pointer;
+  color: var(--light-primary);
+  background-image: linear-gradient(to right, var(--light-primary) 50%, transparent 50%) !important;
+  background-size: 200% 1px !important;
+  background-position: 0% 100% !important;
+  background-repeat: no-repeat;
+
+  transition:
+    background-position 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.3s ease !important;
 }
 
 .signUpButton:hover {
-  border-color: transparent !important;
-  transform: scale(1.05);
+  background-position: 100% 100% !important;
+  color: #fff !important;
 }
 
 .socialContainer {

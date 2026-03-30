@@ -21,7 +21,7 @@
 .columnTitle {
   font-size: var(--fs-200);
   margin-bottom: 28px;
-  color: var(--color-text);
+  color: var(--light-primary);
   font-family: var(--font-heading);
   font-weight: bold;
   letter-spacing: var(--ls-200);
@@ -40,18 +40,43 @@
 }
 
 .link {
-  color: var(--color-text);
+  color: var(--light-primary);
   text-decoration: none;
   font-size: var(--fs-100);
   text-transform: uppercase;
   font-family: var(--font-heading);
   letter-spacing: var(--ls-200);
   transition: color 0.2s ease;
+  position: relative;
+  padding-bottom: 2px;
+  display: inline-block;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover {
+  color: var(--light-primary);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.linkItem:hover {
   color: var(--color-hover-link);
-  text-decoration: underline;
+}
+
+.linkItem:hover::after {
+  width: 0;
 }
 
 .linkList .linkItem:last-child {
@@ -70,7 +95,7 @@
 }
 
 .collapse :global(.ant-collapse-item) {
-  border-bottom: 1px solid var(--color-text) !important;
+  border-bottom: 1px solid var(--light-primary) !important;
 }
 
 .collapse :global(.ant-collapse-header) {
@@ -78,7 +103,7 @@
   font-size: var(--fs-100) !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  color: var(--color-text) !important;
+  color: var(--light-primary) !important;
   padding: 20px 0 !important;
 }
 
@@ -92,7 +117,7 @@
 }
 
 .collapse :global(.ant-collapse-expand-icon) {
-  color: var(--color-text) !important;
+  color: var(--light-primary) !important;
 }
 
 /* .expandIcon {
@@ -122,8 +147,7 @@
 
 .plusLine {
   position: absolute;
-  background-color: var(--color-text);
-  /* font-weight: 300; */
+  background-color: var(--light-primary);
   border-radius: 2px;
   transition: all 0.3s ease;
 }

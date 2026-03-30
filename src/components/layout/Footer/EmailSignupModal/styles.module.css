@@ -83,7 +83,7 @@
 }
 
 .button {
-  background: var(--color-secondary) !important;
+  background: #c5a059  !important;
   border: none !important;
   border-radius: 30px;
   padding: 8px;

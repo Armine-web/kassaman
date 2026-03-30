@@ -7,14 +7,6 @@ import styles from './styles.module.css';
 const DesktopFooter = ({ columns, socialLinks, contactInfo, onOpenModal }: DesktopFooterProps) => {
   const { t } = useTranslation();
 
-  // const renderCustomExpandIcon = ({ isActive }: { isActive?: boolean }) => {
-  //   return (
-  //     <RightOutlined
-  //       className={`${styles.expandIcon} ${isActive ? styles.expandIconActive : ''}`}
-  //     />
-  //   );
-  // };
-
   const renderCustomExpandIcon = ({ isActive }: { isActive?: boolean }) => {
     return (
       <div className={`${styles.accordionBtn} ${isActive ? styles.active : ''}`}>
