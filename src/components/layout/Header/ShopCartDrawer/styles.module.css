@@ -1,0 +1,53 @@
+.productMain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productTitle {
+  font-size: 18px;
+  color: #8f6c2c;
+  font-weight: 600;
+}
+
+.cardDivaider {
+  margin: 10px 0;
+}
+
+:global(.ant-card-head) {
+  border-bottom: none !important;
+  margin-bottom: 40px !important;
+}
+
+.deleteIcon {
+  font-size: 24px;
+}
+
+.productItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 60px;
+}
+
+.productPrice {
+  color: #8f6c2c;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.bookingRemoveButton {
+  color: red;
+  justify-self: end;
+}
+
+.productAvatar {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .productTitle {
+    font-size: 16px;
+  }
+}

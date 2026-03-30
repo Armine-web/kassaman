@@ -70,7 +70,8 @@ export const ProductInfo = ({ product }: Props) => {
               <MainButton
                 onClick={handleBook}
                 disabled={!product.inStock}
-                text={t('booking.book')}
+                text={t('booking.book').split('\n')}  
+
               />
             </div>
           </div>

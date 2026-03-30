@@ -13,8 +13,7 @@ const initialState: AccountState = {
   user: {
     name: 'John Doe',
     email: 'john@gmail.com',
-    phone:'+374 00000000'
-
+    phone: '+374 00000000',
   },
   bookings: MOCK_PRODUCTS.slice(0, 4).map(product => ({
     id: product.id,
@@ -34,6 +33,7 @@ const initialState: AccountState = {
     currency: product.currency,
     inStock: product.inStock,
   })),
+  wishlistItems: [],
 };
 
 const accountSlice = createSlice({
@@ -48,6 +48,7 @@ const accountSlice = createSlice({
       state.user = null;
       state.bookings = [];
       state.wishlist = [];
+      state.wishlistItems = [];
     },
 
     setBookings: (state, action: PayloadAction<AccountState['bookings']>) => {

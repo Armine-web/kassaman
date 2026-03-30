@@ -150,7 +150,7 @@
     "confirmButton": "Confirm Booking",
     "consentText": "I agree to processing of personal data",
     "remove": "Remove",
-    "book": "Book an Item",
+    "book": "Book \nthis Item",
     "total": "Total Amount: "
   },
   "checkout": {

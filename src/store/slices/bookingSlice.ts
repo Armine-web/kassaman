@@ -4,6 +4,8 @@ import type { Product } from '../../types/product';
 
 const initialState: BookingState = {
   selectedItems: [],
+  cartItems: [],
+  cartOpen: false,
   contactInfo: {
     fullName: '',
     phone: '',
@@ -20,6 +22,18 @@ const bookingSlice = createSlice({
 
       if (!exists) {
         state.selectedItems.push(action.payload);
+      }
+    },
+
+    toggleCart: (state, action: PayloadAction<boolean>) => {
+      state.cartOpen = action.payload;
+    },
+
+    addToCart: (state, action: PayloadAction<Product>) => {
+      const exists = state.cartItems.find(item => item.id === action.payload.id);
+
+      if (!exists) {
+        state.cartItems.push({ ...action.payload, quantity: 1 });
       }
     },
 
@@ -51,5 +65,7 @@ export const {
   removeSelectedItem,
   increaseQuantity,
   decreaseQuantity,
+  toggleCart,
+  addToCart,
 } = bookingSlice.actions;
 export default bookingSlice.reducer;

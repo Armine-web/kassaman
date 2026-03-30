@@ -101,7 +101,10 @@ const BookingPage = () => {
               ))}
               <div className={styles.contactFormButton}>
                 <Text strong>
-                  {t('booking.total')} <span className={styles.totalPrice}>{total.toFixed(2)} {selectedItems[0]?.currency}</span>
+                  {t('booking.total')}{' '}
+                  <span className={styles.totalPrice}>
+                    {total.toFixed(2)} {selectedItems[0]?.currency}
+                  </span>
                 </Text>
                 <Form form={form} onValuesChange={handleValuesChange} onFinish={onFinish}>
                   <BaseButton>{t('booking.confirmButton')}</BaseButton>

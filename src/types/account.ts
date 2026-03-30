@@ -1,9 +1,9 @@
 export type AccountState = {
+  wishlistItems: any;
   user: {
     name: string;
     email: string;
     phone: string;
-
   } | null;
   bookings: {
     id: string;
@@ -22,4 +22,4 @@ export type AccountState = {
     price: number;
     currency: string;
   }[];
-}
+};

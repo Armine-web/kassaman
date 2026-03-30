@@ -127,6 +127,7 @@ Button > .productControlsText:hover {
   }
   .bookingWrapper {
     gap: 40px;
+    margin-top: 0;
   }
 
   .firstItem {
@@ -175,12 +176,15 @@ Button > .productControlsText:hover {
   }
 
   .productTitle {
-    position: absolute;
-    top: -5px;
-    font-size: 0.8rem;
+    font-size: 16px;
   }
 
   .bookingTitle {
-    font-size: 1rem;
+    font-size: 20px !important;
+    padding-bottom: 30px;
+  }
+
+  .bookingWrapper {
+    gap: 20px;
   }
 }

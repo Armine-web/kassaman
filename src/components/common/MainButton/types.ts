@@ -1,5 +1,5 @@
 export type Props = {
-  text?: string;
+  text?: string | string[];
   className?: string;
   route?: string;
   disabled?: boolean;

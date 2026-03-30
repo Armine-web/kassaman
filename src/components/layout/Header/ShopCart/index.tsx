@@ -1,12 +1,33 @@
 import { Badge } from 'antd';
-import { ShoppingOutlined } from '@ant-design/icons';
+import { HeartOutlined } from '@ant-design/icons';
+import { useSelector } from 'react-redux';
 import styles from './styles.module.css';
-import type { ShopCartIconProps } from './types';
+import type { Props } from './types';
+import type { RootState } from '../../../../store';
 
-const ShoppCart = ({ count, onClick }: ShopCartIconProps) => {
+const ShoppCart = ({
+  onClick,
+  showBadge = true,
+  iconClassName,
+  iconStyle,
+  active = false,
+}: Props) => {
+  const cartItems = useSelector((state: RootState) => state.booking.cartItems);
+  const totalCount = cartItems.reduce((acc, item) => acc + (item.quantity || 1), 0);
+
+  const icon = (
+    <HeartOutlined
+      className={`${styles.cartIcon} ${iconClassName || ''} ${active ? styles.activeHeart : ''}`}
+      style={iconStyle}
+      onClick={onClick}
+    />
+  );
+
+  if (!showBadge) return icon;
+
   return (
-    <Badge count={count} overflowCount={99} className={styles.badge}>
-      <ShoppingOutlined className={styles.cartIcon} onClick={onClick} />
+    <Badge count={totalCount} overflowCount={99} className={styles.badge}>
+      {icon}
     </Badge>
   );
 };
