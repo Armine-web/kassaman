@@ -1,0 +1,8 @@
+.registerbutton{
+  text-align: center;
+}
+
+.registerbutton button{
+  font-size: 1.2rem;
+  color: #8f6c2c;
+}

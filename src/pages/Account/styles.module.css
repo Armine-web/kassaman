@@ -22,11 +22,8 @@
   gap: 60px;
 }
 
-.loginPrompt {
-  width: 200px;
-  border: none;
-  background-color: transparent;
-  outline: none;
+.buttonLine {
+  margin-bottom: 120px;
 }
 
 @media (max-width: 630px) {
@@ -38,5 +35,9 @@
 
   .accountCardWrapper > :first-child {
     align-self: flex-start;
+  }
+
+  .buttonLine {
+    margin-bottom: 60px;
   }
 }

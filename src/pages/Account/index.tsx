@@ -8,7 +8,7 @@ import BookingItem from './components/bookingItem';
 import WishlistItem from './components/WishlistItem';
 import { Line } from '../../components/common/AppearingLines';
 
-const { Title, Text } = Typography;
+const { Title} = Typography;
 
 const Account = () => {
   const { t } = useTranslation();
@@ -16,10 +16,7 @@ const Account = () => {
 
   if (!user) {
     return (
-      <div className={styles.loginPrompt}>
-        <Text>{t('account.notLoggedIn')}</Text>
         <GoogleLoginButton />
-      </div>
     );
   }
 
@@ -44,7 +41,7 @@ const Account = () => {
             <Line />
           </Flex>
           <WishlistItem />
-          <Flex vertical gap="small" align="center">
+          <Flex vertical gap="small" align="center" className={styles.buttonLine}>
             <Line thin />
             <Line />
           </Flex>

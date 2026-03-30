@@ -151,7 +151,7 @@
     "consentText": "Я согласен с обработкой персональных данных",
     "remove": "Удалить",
     "book": "Забронировать товар",
-    "total":"Итоговая сумма: "
+    "total": "Итоговая сумма: "
   },
   "checkout": {
     "title": "Оформление заказа",
@@ -217,11 +217,23 @@
     "wishlist": "Избранное",
     "noBookings": "Пока нет бронирований",
     "noWishlist": "Нет сохранённых элементов",
-    "notLoggedIn": "Пожалуйста, войдите в систему",
+    "notLoggedIn": "Пожалуйста, зарегистрируйтесь",
     "remove": "Удалить",
     "save": "Сохранить",
     "book": "Забронировать",
     "hello": "Привет",
+    "fullnamePlaceholder": "Введите ваше полное имя",
+    "fullnameRequired": "Полное имя обязательно",
+    "emailPlaceholder": "Введите ваш email",
+    "emailRequired": "Email обязателен",
+    "invalidEmail": "Пожалуйста, введите корректный email",
+    "phonePlaceholder": "Введите ваш телефон",
+    "phoneRequired": "Телефон обязателен",
+    "invalidPhone": "Пожалуйста, введите корректный телефон",
+    "registerButton": "Зарегистрироваться",
+    "or": "или",
+    "loginWithGoogle": "Войти через Google",
+    "loginWithGoogleDescription": "Нажмите кнопку ниже, чтобы войти, используя ваш аккаунт Google.",
     "status": {
       "confirmed": "Подтверждено",
       "cancelled": "Отменено"
