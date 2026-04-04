@@ -19,8 +19,9 @@
   transform: scale(1.2);
 }
 
-.activeHeart {
+.cartIcon:active, .cartIcon:focus {
   background-color: #f0f0f0;
+  color: red;
 }
 
 @media (max-width: 768px) {

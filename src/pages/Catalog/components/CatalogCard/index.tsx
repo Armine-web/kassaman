@@ -5,10 +5,16 @@ import { motion } from 'framer-motion';
 import { imageReveal } from '../../../../animation.ts';
 import MainButton from '../../../../components/common/MainButton';
 import styles from './styles.module.css';
+import ShoppCart from '../../../../components/layout/Header/ShopCart/index.tsx';
+import { useAppDispatch } from '../../../../store/hook';
+import { toggleWishlist } from '../../../../store/slices/wishlistSlice';
+import { useSelector } from 'react-redux';
+import type { RootState } from '../../../../store/index.ts';
 
 export function CatalogCard({ product, onClick }: any) {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
 
   const handleNavigate = () => {
     if (onClick) {
@@ -17,6 +23,9 @@ export function CatalogCard({ product, onClick }: any) {
       navigate(`/product/${product.id}`);
     }
   };
+
+  const wishlistItems = useSelector((state: RootState) => state.wishlist.wishlist ?? []);
+  const isInWishlist = wishlistItems.some(item => item.id === product.id);
 
   const nKey = product.nameKey;
   const displayTitle = nKey
@@ -35,6 +44,17 @@ export function CatalogCard({ product, onClick }: any) {
       onClick={handleNavigate}
       cover={
         <div className={styles.imageContainer}>
+          <div className={styles.cartIconWrapper}>
+            <ShoppCart
+              key={isInWishlist ? 'in' : 'out'}
+              onClick={e => {
+                e.stopPropagation();
+                dispatch(toggleWishlist(product));
+              }}
+              showBadge={false}
+              iconClassName={`${styles.cartIcon} ${isInWishlist ? styles.isInWishlist : ''}`}
+            />
+          </div>
           {product.isNew && <span className={styles.statusTag}>{t('common.new', 'NEW')}</span>}
 
           <motion.img

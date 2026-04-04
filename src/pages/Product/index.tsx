@@ -5,11 +5,8 @@ import { MOCK_PRODUCTS } from '../../mock/mockProducts';
 import { ProductGallery } from './components/ProductGallery';
 import { ProductInfo } from './components/ProductInfo';
 import { SimilarProducts } from './components/SimilarProducts';
-import { addToCart, setSelectedProduct, toggleCart } from '../../store/slices/bookingSlice';
+import { setSelectedProduct } from '../../store/slices/bookingSlice';
 import styles from './styles.module.css';
-import ShoppCart from '../../components/layout/Header/ShopCart';
-import { useSelector } from 'react-redux';
-import type { RootState } from '../../store';
 
 const Product = () => {
   const { id } = useParams<{ id: string }>();
@@ -31,26 +28,11 @@ const Product = () => {
     navigate('/booking');
   };
 
-  const handleAddToCart = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    dispatch(addToCart(product));
-    dispatch(toggleCart(true));
-  };
-  const cartItems = useSelector((state: RootState) => state.booking.cartItems);
-  const isInCart = cartItems.some(item => item.id === product.id);
-
   return (
     <section className={styles.productPage}>
       <div className="container">
         <Row gutter={[32, 32]}>
           <Col xs={24} md={9}>
-            <ShoppCart
-              onClick={handleAddToCart}
-              showBadge={false}
-              iconClassName={styles.cartIcon}
-              active={isInCart}
-            />
-
             <ProductGallery images={product.images} nameKey={product.nameKey} key={product.id} />
           </Col>
 

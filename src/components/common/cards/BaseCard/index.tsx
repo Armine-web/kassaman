@@ -20,7 +20,10 @@ const BaseCard = ({
       <div
         className={styles.imgWrapper}
         onClick={onImageClick}
-        style={{ height: height ?? 'auto', aspectRatio: !height ? 'var(--card-aspect-ratio, 3 / 4)' : undefined }}
+        style={{
+          height: height ?? 'auto',
+          aspectRatio: !height ? 'var(--card-aspect-ratio, 3 / 4)' : undefined,
+        }}
       >
         {imageNode ?? (
           <img

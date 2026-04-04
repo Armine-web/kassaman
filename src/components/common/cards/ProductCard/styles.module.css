@@ -17,25 +17,28 @@
 :global(.ant-card .ant-card-meta-title) {
   color: var(--color-text);
   font-family: var(--font-heading);
-  font-size: var(--fs-100);
-  letter-spacing: var(--ls-200);
+  font-size: var(--text-regular);
+  letter-spacing: var(--letter-spacing-small);
   cursor: pointer;
 }
 
 :global(.ant-card .ant-card-meta-description) {
   color: var(--color-text);
   font-family: var(--font-body);
-  font-size: var(--fs-200);
+  font-size: var(--text-small);
   text-align: center;
-  letter-spacing: var(--ls-100);
   margin: 16px 0 8px;
 }
 
 .price {
   color: var(--color-secondary);
   font-family: var(--font-body);
-  font-size: var(--fs-100);
+  font-size: var(--text-regular);
   font-weight: 500;
-  letter-spacing: var(--ls-200);
-  padding-top: 2px;
+  letter-spacing: var(--letter-spacing-small);
+  padding: 10px;
+}
+
+.clickableTitle {
+  cursor: pointer;
 }

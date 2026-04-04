@@ -4,11 +4,14 @@ import type { ProductCardProps } from './types';
 import BaseCard from '../BaseCard/index';
 import styles from './styles.module.css';
 import { getProductMaterialsAndStones, getProductText } from '../../../../i18n/utils/product';
+import { truncateText } from './utils';
 
 const { Meta } = Card;
 
-const ProductCard = ({ product, width, height, onClickProduct}: ProductCardProps) => {
+const ProductCard = ({ product, width, height, onClickProduct }: ProductCardProps) => {
   const { t } = useTranslation();
+
+  const name = getProductText(product.nameKey, 'name');
 
   return (
     <BaseCard
@@ -19,7 +22,13 @@ const ProductCard = ({ product, width, height, onClickProduct}: ProductCardProps
     >
       <div className={styles.topRow}>
         <div onClick={onClickProduct}>
-          <Meta title={getProductText(product.nameKey, 'name')} />
+          <Meta
+            title={
+              <span onClick={onClickProduct} className={styles.clickableTitle}>
+                {truncateText(name, 24)}
+              </span>
+            }
+          />
         </div>
         <Meta description={getProductMaterialsAndStones(product.nameKey)} />
 

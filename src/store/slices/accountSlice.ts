@@ -51,6 +51,10 @@ const accountSlice = createSlice({
       state.wishlistItems = [];
     },
 
+    addBookings: (state, action: PayloadAction<AccountState['bookings']>) => {
+      state.bookings.push(...action.payload);
+    },
+
     setBookings: (state, action: PayloadAction<AccountState['bookings']>) => {
       state.bookings = action.payload;
     },
@@ -104,6 +108,7 @@ export const {
   removeWishlistItem,
   moveWishlistToBookings,
   removeBookingItem,
+  addBookings,
 } = accountSlice.actions;
 
 export default accountSlice.reducer;

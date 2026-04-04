@@ -5,9 +5,10 @@ import type { ShopCartDrawerProps } from './types';
 import { Avatar, Flex, Typography, Divider } from 'antd';
 import styles from './styles.module.css';
 import BaseButton from '../../../common/buttons/BaseButton';
-import { moveWishlistToBookings, removeWishlistItem } from '../../../../store/slices/accountSlice';
+import { moveWishlistToBookings, removeWishlistItem } from '../../../../store/slices/wishlistSlice';
 import { useAppDispatch } from '../../../../store/hook';
 import type { RootState } from '../../../../store';
+import { getProductText } from '../../../../i18n/utils/product';
 
 const { Text } = Typography;
 
@@ -15,7 +16,7 @@ const ShopCartDrawer = ({ open, onClose }: ShopCartDrawerProps) => {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
 
-  const wishlist = useSelector((state: RootState) => state.account.wishlist ?? []);
+  const wishlist = useSelector((state: RootState) => state.wishlist.wishlist ?? []);
 
   return (
     <AppDrawer title="" side="right" open={open} onClose={onClose}>
@@ -24,9 +25,9 @@ const ShopCartDrawer = ({ open, onClose }: ShopCartDrawerProps) => {
       {wishlist.map(item => (
         <div key={item.id}>
           <div className={styles.productMain}>
-            <Text className={styles.productTitle}>{item.title}</Text>
+            <Text className={styles.productTitle}>{getProductText(item.nameKey, 'name')}</Text>
             <Flex align="center" gap="middle" className={styles.firstItem}>
-              <Avatar shape="square" src={item.image} className={styles.productAvatar} />
+              <Avatar shape="square" src={item.images[0]} className={styles.productAvatar} />
               <Text className={styles.productPrice}>
                 {item.price} {item.currency}
               </Text>

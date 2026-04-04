@@ -2,15 +2,16 @@ import { Card, Avatar, Typography, Flex, Divider } from 'antd';
 import { useAppDispatch, useAppSelector } from '../../../../store/hook';
 import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
-import { removeWishlistItem, moveWishlistToBookings } from '../../../../store/slices/accountSlice';
+import { removeWishlistItem, moveWishlistToBookings } from '../../../../store/slices/wishlistSlice';
 import BaseButton from '../../../../components/common/buttons/BaseButton';
+import { getProductText } from '../../../../i18n/utils/product';
 
 const { Text } = Typography;
 
 const WishlistItem = () => {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
-  const wishlist = useAppSelector(state => state.account.wishlist);
+  const wishlist = useAppSelector(state => state.wishlist.wishlist);
 
   return (
     <section className="">
@@ -22,8 +23,8 @@ const WishlistItem = () => {
                 <>
                   <div key={item.id} className={styles.productItem}>
                     <Flex align="start" vertical gap="middle">
-                      <p className={styles.itemTitle}>{item.title}</p>
-                      <Avatar shape="square" src={item.image} className={styles.productAvatar} />
+                      <p className={styles.itemTitle}>{getProductText(item.nameKey, 'name')}</p>
+                      <Avatar shape="square" src={item.images[0]} className={styles.productAvatar} />
                     </Flex>
                     <Flex gap="middle" vertical>
                       <div>
@@ -50,7 +51,7 @@ const WishlistItem = () => {
                 </>
               ))
             ) : (
-              <Text type="secondary">{t('account.noWishlist')}</Text>
+              <Text type="secondary">{t('wishlist.empty')}</Text>
             )}
           </Card>
         </div>

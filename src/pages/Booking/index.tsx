@@ -1,4 +1,4 @@
-import { Form, Button, Card, Avatar, Typography, Flex, Divider, message } from 'antd';
+import { Form, Card, Avatar, Typography, Flex, Divider, message, Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../store/hook';
 import {
@@ -7,6 +7,7 @@ import {
   increaseQuantity,
   decreaseQuantity,
 } from '../../store/slices/bookingSlice';
+import { addBookings } from '../../store/slices/accountSlice';
 import { useTranslation } from 'react-i18next';
 import type { ContactInfo } from '../../types/contact';
 import { getProductText } from '../../i18n/utils/product';
@@ -32,12 +33,24 @@ const BookingPage = () => {
     dispatch(removeSelectedItem(id));
   };
 
-  const onFinish = (values: ContactInfo) => {
-    console.log('Booking Data:', { products: selectedItems, contact: values });
+  const onFinish = () => {
     if (selectedItems.length === 0) {
       message.warning(t('checkout.noItemsSelected'));
       return;
     }
+
+    const mappedBookings = selectedItems.map(item => ({
+      id: item.id,
+      title: getProductText(item.nameKey, 'name'),
+      price: item.price,
+      currency: item.currency,
+      image: item.images?.[0] || '',
+      inStock: item.inStock ?? true,
+      date: new Date().toISOString(),
+      quantity: item.quantity || 1, // preserve quantity
+    }));
+
+    dispatch(addBookings(mappedBookings));
 
     navigate('/checkout');
   };
@@ -53,6 +66,7 @@ const BookingPage = () => {
         <Line thin />
         <Line />
       </Flex>
+
       <div className={styles.bookingWrapper}>
         <Card className={styles.bookingCard}>
           {selectedItems.length > 0 ? (
@@ -63,15 +77,14 @@ const BookingPage = () => {
                     <Flex align="center" gap="middle" className={styles.firstItem}>
                       <Avatar
                         shape="square"
-                        src={item.images[0]}
+                        src={item.images?.[0] || ''}
                         className={styles.productAvatar}
                       />
-
                       <Text className={styles.productTitle}>
-                        {' '}
                         {getProductText(item.nameKey, 'name')}
                       </Text>
                     </Flex>
+
                     <Flex align="center" gap="middle" className={styles.productControlsWrapper}>
                       <Button onClick={() => dispatch(decreaseQuantity(item.id))} type="text">
                         <Text className={styles.productControlsText}>-</Text>
@@ -83,15 +96,14 @@ const BookingPage = () => {
                     </Flex>
 
                     <Text className={styles.productPrice}>
-                      {' '}
                       {(item.price * (item.quantity || 1)).toFixed(2)} {item.currency}
                     </Text>
+
                     <BaseButton
                       onClick={() => handleRemoveItem(item.id)}
                       underlineColor="red"
                       className={styles.bookingRemoveButton}
                     >
-                      {' '}
                       {t('booking.remove')}
                     </BaseButton>
                   </div>
@@ -99,6 +111,7 @@ const BookingPage = () => {
                   <Divider className={styles.cardDivaider} />
                 </div>
               ))}
+
               <div className={styles.contactFormButton}>
                 <Text strong>
                   {t('booking.total')}{' '}
@@ -106,6 +119,7 @@ const BookingPage = () => {
                     {total.toFixed(2)} {selectedItems[0]?.currency}
                   </span>
                 </Text>
+
                 <Form form={form} onValuesChange={handleValuesChange} onFinish={onFinish}>
                   <BaseButton>{t('booking.confirmButton')}</BaseButton>
                 </Form>
@@ -116,6 +130,7 @@ const BookingPage = () => {
           )}
         </Card>
       </div>
+
       <Flex vertical gap="small" align="center">
         <Line thin />
         <Line />

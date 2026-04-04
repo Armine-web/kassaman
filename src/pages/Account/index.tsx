@@ -8,16 +8,14 @@ import BookingItem from './components/bookingItem';
 import WishlistItem from './components/WishlistItem';
 import { Line } from '../../components/common/AppearingLines';
 
-const { Title} = Typography;
+const { Title } = Typography;
 
 const Account = () => {
   const { t } = useTranslation();
   const user = useAppSelector(state => state.account.user);
 
   if (!user) {
-    return (
-        <GoogleLoginButton />
-    );
+    return <GoogleLoginButton />;
   }
 
   return (
@@ -25,11 +23,11 @@ const Account = () => {
       <div className={styles.accountSection}>
         <div className={styles.accountCardWrapper}>
           <Title level={4}>
-          {t('account.hello')}, {user?.name}
-        </Title>{' '}
-        <AccountCard />
+            {t('account.hello')}, {user?.name}
+          </Title>{' '}
+          <AccountCard />
         </div>
-        
+
         <div className={styles.accountWrapper}>
           <Flex vertical gap="small" align="center">
             <Line thin />

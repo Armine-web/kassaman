@@ -12,8 +12,8 @@ const ShoppCart = ({
   iconStyle,
   active = false,
 }: Props) => {
-  const cartItems = useSelector((state: RootState) => state.booking.cartItems);
-  const totalCount = cartItems.reduce((acc, item) => acc + (item.quantity || 1), 0);
+  const wishlistItems = useSelector((state: RootState) => state.wishlist.wishlist ?? []);
+  const totalCount = wishlistItems.length;
 
   const icon = (
     <HeartOutlined
