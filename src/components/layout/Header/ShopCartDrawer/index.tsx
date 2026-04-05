@@ -9,6 +9,7 @@ import { moveWishlistToBookings, removeWishlistItem } from '../../../../store/sl
 import { useAppDispatch } from '../../../../store/hook';
 import type { RootState } from '../../../../store';
 import { getProductText } from '../../../../i18n/utils/product';
+import { setSelectedProduct } from '../../../../store/slices/bookingSlice';
 
 const { Text } = Typography;
 
@@ -16,11 +17,20 @@ const ShopCartDrawer = ({ open, onClose }: ShopCartDrawerProps) => {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
 
-  const wishlist = useSelector((state: RootState) => state.wishlist.wishlist ?? []);
+  const wishlist = useSelector((state: RootState) => state.wishlist.wishlist);
+
+  const handleMove = (id: string) => {
+    const item = wishlist.find(i => i.id === id);
+
+    if (item) {
+      dispatch(moveWishlistToBookings(id));
+      dispatch(setSelectedProduct(item));
+    }
+  };
 
   return (
     <AppDrawer title="" side="right" open={open} onClose={onClose}>
-      {wishlist.length === 0 && <Text>{t('wishlist.empty') || 'Your wishlist is empty.'}</Text>}
+      {wishlist.length === 0 && <Text>{t('account.noWishlist') || 'Your wishlist is empty.'}</Text>}
 
       {wishlist.map(item => (
         <div key={item.id}>
@@ -37,9 +47,7 @@ const ShopCartDrawer = ({ open, onClose }: ShopCartDrawerProps) => {
               <BaseButton onClick={() => dispatch(removeWishlistItem(item.id))}>
                 {t('account.remove')}
               </BaseButton>
-              <BaseButton onClick={() => dispatch(moveWishlistToBookings(item.id))}>
-                {t('account.book')}
-              </BaseButton>
+              <BaseButton onClick={() => handleMove(item.id)}>{t('account.book')}</BaseButton>
             </Flex>
           </div>
 
