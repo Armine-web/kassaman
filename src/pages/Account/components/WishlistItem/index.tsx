@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 import { removeWishlistItem, moveWishlistToBookings } from '../../../../store/slices/wishlistSlice';
 import BaseButton from '../../../../components/common/buttons/BaseButton';
 import { getProductText } from '../../../../i18n/utils/product';
+import { setSelectedProduct } from '../../../../store/slices/bookingSlice';
 
 const { Text } = Typography;
 
@@ -12,6 +13,15 @@ const WishlistItem = () => {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
   const wishlist = useAppSelector(state => state.wishlist.wishlist);
+
+  const handleMove = (id: string) => {
+      const item = wishlist.find(i => i.id === id);
+  
+      if (item) {
+        dispatch(moveWishlistToBookings(id));
+        dispatch(setSelectedProduct(item));
+      }
+    };
 
   return (
     <section className="">
@@ -40,7 +50,7 @@ const WishlistItem = () => {
                           {' '}
                           {t('account.remove')}
                         </BaseButton>
-                        <BaseButton onClick={() => dispatch(moveWishlistToBookings(item.id))}>
+                        <BaseButton onClick={() => {handleMove(item.id)}}>
                           {' '}
                           {t('account.book')}
                         </BaseButton>

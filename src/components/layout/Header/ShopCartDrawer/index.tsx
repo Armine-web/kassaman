@@ -26,7 +26,7 @@ const ShopCartDrawer = ({ open, onClose }: ShopCartDrawerProps) => {
       dispatch(moveWishlistToBookings(id));
       dispatch(setSelectedProduct(item));
     }
-  };
+  }; 
 
   return (
     <AppDrawer title="" side="right" open={open} onClose={onClose}>
