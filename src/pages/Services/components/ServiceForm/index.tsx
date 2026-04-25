@@ -7,7 +7,6 @@ import { postServiceInquiry } from '../../../../api/services';
 import styles from './styles.module.css';
 
 const { Option } = Select;
-const { TextArea } = Input;
 
 export default function ServiceForm() {
   const { t } = useTranslation('');
@@ -67,8 +66,15 @@ export default function ServiceForm() {
               <Input placeholder={t('service.form.email')} className={styles.minimalInput} />
             </Form.Item>
 
-            <Form.Item name="serviceType" rules={[{ required: true }]}>
-              <Select placeholder={t('service.form.service')} className={styles.minimalSelect}>
+            <Form.Item
+              name="serviceType"
+              rules={[{ required: true, message: t('service.form.val_service') }]}
+            >
+              <Select
+                placeholder={t('service.form.service')}
+                className={styles.minimalSelect}
+                bordered={false}
+              >
                 {SERVICE_OPTIONS.map(opt => (
                   <Option key={opt.value} value={opt.value}>
                     {t(opt.labelKey)}
@@ -77,15 +83,7 @@ export default function ServiceForm() {
               </Select>
             </Form.Item>
 
-            <Form.Item name="message">
-              <TextArea
-                placeholder={t('service.form.message')}
-                rows={4}
-                className={styles.minimalTextarea}
-              />
-            </Form.Item>
-
-            <Button type="primary" htmlType="submit" className={styles.submitBtn} loading={loading}>
+            <Button htmlType="submit" className={styles.submitBtn} loading={loading}>
               {t('service.form.submit')}
             </Button>
           </Form>
